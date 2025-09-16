@@ -1,0 +1,528 @@
+<div class="ap-latin-homepage">
+  <!-- Navigation Section -->
+  <nav class="navigation">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <h2>AP Latin</h2>
+      </div>
+      <div class="nav-tabs">
+        <a href="#course-overview" class="nav-tab" (click)="scrollToSection('course-overview')">Overview</a>
+        <a href="#curriculum" class="nav-tab" (click)="scrollToSection('curriculum')">Curriculum</a>
+        <a href="#skills" class="nav-tab" (click)="scrollToSection('skills')">Cheatsheet</a>
+        <a href="#countdown" class="nav-tab" (click)="scrollToSection('countdown')">Countdown</a>
+        <a href="#resources" class="nav-tab" (click)="scrollToSection('resources')">Resources</a>
+      </div>
+      <div class="nav-search">
+        <form class="nav-search-form" (submit)="onSearch($event, navSearchInput.value)">
+          <input #navSearchInput type="search" class="nav-search-input" placeholder="Search AP Latin..." aria-label="Search" />
+          <button type="submit" class="nav-search-button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Parallax Hero Section -->
+  <section class="parallax-hero">
+    <div class="parallax-background"></div>
+    <div class="parallax-content">
+      <div class="parallax-text">
+        <h1 class="parallax-title">AP Latin</h1>
+        <p class="parallax-subtitle">Master the Classics, Conquer the Exam</p>
+        <p class="parallax-description">
+          Where you can find everything you need to score well on the exam in May - from daily vocab; to annotated translations; to thematic analysis of ancient texts; to ranked scansion games; we have it all.
+        </p>
+        <button class="parallax-cta-button" (click)="scrollToSection('course-overview')">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Original Hero Section (now renamed) -->
+  <div class="hero-frame">
+              <header class="hero-section" id="hero">
+    <div class="hero-image">
+            <img src="assets/baroque-painting.jpg"
+                 alt="Baroque painting depicting dramatic mythological scene with warrior figures and divine elements" 
+                 class="hero-img"
+                 (click)="openImagePopup('assets/baroque-painting.jpg', 'Aeneas defeats Turnus, Luca Giordano, 1634-1705, via the Prado Museum. The woman to the left, bathed in light, is the goddess Venus, the mother of Aeneas. She signifies the hope and prosperity in Aeneas\' and Rome\'s future. The woman to the right, shrouded in darkness, covering her face, is Juturna, Turnus\' sister. She is forced by Jupiter to let her brother meet his fate, showing that this darkness not only signifies the defeat of the enemy, but also her despair.')"
+                 title="Click to learn more">
+          </div>
+          <div class="hero-content">
+            <h1 class="hero-title">Click the image to learn more</h1>
+            <p class="hero-subtitle">Why not explore the origin of this painting?</p>
+            <p class="hero-description">
+              Try this out with other images in this website!
+            </p>
+          </div>
+      </header>
+      <div class="frame-edge frame-top" aria-hidden="true"></div>
+      <div class="frame-edge frame-bottom" aria-hidden="true"></div>
+    </div>
+
+      <section class="course-overview" id="course-overview">
+    <div class="container">
+      <h2 class="section-title">Course Overview</h2>
+      <div class="overview-grid">
+          <div class="overview-card" (click)="navigateToProse()">
+            <img src="assets/prose.jpeg"
+                 alt="Prose text and writing"
+               class="overview-img">
+            <h3>Prose</h3>
+            <p>The free-verse essays, letters, and histories that tell Rome's story. Explore how Pliny, Caesar, and Seneca have mastered the art of Prose.</p>
+        </div>
+          <div class="overview-card" (click)="navigateToPoetry()">
+            <img src="assets/poetry.png"
+                 alt="Aeneas and poetry"
+               class="overview-img">
+            <h3>Poetry</h3>
+            <p>The rhythm that inspired Western Society's oldest stories. Develop an understanding of the art that is Roman poetry through Virgil and Ovid.</p>
+        </div>
+          <div class="overview-card" (click)="navigateToGrammar()">
+            <img src="assets/grammar.webp"
+               alt="Language learning" 
+               class="overview-img">
+            <h3>Grammar</h3>
+            <p>Know everything you need to know to translate and understand the inner workings of Classical Latin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <div class="curriculum-frame">
+        <section class="curriculum-section" id="curriculum">
+    <div class="container">
+      <h2 class="section-title">Curriculum Highlights</h2>
+      <div class="curriculum-content">
+        <div class="curriculum-text">
+                <h3>Pliny the Younger, Letters</h3>
+                <p>Delve into Pliny's vivid insights in Roman society, politics, daily life and culture, as well as reading eye-witness accounts of the eruption of Mt. Vesuvius.</p>
+                  <ul>
+                    <li>Book 6
+                      <div class="book-subtext">Letters 4 and 7: Letters to Calpurnia</div>
+                      <div class="book-subtext">Letter 16: Eruption of Mt. Vesuvius and Pliny the Elder</div>
+                      <div class="book-subtext">Letter 20: Eruption of Mt. Vesuvius and Pliny the Younger</div>
+                    </li>
+                    <li>Book 7
+                      <div class="book-subtext">Letter 27: Ghosts and Apparitions</div>
+                    </li>
+                    <li>Book 10
+                      <div class="book-subtext">Letters 5,6,and 7: Letters to Emperor Trajan, Citizenship for Pliny's Doctor</div>
+                      <div class="book-subtext">Letters 37 and 90: Letters to Emperor Trajan, Aqueducts</div>
+                    </li>
+          </ul>
+        </div>
+        <div class="curriculum-image">
+                <img src="assets/pliny.jpeg"
+                     alt="Pliny and Vesuvius"
+                     class="curriculum-img"
+                     (click)="openImagePopup('assets/pliny.jpeg', 'Pliny the Younger and his Mother at Misenum, 79 A.D., Angelica Kauffman, 1785, via the Princeton University Art Museum. In this scene, a friend is urging Pliny and Plinia (Pliny\'s mother) to flee the volcanic eruption. Pliny and Plinia insist they will not leave until they know the fate of Pliny the Elder.')"
+                     title="Click to learn more">
+        </div>
+      </div>
+      
+      <div class="curriculum-content reverse">
+        <div class="curriculum-image">
+                <img src="assets/underworld.jpeg"
+                     alt="Aeneas in the Underworld"
+                     class="curriculum-img"
+                     (click)="openImagePopup('assets/underworld.jpeg', 'Aeneas and the Sibyl in the Underworld, Jan Brueghel the Younger, 1630s, via the Metropolitan Museum of Art. In this scene the Sibyl, a temple priestess, is leading Aeneas through the Underworld. This piece is inspired by the likes of Jan Brueghel the Elder and Hieronymus Bosch.')"
+                     title="Click to learn more">
+        </div>
+        <div class="curriculum-text">
+                <h3>Virgil's The Aeneid</h3>
+                <p>Analyze Virgil's account on the fall of Troy and the foundation of Rome, mixing both reliable history and epic mythology, all under the guise of a political commentary with iambic pentameter. </p>
+                <ul>
+                  <li>Book 1</li>
+                    <div class="book-subtext">Lines 1-33: The Epic Begins</div>
+                    <div class="book-subtext">Lines 88-107: The Storm</div>
+                    <div class="book-subtext">Lines 496-508: Queen Dido</div>
+                  <li>Book 2</li>
+                    <div class="book-subtext">Lines 40-56 and 201-249: Laocoön and the Trojan Horse</div>
+                  <li>Book 4</li>
+                    <div class="book-subtext">Lines 74-89: Dido Feels the Effect of Cupid</div>
+                    <div class="book-subtext">Lines 165-197: Rumor Reaches Jupiter</div>
+                    <div class="book-subtext">Lines 305-361: Aeneas Leaves Dido</div>
+                  <li>Book 6</li>
+                    <div class="book-subtext">Lines 450-476: The Shade of Dido</div>
+                    <div class="book-subtext">Lines 788-800 and 847-853: Meeting Anchises</div>
+                  <li>Book 7</li>
+                    <div class="book-subtext">Lines 45-58: King Latinus</div>
+                    <div class="book-subtext">Lines 783-792 and 803-817: Turnus Prepares for War</div>
+                  <li>Book 11</li>
+                    <div class="book-subtext">Lines 532-594: The Story of Camilla</div>
+                  <li>Book 12</li>
+                    <div class="book-subtext">Lines 791-796, 803-812, and 818-828: The Fate of the Trojans Is Decided</div>
+                    <div class="book-subtext">Lines 919-952: The Final Battle of Aeneas and Turnus</div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+        <div class="frame-edge frame-top" aria-hidden="true"></div>
+        <div class="frame-edge frame-bottom" aria-hidden="true"></div>
+      </div>
+
+      <section class="skills-section" id="skills">
+    <div class="container">
+        <h2 class="section-title">Your Cheatsheet to Success</h2>
+      <div class="skills-grid">
+          <div class="skill-column" (click)="navigateToWordList()">
+            <div class="column-label">Word List</div>
+            <div class="list-image">
+              <img src="assets/list.png" alt="Word List" class="list-img">
+            </div>
+            <div class="column-image">
+              <img src="assets/column3.png" alt="Column" class="column-img">
+            </div>
+          </div>
+          <div class="skill-column" (click)="navigateToDictionary()">
+            <div class="column-label">Dictionary</div>
+            <div class="dict-image">
+              <img src="assets/dict.png" alt="Dictionary" class="dict-img">
+            </div>
+            <div class="column-image">
+              <img src="assets/column3.png" alt="Column" class="column-img">
+            </div>
+          </div>
+          <div class="skill-column" (click)="navigateToScansion()">
+            <div class="column-label">Scansion</div>
+            <div class="scansion-image">
+              <img src="assets/scansion2.png" alt="Scansion" class="scansion-img">
+            </div>
+            <div class="column-image">
+              <img src="assets/column3.png" alt="Column" class="column-img">
+            </div>
+        </div>
+          <div class="skill-column" (click)="navigateToCulture()">
+            <div class="column-label">Culture and History</div>
+            <div class="lyre-image">
+              <img src="assets/lyre.png" alt="Lyre" class="lyre-img">
+        </div>
+            <div class="column-image">
+              <img src="assets/column3.png" alt="Column" class="column-img">
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <div class="countdown-frame">
+      <section class="countdown-section" id="countdown">
+    <div class="container">
+          <h2 class="section-title">Countdown to AP Latin Exam</h2>
+          <div class="countdown-grid">
+            <div class="time-box days">
+              <div class="time-value" [class.urgent]="isUrgent()">{{ daysLeft() }}</div>
+              <div class="time-label">Days</div>
+            </div>
+            <div class="time-box">
+              <div class="time-value" [class.urgent]="isUrgent()">{{ hoursLeft() }}</div>
+              <div class="time-label">Hours</div>
+            </div>
+            <div class="time-box">
+              <div class="time-value" [class.urgent]="isUrgent()">{{ minutesLeft() }}</div>
+              <div class="time-label">Minutes</div>
+            </div>
+            <div class="time-box">
+              <div class="time-value" [class.urgent]="isUrgent()">{{ secondsLeft() }}</div>
+              <div class="time-label">Seconds</div>
+            </div>
+          </div>
+          <p class="countdown-note">May 4, 2026 at 8:00 AM (local time)</p>
+        </div>
+      </section>
+      <div class="frame-edge frame-top" aria-hidden="true"></div>
+      <div class="frame-edge frame-bottom" aria-hidden="true"></div>
+    </div>
+
+      <section class="resources-section" id="resources">
+    <div class="container">
+      <h2 class="section-title">Study Resources</h2>
+      <div class="resources-grid">
+          <div class="resource-card" (click)="navigateToOnlineTools()">
+            <img src="/assets/online.jpg"
+               alt="Online tools" 
+               class="resource-img">
+          <h4>Online Tools</h4>
+            <p>All the websites and online tools you need to succeed.</p>
+        </div>
+          <div class="resource-card" (click)="navigateToPracticeTests()">
+            <img src="/assets/tests.jpg"
+               alt="Practice tests" 
+               class="resource-img">
+          <h4>Practice Tests</h4>
+          <p>Previous AP exams and sample questions for comprehensive preparation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+      <footer class="footer">
+    <div class="container">
+        <p>&copy; 2025-2026 AP Latin Course. All rights reserved.</p>
+        <p>This site is for educational purposes only. All trademarks and copyrighted materials belong to their respective owners.</p>
+        <p>Designed and coded by Hamza El-Gengaihy.</p>
+      </div>
+    </footer>
+
+    <!-- Image Popup Modal -->
+    @if (showImagePopup) {
+      <div class="image-popup-overlay" (click)="closeImagePopup()">
+        <div class="image-popup" (click)="$event.stopPropagation()">
+          <button class="popup-close" (click)="closeImagePopup()">&times;</button>
+          <div class="popup-content">
+            <div class="popup-image">
+              <img [src]="popupImageSrc" [alt]="popupImageAlt" class="popup-img">
+            </div>
+            <div class="popup-description">
+              <p>{{ popupImageDescription }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- Prose Page -->
+    @if (currentPage === 'prose') {
+      <div class="page-overlay">
+        <div class="split-screen">
+          <div class="split-left" (click)="navigateToPliny()">
+            <div class="split-image" style="background-image: url('assets/plinyclose.webp')"></div>
+            <div class="split-label">Pliny</div>
+          </div>
+          <div class="split-right" (click)="navigateToOthers()">
+            <div class="split-image" style="background-image: url('assets/caesar.webp')"></div>
+            <div class="split-label">Others</div>
+          </div>
+        </div>
+        <button class="back-button" (click)="goBack()">← Back to Home</button>
+      </div>
+    }
+
+    <!-- Poetry Page -->
+    @if (currentPage === 'poetry') {
+      <div class="page-overlay">
+        <div class="split-screen">
+          <div class="split-left" (click)="navigateToAeneid()">
+            <div class="split-image" style="background-image: url('assets/meetingdido2.png')"></div>
+            <div class="split-label">The Aeneid</div>
+          </div>
+          <div class="split-right" (click)="navigateToOthers()">
+            <div class="split-image" style="background-image: url('assets/phaethon.jpg')"></div>
+            <div class="split-label">Others</div>
+          </div>
+        </div>
+        <button class="back-button" (click)="goBack()">← Back to Home</button>
+      </div>
+    }
+
+    <!-- Other Pages -->
+    @if (currentPage === 'grammar') {
+      <div class="page-overlay">
+        <div class="content-page">
+          <h1>Latin Grammar</h1>
+          <p>Master the fundamentals of Classical Latin grammar.</p>
+          <button class="back-button" (click)="goBack()">← Back to Home</button>
+        </div>
+      </div>
+    }
+
+    @if (currentPage === 'wordlist') {
+      <div class="page-overlay">
+        <div class="wordlist-page">
+          <button class="back-button" (click)="goBack()">← Back to Home</button>
+          
+          <div class="wordlist-header">
+            <h1>AP Latin Vocabulary</h1>
+            <p>Essential vocabulary organized by reading sections</p>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="filter-buttons">
+            <button class="filter-btn" [class.active]="selectedFilter === 'all'" (click)="filterWords('all')">All Words</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '1.1'" (click)="filterWords('1.1')">1.1</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '1.2'" (click)="filterWords('1.2')">1.2</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '1.3'" (click)="filterWords('1.3')">1.3</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '1.4'" (click)="filterWords('1.4')">1.4</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '2.1'" (click)="filterWords('2.1')">2.1</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '2.3'" (click)="filterWords('2.3')">2.3</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '2.4'" (click)="filterWords('2.4')">2.4</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '3.1'" (click)="filterWords('3.1')">3.1</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '3.4'" (click)="filterWords('3.4')">3.4</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '3.6'" (click)="filterWords('3.6')">3.6</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '4.1'" (click)="filterWords('4.1')">4.1</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '4.4'" (click)="filterWords('4.4')">4.4</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '4.6'" (click)="filterWords('4.6')">4.6</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '5.1'" (click)="filterWords('5.1')">5.1</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '5.3'" (click)="filterWords('5.3')">5.3</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '5.4'" (click)="filterWords('5.4')">5.4</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '5.6'" (click)="filterWords('5.6')">5.6</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '6.1'" (click)="filterWords('6.1')">6.1</button>
+            <button class="filter-btn" [class.active]="selectedFilter === '6.2'" (click)="filterWords('6.2')">6.2</button>
+          </div>
+
+          <!-- Word List Content -->
+          <div class="wordlist-content">
+            <h2 class="section-title">{{ getSectionTitle() }}</h2>
+            <div class="vocabulary-notes">
+              @for (line of filteredWords(); track line) {
+                <div class="vocabulary-line">{{ line }}</div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (currentPage === 'scansion') {
+      <div class="page-overlay">
+        <div class="scansion-background"></div>
+        <div class="scansion-content">
+          <button class="back-button" (click)="goBack()">← Back to Home</button>
+          
+          <!-- Video Section -->
+          <div class="video-section">
+            <h1>Scansion</h1>
+            <p class="video-intro">Learn everything you need to know about scansion at a moment's notice:</p>
+            <div class="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/cGF47JT0hPA" 
+                title="Scansion Tutorial"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Scansion Notes Section -->
+          <div class="notes-section">
+            <h2>Dactylic Hexameter Verse</h2>
+            <p>Ancient verse was composed in lines of long or short syllables in different combinations. <strong>Dactylic hexameter</strong> is the form of verse employed by Virgil in the Aeneid. It consists of lines made from six (hexa) feet, each foot containing either a long syllable followed by two short syllables <strong>(a dactyl: – ˇ ˇ)</strong> or two long syllables <strong>(a spondee: – –)</strong>. The first four feet may either be dactyls or spondees. The fifth foot is normally (but not always) a dactyl. The sixth foot is an <strong>anceps</strong>, i.e., either a long-long (– –) or long-short (– ˇ) <strong>(a trochee)</strong>. The last foot is usually always counted as a spondee though, by the <strong>brevis in longo</strong> convention, where a seemingly short vowel is considered long for metrical purposes.</p>
+            
+            <p>A line of dactylic hexameter could follow a pattern like this:</p>
+            <div class="meter-pattern">
+              <div class="foot">– ˇ ˇ</div>
+              <div class="foot">– ˇ ˇ</div>
+              <div class="foot">– ˇ ˇ</div>
+              <div class="foot">– ˇ ˇ</div>
+              <div class="foot">– ˇ ˇ</div>
+              <div class="foot">– –</div>
+    </div>
+
+            <h3>Quantity Determined by Nature:</h3>
+            <p>Each foot of poetry thus consists of long and/or short syllables. If the syllable contains a short vowel or a long vowel, its quantity is said to be determined by its "nature" — it is short or long simply because it contains a short or long vowel. Thus:</p>
+            <ol>
+              <li>A short syllable contains a short quantity vowel.</li>
+              <li>A long syllable contains a long quantity vowel</li>
+              <li>A long syllable may also contain a diphthong.</li>
+            </ol>
+
+            <p>Here are some general rules to assist in determining the nature of syllables:</p>
+            <ul>
+              <li>A final <strong>-o, -i,</strong> or <strong>-u</strong> is usually long by nature.<br>
+              <em>But: the final -i in tibi and mihi may be either short or long as the meter requires. (The first -i- in both words is always short.)</em></li>
+              <li>A final <strong>-as, -es,</strong> or <strong>-os</strong> is usually long by nature.</li>
+              <li>A final <strong>-a</strong> or <strong>-is</strong> is often short by nature.<br>
+              <em>But: -a in the first declension ablative singular is always long, as is -is in the first and second declensions ablative / dative plural.</em></li>
+              <li>A final <strong>-e</strong> is usually short by nature.<br>
+              <em>But: -e in the fifth declension ablative singular and -e on adverbs formed from second declension adjectives are long by nature.</em></li>
+              <li>A final <strong>-us</strong> is usually short by nature.<br>
+              <em>But: fourth declension genitive singular, and nominative / accusative plural (but not fourth declension nominative singular) are long by nature.</em></li>
+              <li>A final <strong>-am, -em, </strong>or <strong>-um</strong> is always short by nature.</li>
+              <li><strong>Diphthongs</strong> are two vowels combining to create one sound. The diphthongs in latin are <strong>ae, oe, ei, au, eu, </strong> and <strong>ui</strong>. Remember, just because these vowels are together doesn't always mean there is a diphthong. The vowels have to be making one continuous sound.</li>
+            </ul>
+
+            <h3>Quantity Determined by Position:</h3>
+            <p>A vowel is considered long by position when directly followed by two consonants, whether in the same word or the beginning of the next word.</p>
+            
+            <p><strong>Example 1:</strong> in the word urbs, the u, although short by nature, is long by position because it is followed by two consonants.</p>
+            
+            <p><strong>Example 2:</strong> in the phrase puella stat the -a of puella, although short by nature, is long because it is followed by two consonants. Similarly, the -e is also long by position.</p>
+            
+            <p>This rule is not absolute and some consonant combinations (-cr, -pr, and -tr) will not always create a preceding long vowel. <strong>-l</strong> and <strong>-r</strong> are what we call <strong>liquid consonants</strong>, which means that, after following a consonant (-br and -cl), the preceding vowel isn't lengthened.</p>
+            
+            <p>The consonant <strong>-h-</strong> is <strong>not</strong> usually considered a full consonant, and will not normally lengthen a preceding vowel. For instance, in the phrase tenet haec, the syllable -et in tenet is short, not long.</p>
+            
+            <p>The consonants <strong>-x-</strong> and <strong>-z-</strong> will lengthen a preceding vowel, since they are actually <strong>double consonants</strong> (-ks- and -ds-, respectively).</p>
+            
+            <p>The common combination <strong>-qu-</strong> will never lengthen a preceding vowel. Also, the -u is never long.</p>
+            
+            <p>Remember that <strong>-i-</strong> in Latin is sometimes a consonant, like in the word Troiam. Think: is the i acting as a j in this word? If it is, it is acting as a consonant.</p>
+
+            <h3>Elision and Hiatus:</h3>
+            <p>Elision is the omission of certain syllables in scansion. It has two basic rules:</p>
+            <ol>
+              <li>A final syllable ending in a vowel may be omitted before a word beginning with a <strong>vowel</strong> or an <strong>h-</strong>.<br>
+              <em>Thus in nauta est the final -a is elided or "knocked out," leaving two syllables: naut est.</em><br>
+              <strong>Nota Bene:</strong> The syllable may or may not be omitted. The term for deliberate avoidance of elision is called hiatus.</li>
+              <li>A final syllable ending in the letter <strong>-m</strong> may be omitted from the meter before a word beginning with a <strong>vowel</strong> or an <strong>h-</strong>.<br>
+              <em>Thus, nautam esse becomes naut esse. Instead of saying this phrase has 4 total syllables, with the elision, it has only 3.</em><br>
+              <em>Multum ille becomes mulltille.</em></li>
+            </ol>
+            
+            <p class="source-note">Adapted from <a href="https://www.thelatinlibrary.com/satire/scansion.pdf" target="_blank">https://www.thelatinlibrary.com/satire/scansion.pdf</a></p>
+          </div>
+
+          <!-- Practice Game Section -->
+          <div class="practice-section">
+            <h2>Feeling confident in your scansion skills?</h2>
+            <p>Practice your skills with ranked scansion games!</p>
+            <div class="game-container">
+              <div class="game-window" (click)="navigateToHexameter()">
+                <div class="window-frame">
+                  <div class="window-content">
+                    <img src="assets/hexameter.png" alt="Hexameter Scansion Game" class="game-preview">
+                    <div class="game-overlay">
+                      <h3>Hexameter</h3>
+                      <p>Practice the art of scanning lines of ancient poetry</p>
+                      <span class="click-hint">Click to play →</span>
+                    </div>
+                  </div>
+    </div>
+</div>
+
+                              <div class="rating-section">
+                  <div class="rating-circle">
+                    <img src="assets/rating2.png" alt="Rating Score" class="rating-image">
+                  </div>
+                  <img src="assets/arrow.png" alt="Arrow pointing to game" class="arrow-image">
+                  <p class="challenge-text">Try to beat my score!</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (currentPage === 'culture') {
+      <div class="page-overlay">
+        <div class="content-page">
+          <h1>Culture and History</h1>
+          <p>Explore the rich cultural context of ancient Rome.</p>
+          <button class="back-button" (click)="goBack()">← Back to Home</button>
+        </div>
+      </div>
+    }
+
+    @if (currentPage === 'online-tools') {
+      <div class="page-overlay">
+        <div class="content-page">
+          <h1>Online Tools</h1>
+          <p>Digital resources and tools for Latin learning.</p>
+          <button class="back-button" (click)="goBack()">← Back to Home</button>
+        </div>
+      </div>
+    }
+
+    @if (currentPage === 'practice-tests') {
+      <div class="page-overlay">
+        <div class="content-page">
+          <h1>Practice Tests</h1>
+          <p>Previous AP exams and sample questions.</p>
+          <button class="back-button" (click)="goBack()">← Back to Home</button>
+        </div>
+      </div>
+    }
+  </div>
