@@ -366,8 +366,8 @@
           <div class="wordlist-content">
             <h2 class="section-title">{{ getSectionTitle() }}</h2>
             <div class="vocabulary-notes">
-              @for (line of filteredWords(); track line) {
-                <div class="vocabulary-line">{{ line }}</div>
+              @for (line of this.filteredWords; track line) {
+                <div class="vocabulary-line">{{line.unit}} {{ line.word }}</div>
               }
             </div>
           </div>
