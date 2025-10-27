@@ -66,6 +66,113 @@ export class App {
       // noop to subscribe to signals to keep them hot
       void this.now();
     });
+
+    // Add scroll listener for culture page navigation
+    this.setupScrollListener();
+  }
+
+  private setupScrollListener() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', () => {
+        if (this.currentPage === 'culture') {
+          this.updateActiveSection();
+          this.updateTimelineDots();
+          this.updateScrollAnimations();
+        }
+      });
+    }
+  }
+
+  private updateActiveSection() {
+    const sections = ['founding', 'kingdom', 'republic', 'empire'];
+    const scrollPosition = window.scrollY + 200; // Offset for better UX
+
+    for (const sectionId of sections) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top + window.scrollY;
+        const elementBottom = elementTop + rect.height;
+
+        if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
+          this.activeSection = sectionId;
+          break;
+        }
+      }
+    }
+  }
+
+  private updateTimelineDots() {
+    const dots = document.querySelectorAll('.timeline-dot');
+    const years = document.querySelectorAll('.timeline-year');
+    const sections = ['founding', 'kingdom', 'republic', 'empire'];
+    
+    sections.forEach((sectionId, index) => {
+      const dot = dots[index] as HTMLElement;
+      const year = years[index] as HTMLElement;
+      const section = document.getElementById(sectionId);
+      
+      if (section && dot && year) {
+        const rect = section.getBoundingClientRect();
+        // Much more aggressive visibility - show when section is 90% visible or entering viewport
+        const isVisible = rect.top < window.innerHeight * 0.9 && rect.bottom > window.innerHeight * 0.1;
+        
+        // Position the dot and year at the center of its section
+        const sectionTop = rect.top + window.scrollY;
+        const sectionHeight = rect.height;
+        const centerPosition = sectionTop + (sectionHeight / 2);
+        
+        dot.style.top = `${centerPosition}px`;
+        year.style.top = `${centerPosition}px`;
+        
+        // Update visibility for dot and year
+        if (isVisible) {
+          dot.classList.add('visible');
+          year.classList.add('visible');
+        } else {
+          dot.classList.remove('visible');
+          year.classList.remove('visible');
+        }
+        
+        // Update active state
+        if (sectionId === this.activeSection) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      }
+    });
+    
+    // Update timeline line height to stop at culture section
+    this.updateTimelineLineHeight();
+  }
+
+  private updateTimelineLineHeight() {
+    const timelineLine = document.querySelector('.timeline-line') as HTMLElement;
+    const cultureSection = document.getElementById('culture');
+    
+    if (timelineLine && cultureSection) {
+      const cultureRect = cultureSection.getBoundingClientRect();
+      const cultureTop = cultureRect.top + window.scrollY;
+      
+      // Set timeline line height to stop well before culture section
+      timelineLine.style.height = `${cultureTop - 200}px`;
+    }
+  }
+
+  private updateScrollAnimations() {
+    const sections = document.querySelectorAll('.timeline-section');
+    const windowHeight = window.innerHeight;
+    
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      // Much more aggressive visibility - show when section is 95% visible
+      const isVisible = rect.top < windowHeight * 0.95 && rect.bottom > windowHeight * 0.05;
+      
+      if (isVisible) {
+        section.classList.add('visible');
+      }
+    });
   }
 
   ngOnDestroy() {
@@ -112,6 +219,7 @@ export class App {
   }
 
   scrollToSection(sectionId: string) {
+    this.activeSection = sectionId;
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -126,6 +234,8 @@ export class App {
 
   // Page navigation
   currentPage = 'home';
+  navigationHistory: string[] = [];
+  activeSection: string = 'founding';
 
   openImagePopup(imageSrc: string, description: string) {
     this.popupImageSrc = imageSrc;
@@ -148,6 +258,7 @@ export class App {
   }
 
   navigateToGrammar() {
+    this.navigationHistory.push(this.currentPage);
     this.currentPage = 'grammar';
   }
 
@@ -165,8 +276,10 @@ export class App {
   }
 
   navigateToCulture() {
+    this.navigationHistory.push(this.currentPage);
     this.currentPage = 'culture';
   }
+
 
   navigateToOnlineTools() {
     this.currentPage = 'online-tools';
@@ -177,19 +290,56 @@ export class App {
   }
 
   goBack() {
-    this.currentPage = 'home';
+    if (this.navigationHistory.length > 0) {
+      this.currentPage = this.navigationHistory.pop()!;
+    } else {
+      this.currentPage = 'home';
+    }
   }
 
   navigateToPliny() {
+    this.navigationHistory.push(this.currentPage);
     this.currentPage = 'pliny-detail';
   }
 
   navigateToOthers() {
+    this.navigationHistory.push(this.currentPage);
     this.currentPage = 'others-detail';
   }
 
   navigateToAeneid() {
+    this.navigationHistory.push(this.currentPage);
     this.currentPage = 'aeneid-detail';
+  }
+
+  navigateToPlinyLetter4() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'pliny-letter-4';
+  }
+
+  navigateToPlinyLetter16() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'pliny-letter-16';
+  }
+
+  navigateToPlinyLetter20() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'pliny-letter-20';
+  }
+
+  navigateToPlinyLetter27() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'pliny-letter-27';
+  }
+
+  navigateToPlinyLetters567() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'pliny-letters-567';
+  }
+
+  navigateToPlinyLetters3790() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'pliny-letters-3790';
   }
 
   navigateToHexameter() {
