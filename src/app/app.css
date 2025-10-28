@@ -3039,20 +3039,43 @@ body {
   margin: 0 auto;
 }
 
-/* Professional Timeline Design - Left Side Layout */
+/* Professional Timeline Design - Two Column Layout */
 .timeline-container {
   position: relative;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 50px; /* Minimal padding for full width usage */
+  padding: 0 50px;
   min-height: 4000px;
-  display: flex; /* Use flexbox for clean layout */
+  display: grid;
+  grid-template-columns: 20% 80%; /* Two columns: 20% dates, 80% content */
+  gap: 40px;
 }
 
-/* Timeline Line - Left Side */
+/* Dates Column - 20% Width */
+.timeline-dates-column {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  padding: 20px;
+  grid-column: 1; /* First column in grid */
+  width: 100%;
+}
+
+.timeline-year {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  margin: 50px 0;
+  text-align: left; /* Left aligned for left column */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Timeline Line - Separates the two columns */
 .timeline-line {
   position: absolute;
-  left: 200px; /* Fixed position on left side */
+  left: 20%; /* Between the two columns */
   top: 0;
   width: 3px;
   background: linear-gradient(180deg, #D4AF37, #B8860B, #D4AF37);
@@ -3061,10 +3084,9 @@ body {
   height: 100%; /* Will be set dynamically */
 }
 
-/* Small White Dots - On Left Timeline */
+/* Small White Dots - On Timeline */
 .timeline-dot {
   position: absolute;
-  left: 200px; /* Aligned with timeline line */
   width: 10px;
   height: 10px;
   background: white;
@@ -3086,47 +3108,32 @@ body {
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
 }
 
-/* Large White Years - Far Left */
-.timeline-year {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 4rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  transition: opacity 0.1s ease;
-  pointer-events: none;
-  z-index: 999;
-  width: 180px;
-  text-align: right;
+/* Content Column - 80% Width */
+.timeline-content-column {
+  width: 100%;
+  grid-column: 2; /* Second column in grid */
 }
 
 /* Timeline Sections - Clean Layout */
 .timeline-section {
   position: relative;
-  margin: 300px 0;
-  min-height: 400px;
+  margin: 100px 0;
+  min-height: 300px;
   width: 100%;
 }
 
-/* Content Blocks - All on Right Side */
+/* Content Blocks - Information Column (80% width) */
 .timeline-content {
   background: transparent;
   border-radius: 0;
-  padding: 40px 0;
+  padding: 40px 20px;
   box-shadow: none;
   backdrop-filter: none;
   border-left: none;
   margin-left: 0;
   color: white;
-  max-width: 800px; /* Much wider for right side */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 300px; /* All content on right side of timeline */
+  width: 100%;
+  position: relative;
 }
 
 .timeline-content h2 {

@@ -3969,21 +3969,30 @@ display, propose, relate; put or place forward;">propositam</span>.
             <div class="timeline-dot" data-section="kingdom" (click)="scrollToSection('kingdom')"></div>
             <div class="timeline-dot" data-section="republic" (click)="scrollToSection('republic')"></div>
             <div class="timeline-dot" data-section="empire" (click)="scrollToSection('empire')"></div>
-            <!-- Founding of Rome (753 BC) -->
-            <div class="timeline-section" id="founding">
+            
+            <!-- Dates Column (20%) -->
+            <div class="timeline-dates-column">
               <div class="timeline-year">753 BC</div>
-              <div class="timeline-content">
-                <h2>The Founding of Rome</h2>
-                <p>According to Roman legend, Rome was founded by Romulus and Remus, twin brothers raised by a she-wolf. Romulus killed Remus in a dispute and became the first king of Rome, establishing the city on Palatine Hill.</p>
-              </div>
+              <div class="timeline-year">753-509 BC</div>
+              <div class="timeline-year">509-27 BC</div>
+              <div class="timeline-year">27 BC-476 AD</div>
             </div>
 
-            <!-- Roman Kingdom (753-509 BC) -->
-            <div class="timeline-section" id="kingdom">
-              <div class="timeline-year">753-509 BC</div>
-              <div class="timeline-content">
-                <h2>The Roman Kingdom</h2>
-                <p>Seven legendary kings ruled Rome before the establishment of the Republic. The kingdom period saw the development of Roman institutions, religious practices, and military organization.</p>
+            <!-- Content Column (80%) -->
+            <div class="timeline-content-column">
+              <!-- Founding of Rome (753 BC) -->
+              <div class="timeline-section" id="founding">
+                <div class="timeline-content">
+                  <h2>The Founding of Rome</h2>
+                  <p>According to Roman legend, Rome was founded by Romulus and Remus, twin brothers raised by a she-wolf. Romulus killed Remus in a dispute and became the first king of Rome, establishing the city on Palatine Hill.</p>
+                </div>
+              </div>
+
+              <!-- Roman Kingdom (753-509 BC) -->
+              <div class="timeline-section" id="kingdom">
+                <div class="timeline-content">
+                  <h2>The Roman Kingdom</h2>
+                  <p>Seven legendary kings ruled Rome before the establishment of the Republic. The kingdom period saw the development of Roman institutions, religious practices, and military organization.</p>
 
                   
                   <div class="history-item">
@@ -4671,10 +4680,11 @@ display, propose, relate; put or place forward;">propositam</span>.
                   </div>
           </div>
           <button class="back-button" (click)="goBack()">← Back to Home</button>
-        </div> 
+        </div>
       </div>
     </div>
-  }
+    }
+    
 
     @if (currentPage === 'online-tools') {
       <div class="page-overlay">
@@ -6032,4 +6042,4 @@ display, propose, relate; put or place forward;">propositam</span>.
         </div>
       </div>
     }
-</div>
+  </div>
