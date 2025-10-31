@@ -1,0 +1,2655 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module" src="./Latin_files/client"></script>
+
+  
+  <title>Latin</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./Latin_files/styles.css"><style>
+
+*[_ngcontent-ng-c2184142485] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body[_ngcontent-ng-c2184142485] {
+  font-family:
+    "Georgia",
+    "Times New Roman",
+    serif;
+  line-height: 1.6;
+  color: #ff0404;
+  background-color: pink;
+}
+.container[_ngcontent-ng-c2184142485] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.navigation[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(62, 39, 35, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 10px 0;
+  border-bottom: 2px solid #8D6E63;
+}
+.nav-container[_ngcontent-ng-c2184142485] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-brand[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  color: #ecf0f1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+.nav-tabs[_ngcontent-ng-c2184142485] {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+}
+.nav-tab[_ngcontent-ng-c2184142485] {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+.nav-tab[_ngcontent-ng-c2184142485]:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #8D6E63;
+  transform: translateY(-2px);
+}
+.nav-search[_ngcontent-ng-c2184142485] {
+  flex: 0 0 auto;
+}
+.nav-search-form[_ngcontent-ng-c2184142485] {
+  display: flex;
+  gap: 10px;
+}
+.nav-search-input[_ngcontent-ng-c2184142485] {
+  padding: 10px 15px;
+  border: 2px solid #8D6E63;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  min-width: 250px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.nav-search-input[_ngcontent-ng-c2184142485]::placeholder {
+  color: #bdc3c7;
+}
+.nav-search-input[_ngcontent-ng-c2184142485]:focus {
+  outline: none;
+  border-color: #e74c3c;
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav-search-button[_ngcontent-ng-c2184142485] {
+  padding: 10px 20px;
+  background:
+    linear-gradient(
+      45deg,
+      #e74c3c,
+      #c0392b);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.nav-search-button[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+.parallax-hero[_ngcontent-ng-c2184142485] {
+  position: relative;
+  height: 250vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+.parallax-background[_ngcontent-ng-c2184142485] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/assets/paralax.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.7) contrast(1.2);
+  z-index: -2;
+}
+.parallax-content[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 20px;
+}
+.parallax-title[_ngcontent-ng-c2184142485] {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  animation: _ngcontent-ng-c2184142485_fadeInUp 1s ease-out 0.5s forwards;
+}
+.parallax-subtitle[_ngcontent-ng-c2184142485] {
+  font-size: 2rem;
+  margin-bottom: 400px;
+  color: #f39c12;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  animation: _ngcontent-ng-c2184142485_fadeInUp 1s ease-out 1s forwards;
+}
+.parallax-description[_ngcontent-ng-c2184142485] {
+  font-size: 2.3rem;
+  margin-bottom: 500px;
+  line-height: 1.8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  animation: _ngcontent-ng-c2184142485_fadeInUp 1s ease-out 1.5s forwards;
+}
+.parallax-cta-button[_ngcontent-ng-c2184142485] {
+  background:
+    linear-gradient(
+      45deg,
+      #e74c3c,
+      #c0392b);
+  color: white;
+  border: none;
+  padding: 40px 80px;
+  font-size: 2.3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: _ngcontent-ng-c2184142485_fadeInUp 1s ease-out 2s forwards;
+}
+.parallax-cta-button[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+@keyframes _ngcontent-ng-c2184142485_fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.image-popup-overlay[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+.image-popup[_ngcontent-ng-c2184142485] {
+  background: white;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+.popup-close[_ngcontent-ng-c2184142485] {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.popup-close[_ngcontent-ng-c2184142485]:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+.popup-content[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.popup-image[_ngcontent-ng-c2184142485] {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f8f9fa;
+}
+.popup-img[_ngcontent-ng-c2184142485] {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.popup-description[_ngcontent-ng-c2184142485] {
+  padding: 25px;
+  background: white;
+  border-top: 1px solid #e9ecef;
+}
+.popup-description[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+.page-overlay[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+}
+.split-screen[_ngcontent-ng-c2184142485] {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.split-left[_ngcontent-ng-c2184142485], 
+.split-right[_ngcontent-ng-c2184142485] {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  filter: brightness(0.85) contrast(0.9);
+}
+.split-left[_ngcontent-ng-c2184142485]:hover, 
+.split-right[_ngcontent-ng-c2184142485]:hover {
+  transform: scale(1.02);
+  filter: brightness(1) contrast(1.05);
+}
+.split-image[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.split-label[_ngcontent-ng-c2184142485] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.split-left[_ngcontent-ng-c2184142485]:hover   .split-label[_ngcontent-ng-c2184142485], 
+.split-right[_ngcontent-ng-c2184142485]:hover   .split-label[_ngcontent-ng-c2184142485] {
+  opacity: 1;
+}
+.back-button[_ngcontent-ng-c2184142485] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(62, 39, 35, 0.9);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.back-button[_ngcontent-ng-c2184142485]:hover {
+  background: rgba(62, 39, 35, 1);
+  transform: translateY(-2px);
+}
+.content-page[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.content-page[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+.content-page[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+.wordlist-page[_ngcontent-ng-c2184142485] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 100px 20px;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      135deg,
+      #8D6E63 0%,
+      #6D4C41 50%,
+      #5D4037 100%);
+}
+.wordlist-header[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.wordlist-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.wordlist-header[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  color: #f5f5f5;
+}
+.filter-buttons[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.filter-btn[_ngcontent-ng-c2184142485] {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.filter-btn[_ngcontent-ng-c2184142485]:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.filter-btn.active[_ngcontent-ng-c2184142485] {
+  background: #f39c12;
+  border-color: #e67e22;
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+}
+.wordlist-content[_ngcontent-ng-c2184142485] {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 0px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-height: 53vh;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+.wordlist-content[_ngcontent-ng-c2184142485]   .section-title[_ngcontent-ng-c2184142485] {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #3E2723;
+  text-align: center;
+  border-bottom: 3px solid #8D6E63;
+  padding-bottom: 15px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  margin: -40px -40px 30px -40px;
+  padding: 40px 40px 15px 40px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.word-list[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.word-entry[_ngcontent-ng-c2184142485] {
+  background: #fff;
+  border: 1px solid #8D6E63;
+  border-radius: 8px;
+  padding: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+.word-entry[_ngcontent-ng-c2184142485]:hover {
+  border-color: #f39c12;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.word-header[_ngcontent-ng-c2184142485] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.word-latin[_ngcontent-ng-c2184142485] {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #3E2723;
+  font-style: italic;
+  line-height: 1.3;
+}
+.word-part[_ngcontent-ng-c2184142485] {
+  background: #f39c12;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.word-definitions[_ngcontent-ng-c2184142485] {
+  margin-bottom: 15px;
+}
+.definition[_ngcontent-ng-c2184142485] {
+  font-size: 1.05rem;
+  color: #5D4037;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  border-left: 4px solid #8D6E63;
+}
+.word-section[_ngcontent-ng-c2184142485] {
+  background: #8D6E63;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.vocabulary-notes[_ngcontent-ng-c2184142485] {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #3E2723;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-height: 60vh;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+.vocabulary-line[_ngcontent-ng-c2184142485] {
+  margin-bottom: 2px;
+  padding: 2px 0;
+}
+.scansion-background[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/assets/grammar.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.2) contrast(1.2);
+  z-index: -1;
+}
+.scansion-content[_ngcontent-ng-c2184142485] {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  overflow-y: auto;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.video-section[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 60px;
+}
+.video-section[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+.video-intro[_ngcontent-ng-c2184142485] {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  color: #ecf0f1;
+}
+.video-container[_ngcontent-ng-c2184142485] {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+.video-container[_ngcontent-ng-c2184142485]   iframe[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+.notes-section[_ngcontent-ng-c2184142485] {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.notes-section[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #f39c12;
+  text-align: center;
+}
+.notes-section[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  font-size: 1.8rem;
+  margin: 30px 0 15px 0;
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+}
+.notes-section[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+.notes-section[_ngcontent-ng-c2184142485]   ul[_ngcontent-ng-c2184142485], 
+.notes-section[_ngcontent-ng-c2184142485]   ol[_ngcontent-ng-c2184142485] {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+.notes-section[_ngcontent-ng-c2184142485]   li[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+.notes-section[_ngcontent-ng-c2184142485]   em[_ngcontent-ng-c2184142485] {
+  color: #bdc3c7;
+  font-style: italic;
+}
+.notes-section[_ngcontent-ng-c2184142485]   strong[_ngcontent-ng-c2184142485] {
+  color: #e74c3c;
+  font-weight: bold;
+}
+.meter-pattern[_ngcontent-ng-c2184142485] {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.foot[_ngcontent-ng-c2184142485] {
+  background: rgba(231, 76, 60, 0.2);
+  border: 2px solid #e74c3c;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+  font-family: "Courier New", monospace;
+}
+.source-note[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  font-style: italic;
+  color: #bdc3c7;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.source-note[_ngcontent-ng-c2184142485]   a[_ngcontent-ng-c2184142485] {
+  color: #f39c12;
+  text-decoration: none;
+}
+.source-note[_ngcontent-ng-c2184142485]   a[_ngcontent-ng-c2184142485]:hover {
+  text-decoration: underline;
+}
+.practice-section[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.practice-section[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+.practice-section[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  color: #ecf0f1;
+}
+.game-container[_ngcontent-ng-c2184142485] {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.game-window[_ngcontent-ng-c2184142485] {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.game-window[_ngcontent-ng-c2184142485]:hover {
+  transform: scale(1.05);
+}
+.window-frame[_ngcontent-ng-c2184142485] {
+  background:
+    linear-gradient(
+      135deg,
+      #3E2723 0%,
+      #5D4037 50%,
+      #8D6E63 100%);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  border: 3px solid #8D6E63;
+  margin-right: -15px;
+}
+.window-content[_ngcontent-ng-c2184142485] {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #000;
+}
+.game-preview[_ngcontent-ng-c2184142485] {
+  width: 700px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.game-overlay[_ngcontent-ng-c2184142485] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(62, 39, 35, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.game-window[_ngcontent-ng-c2184142485]:hover   .game-overlay[_ngcontent-ng-c2184142485] {
+  opacity: 1;
+}
+.game-overlay[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+.game-overlay[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+.click-hint[_ngcontent-ng-c2184142485] {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+  border: 2px solid #e74c3c;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background: rgba(231, 76, 60, 0.1);
+}
+.rating-section[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.rating-circle[_ngcontent-ng-c2184142485] {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  border: 4px solid #f39c12;
+  background: rgba(243, 156, 18, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-15deg);
+  box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
+  position: relative;
+  margin-bottom: -50px;
+}
+.rating-image[_ngcontent-ng-c2184142485] {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.arrow-image[_ngcontent-ng-c2184142485] {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 5px 0;
+  transform: rotate(190deg);
+  margin-bottom: -15px;
+  margin-right: 50px;
+}
+.challenge-text[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  color: #f39c12;
+  font-weight: bold;
+  text-align: center;
+  max-width: 150px;
+  line-height: 1.4;
+}
+.hero-section[_ngcontent-ng-c2184142485] {
+  background:
+    linear-gradient(
+      135deg,
+      #3E2723 0%,
+      #5D4037 50%,
+      #8D6E63 100%);
+  color: rgb(232, 23, 23);
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  margin-top: 0px;
+  gap: 40px;
+}
+.hero-frame[_ngcontent-ng-c2184142485] {
+  position: relative;
+  padding: 0;
+}
+.hero-frame[_ngcontent-ng-c2184142485]   .hero-section[_ngcontent-ng-c2184142485] {
+  position: relative;
+  z-index: 1;
+}
+.frame-edge[_ngcontent-ng-c2184142485] {
+  position: absolute;
+  background-image: url(/assets/border-removebg-preview.png);
+  background-size: contain;
+  pointer-events: none;
+  z-index: 2;
+}
+.frame-top[_ngcontent-ng-c2184142485], 
+.frame-bottom[_ngcontent-ng-c2184142485] {
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  background-repeat: repeat-x;
+}
+.frame-top[_ngcontent-ng-c2184142485] {
+  top: 0;
+  transform: rotate(0deg);
+}
+.frame-bottom[_ngcontent-ng-c2184142485] {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.hero-image[_ngcontent-ng-c2184142485] {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img[_ngcontent-ng-c2184142485] {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero-img[_ngcontent-ng-c2184142485]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+.hero-content[_ngcontent-ng-c2184142485] {
+  flex: 1;
+  padding-left: 24px;
+}
+.hero-title[_ngcontent-ng-c2184142485] {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+.hero-subtitle[_ngcontent-ng-c2184142485] {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f39c12;
+  font-weight: 600;
+}
+.hero-description[_ngcontent-ng-c2184142485] {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  color: #ecf0f1;
+}
+.hero-image[_ngcontent-ng-c2184142485] {
+  flex: 1;
+  text-align: center;
+}
+.hero-img[_ngcontent-ng-c2184142485] {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.section-title[_ngcontent-ng-c2184142485] {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #A3B18A;
+  position: relative;
+}
+.section-title[_ngcontent-ng-c2184142485]::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background:
+    linear-gradient(
+      45deg,
+      #e74c3c,
+      #c0392b);
+  border-radius: 2px;
+}
+.course-overview[_ngcontent-ng-c2184142485] {
+  padding: 80px 0;
+  background: #8D6E63;
+}
+.overview-grid[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+.overview-card[_ngcontent-ng-c2184142485] {
+  background: #E0E0E0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.overview-card[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-5px);
+}
+.overview-img[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.overview-card[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+.overview-card[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  color: #666;
+  line-height: 1.6;
+}
+.curriculum-section[_ngcontent-ng-c2184142485] {
+  padding: 80px 0;
+  background:
+    linear-gradient(
+      135deg,
+      #8D6E63 0%,
+      #5D4037 50%,
+      #3E2723 100%);
+}
+.curriculum-content[_ngcontent-ng-c2184142485] {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+.curriculum-content.reverse[_ngcontent-ng-c2184142485] {
+  flex-direction: row-reverse;
+}
+.curriculum-text[_ngcontent-ng-c2184142485] {
+  flex: 1;
+}
+.curriculum-text[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.curriculum-text[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.8;
+}
+.curriculum-text[_ngcontent-ng-c2184142485]   ul[_ngcontent-ng-c2184142485] {
+  list-style: none;
+  padding-left: 0;
+}
+.curriculum-text[_ngcontent-ng-c2184142485]   li[_ngcontent-ng-c2184142485] {
+  padding: 8px 0;
+  color: #ffffff;
+  position: relative;
+  padding-left: 25px;
+}
+.curriculum-text[_ngcontent-ng-c2184142485]   li[_ngcontent-ng-c2184142485]::before {
+  content: "\25b6";
+  position: absolute;
+  left: 0;
+  color: #e74c3c;
+  font-weight: bold;
+}
+.book-subtext[_ngcontent-ng-c2184142485] {
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-style: italic;
+  margin-top: 5px;
+  margin-left: 45px;
+  line-height: 1.4;
+}
+.curriculum-image[_ngcontent-ng-c2184142485] {
+  flex: 1;
+  text-align: center;
+}
+.curriculum-img[_ngcontent-ng-c2184142485] {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  cursor: help;
+}
+.hero-img[_ngcontent-ng-c2184142485], 
+.curriculum-img[_ngcontent-ng-c2184142485] {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.hero-img[_ngcontent-ng-c2184142485]:hover, 
+.curriculum-img[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.hero-img[_ngcontent-ng-c2184142485]:hover::after, 
+.curriculum-img[_ngcontent-ng-c2184142485]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  max-width: 300px;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+.hero-img[_ngcontent-ng-c2184142485]::after, 
+.curriculum-img[_ngcontent-ng-c2184142485]::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  max-width: 300px;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.hero-img[_ngcontent-ng-c2184142485]:hover::before, 
+.curriculum-img[_ngcontent-ng-c2184142485]:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+.hero-img[_ngcontent-ng-c2184142485]::before, 
+.curriculum-img[_ngcontent-ng-c2184142485]::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.curriculum-content.reverse[_ngcontent-ng-c2184142485]   .curriculum-img[_ngcontent-ng-c2184142485] {
+  max-width: 120%;
+  transform: scale(1.1);
+}
+.curriculum-frame[_ngcontent-ng-c2184142485] {
+  position: relative;
+}
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-top[_ngcontent-ng-c2184142485], 
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-bottom[_ngcontent-ng-c2184142485] {
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-repeat: repeat-x;
+}
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-top[_ngcontent-ng-c2184142485] {
+  top: 0;
+  transform: none;
+}
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-bottom[_ngcontent-ng-c2184142485] {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.skills-section[_ngcontent-ng-c2184142485] {
+  padding: 30px 0;
+  background: #3E2723;
+  position: relative;
+  overflow: hidden;
+}
+.skills-grid[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  align-items: end;
+  height: calc(100% - 150px);
+  position: relative;
+}
+.skill-column[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  bottom: -50px;
+}
+.skill-column[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-10px);
+}
+.column-label[_ngcontent-ng-c2184142485] {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.scansion-image[_ngcontent-ng-c2184142485] {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.scansion-img[_ngcontent-ng-c2184142485] {
+  width: 150px;
+  height: auto;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+.lyre-image[_ngcontent-ng-c2184142485] {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.lyre-img[_ngcontent-ng-c2184142485] {
+  width: 100px;
+  height: auto;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+.dict-image[_ngcontent-ng-c2184142485] {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.dict-img[_ngcontent-ng-c2184142485] {
+  width: 250px;
+  height: auto;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+.list-image[_ngcontent-ng-c2184142485] {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.list-img[_ngcontent-ng-c2184142485] {
+  width: 100px;
+  height: auto;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+.column-image[_ngcontent-ng-c2184142485] {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+.column-img[_ngcontent-ng-c2184142485] {
+  width: 160px;
+  height: auto;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: bottom;
+}
+.skill-column[_ngcontent-ng-c2184142485]:hover   .column-img[_ngcontent-ng-c2184142485] {
+  filter: brightness(1.1);
+}
+.countdown-section[_ngcontent-ng-c2184142485] {
+  padding: 80px 0;
+  background:
+    linear-gradient(
+      135deg,
+      #000000 0%,
+      #000000 50%,
+      #000000 100%);
+}
+.countdown-grid[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  gap: 30px;
+  max-width: 700px;
+  margin: 40px auto 0;
+}
+.time-box[_ngcontent-ng-c2184142485] {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.time-value[_ngcontent-ng-c2184142485] {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time-value.urgent[_ngcontent-ng-c2184142485] {
+  color: #e53935;
+}
+.time-label[_ngcontent-ng-c2184142485] {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.countdown-section[_ngcontent-ng-c2184142485]::before, 
+.countdown-section[_ngcontent-ng-c2184142485]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: white;
+}
+.countdown-section[_ngcontent-ng-c2184142485] {
+  position: relative;
+}
+.countdown-section[_ngcontent-ng-c2184142485]::before {
+  top: 0;
+}
+.countdown-section[_ngcontent-ng-c2184142485]::after {
+  bottom: 0;
+}
+.countdown-frame[_ngcontent-ng-c2184142485] {
+  position: relative;
+}
+.countdown-frame[_ngcontent-ng-c2184142485]   .frame-top[_ngcontent-ng-c2184142485], 
+.countdown-frame[_ngcontent-ng-c2184142485]   .frame-bottom[_ngcontent-ng-c2184142485] {
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-repeat: repeat-x;
+}
+.countdown-frame[_ngcontent-ng-c2184142485]   .frame-top[_ngcontent-ng-c2184142485] {
+  top: 0;
+  transform: none;
+}
+.countdown-frame[_ngcontent-ng-c2184142485]   .frame-bottom[_ngcontent-ng-c2184142485] {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.curriculum-frame[_ngcontent-ng-c2184142485] {
+  position: relative;
+}
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-top[_ngcontent-ng-c2184142485], 
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-bottom[_ngcontent-ng-c2184142485] {
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-repeat: repeat-x;
+}
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-top[_ngcontent-ng-c2184142485] {
+  top: 0;
+  transform: none;
+}
+.curriculum-frame[_ngcontent-ng-c2184142485]   .frame-bottom[_ngcontent-ng-c2184142485] {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.countdown-section[_ngcontent-ng-c2184142485]   .container[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  row-gap: 10px;
+}
+.countdown-note[_ngcontent-ng-c2184142485] {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+.resources-section[_ngcontent-ng-c2184142485] {
+  padding: 80px 0;
+  background:
+    linear-gradient(
+      135deg,
+      #3E2723 0%,
+      #5D4037 50%,
+      #8D6E63 100%);
+}
+.resources-grid[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+.resource-card[_ngcontent-ng-c2184142485] {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.resource-card[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-5px);
+}
+.resource-img[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.resource-card[_ngcontent-ng-c2184142485]   h4[_ngcontent-ng-c2184142485] {
+  padding: 20px 20px 10px;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+.resource-card[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  padding: 0 20px 20px;
+  color: #666;
+  line-height: 1.6;
+}
+.footer[_ngcontent-ng-c2184142485] {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  margin-bottom: 10px;
+  color: #bdc3c7;
+}
+@media (max-width: 768px) {
+  .navigation[_ngcontent-ng-c2184142485] {
+    padding: 10px 0;
+  }
+  .nav-container[_ngcontent-ng-c2184142485] {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-tabs[_ngcontent-ng-c2184142485] {
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-tab[_ngcontent-ng-c2184142485] {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  .nav-search-input[_ngcontent-ng-c2184142485] {
+    min-width: 200px;
+  }
+  .parallax-hero[_ngcontent-ng-c2184142485] {
+    height: 80vh;
+    margin-top: 80px;
+  }
+  .parallax-title[_ngcontent-ng-c2184142485] {
+    font-size: 3rem;
+  }
+  .parallax-subtitle[_ngcontent-ng-c2184142485] {
+    font-size: 1.5rem;
+  }
+  .parallax-description[_ngcontent-ng-c2184142485] {
+    font-size: 1.1rem;
+  }
+  .hero-section[_ngcontent-ng-c2184142485] {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0;
+    gap: 20px;
+  }
+  .hero-image[_ngcontent-ng-c2184142485] {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+  }
+  .image-popup[_ngcontent-ng-c2184142485] {
+    max-width: 95%;
+    max-height: 80vh;
+  }
+  .popup-content[_ngcontent-ng-c2184142485] {
+    flex-direction: column;
+  }
+  .popup-image[_ngcontent-ng-c2184142485] {
+    padding: 15px;
+  }
+  .popup-img[_ngcontent-ng-c2184142485] {
+    max-height: 250px;
+  }
+  .popup-description[_ngcontent-ng-c2184142485] {
+    padding: 20px;
+  }
+  .split-label[_ngcontent-ng-c2184142485] {
+    font-size: 2rem;
+  }
+  .content-page[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 2.5rem;
+  }
+  .content-page[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+    font-size: 1.2rem;
+  }
+  .back-button[_ngcontent-ng-c2184142485] {
+    top: 10px;
+    left: 10px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  .scansion-content[_ngcontent-ng-c2184142485] {
+    padding: 15px;
+  }
+  .video-section[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 2.5rem;
+  }
+  .video-intro[_ngcontent-ng-c2184142485] {
+    font-size: 1.2rem;
+  }
+  .video-container[_ngcontent-ng-c2184142485]   iframe[_ngcontent-ng-c2184142485] {
+    height: 300px;
+  }
+  .notes-section[_ngcontent-ng-c2184142485] {
+    padding: 25px;
+  }
+  .notes-section[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+    font-size: 2rem;
+  }
+  .notes-section[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+    font-size: 1.5rem;
+  }
+  .notes-section[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485], 
+   .notes-section[_ngcontent-ng-c2184142485]   li[_ngcontent-ng-c2184142485] {
+    font-size: 1rem;
+  }
+  .meter-pattern[_ngcontent-ng-c2184142485] {
+    gap: 10px;
+  }
+  .foot[_ngcontent-ng-c2184142485] {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  .practice-section[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+    font-size: 2rem;
+  }
+  .practice-section[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+    font-size: 1.1rem;
+  }
+  .game-preview[_ngcontent-ng-c2184142485] {
+    width: 300px;
+    height: 200px;
+  }
+  .game-overlay[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+    font-size: 1.5rem;
+  }
+  .game-overlay[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+    font-size: 1rem;
+  }
+  .game-container[_ngcontent-ng-c2184142485] {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .rating-circle[_ngcontent-ng-c2184142485] {
+    width: 100px;
+    height: 100px;
+  }
+  .rating-image[_ngcontent-ng-c2184142485] {
+    width: 70px;
+    height: 70px;
+  }
+  .arrow-image[_ngcontent-ng-c2184142485] {
+    width: 60px;
+    height: 40px;
+  }
+  .challenge-text[_ngcontent-ng-c2184142485] {
+    font-size: 1rem;
+    max-width: 120px;
+  }
+  .hero-content[_ngcontent-ng-c2184142485] {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .hero-title[_ngcontent-ng-c2184142485] {
+    font-size: 2.5rem;
+  }
+  .curriculum-content[_ngcontent-ng-c2184142485], 
+   .curriculum-content.reverse[_ngcontent-ng-c2184142485], 
+   .exam-content[_ngcontent-ng-c2184142485] {
+    flex-direction: column;
+    text-align: center;
+  }
+  .exam-breakdown[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .cta-buttons[_ngcontent-ng-c2184142485] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title[_ngcontent-ng-c2184142485] {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .container[_ngcontent-ng-c2184142485] {
+    padding: 0 15px;
+  }
+  .hero-title[_ngcontent-ng-c2184142485] {
+    font-size: 2rem;
+  }
+  .overview-grid[_ngcontent-ng-c2184142485], 
+   .skills-grid[_ngcontent-ng-c2184142485], 
+   .resources-grid[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+}
+.coming-soon-page[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      135deg,
+      #8B4513 0%,
+      #A0522D 100%);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.coming-soon-content[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  color: #F5E6D3;
+  max-width: 600px;
+  padding: 60px 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.coming-soon-title[_ngcontent-ng-c2184142485] {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Georgia", serif;
+}
+.coming-soon-subtitle[_ngcontent-ng-c2184142485] {
+  font-size: 1.5rem;
+  color: #F5E6D3;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+.coming-soon-icon[_ngcontent-ng-c2184142485] {
+  font-size: 5rem;
+  margin-top: 20px;
+  animation: _ngcontent-ng-c2184142485_float 3s ease-in-out infinite;
+}
+@keyframes _ngcontent-ng-c2184142485_float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@media (max-width: 768px) {
+  .coming-soon-title[_ngcontent-ng-c2184142485] {
+    font-size: 2.5rem;
+  }
+  .coming-soon-subtitle[_ngcontent-ng-c2184142485] {
+    font-size: 1.2rem;
+  }
+  .coming-soon-icon[_ngcontent-ng-c2184142485] {
+    font-size: 3rem;
+  }
+  .coming-soon-content[_ngcontent-ng-c2184142485] {
+    padding: 40px 30px;
+  }
+}
+.online-tools-page[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      135deg,
+      #8B4513 0%,
+      #D2691E 100%);
+  padding: 40px 20px 80px 20px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.online-tools-header[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  color: #F5E6D3;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+.online-tools-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Georgia", serif;
+}
+.online-tools-header[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.3rem;
+  color: #F5E6D3;
+  opacity: 0.9;
+}
+.tools-container[_ngcontent-ng-c2184142485] {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+.tool-category[_ngcontent-ng-c2184142485] {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tool-category[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  font-size: 1.8rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+  padding-bottom: 10px;
+}
+.tool-links[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tool-link[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 4px solid #FFD700;
+}
+.tool-link[_ngcontent-ng-c2184142485]:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.tool-title[_ngcontent-ng-c2184142485] {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 8px;
+  display: block;
+}
+.tool-desc[_ngcontent-ng-c2184142485] {
+  font-size: 0.95rem;
+  color: #F5E6D3;
+  opacity: 0.9;
+  line-height: 1.4;
+  display: block;
+}
+.pliny-detail-page[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  padding: 40px 20px 80px 20px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.pliny-detail-page[_ngcontent-ng-c2184142485]   .parallax-background[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: 0.4;
+  filter: brightness(1.1) contrast(1.2);
+  pointer-events: none;
+}
+.pliny-header[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  color: #F5E6D3;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+}
+.pliny-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Georgia", serif;
+}
+.pliny-header[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  font-size: 1.3rem;
+  color: #F5E6D3;
+  opacity: 0.9;
+}
+.pliny-letters-container[_ngcontent-ng-c2184142485] {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+.letter-category[_ngcontent-ng-c2184142485] {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.letter-category[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 25px;
+  font-family: "Georgia", serif;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+  padding-bottom: 15px;
+  text-align: center;
+}
+.letter-options[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.letter-card[_ngcontent-ng-c2184142485] {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border-left: 4px solid #FFD700;
+  cursor: pointer;
+  position: relative;
+}
+.letter-card[_ngcontent-ng-c2184142485]:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.letter-card[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  font-size: 1.4rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+}
+.letter-subtitle[_ngcontent-ng-c2184142485] {
+  font-size: 1rem;
+  color: #F5E6D3;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.letter-badge[_ngcontent-ng-c2184142485] {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .pliny-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 2.2rem;
+  }
+  .pliny-header[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+    font-size: 1.1rem;
+  }
+  .letter-category[_ngcontent-ng-c2184142485] {
+    padding: 20px;
+  }
+  .letter-category[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+    font-size: 1.6rem;
+  }
+  .letter-options[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .letter-card[_ngcontent-ng-c2184142485] {
+    padding: 20px;
+  }
+  .letter-card[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .pliny-letters-container[_ngcontent-ng-c2184142485] {
+    padding: 10px;
+    gap: 25px;
+  }
+  .pliny-header[_ngcontent-ng-c2184142485] {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+  }
+  .pliny-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 1.8rem;
+  }
+  .letter-category[_ngcontent-ng-c2184142485] {
+    padding: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .tools-container[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .online-tools-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 2.2rem;
+  }
+  .online-tools-header[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+    font-size: 1.1rem;
+  }
+  .tool-category[_ngcontent-ng-c2184142485] {
+    padding: 20px;
+  }
+  .tool-category[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+    font-size: 1.5rem;
+  }
+  .tool-link[_ngcontent-ng-c2184142485] {
+    padding: 15px;
+  }
+  .tool-title[_ngcontent-ng-c2184142485] {
+    font-size: 1.1rem;
+  }
+  .tool-desc[_ngcontent-ng-c2184142485] {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .tools-container[_ngcontent-ng-c2184142485] {
+    padding: 10px;
+    gap: 20px;
+  }
+  .online-tools-header[_ngcontent-ng-c2184142485] {
+    padding: 20px 10px;
+  }
+  .online-tools-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 1.8rem;
+  }
+  .tool-category[_ngcontent-ng-c2184142485] {
+    padding: 15px;
+  }
+}
+.letter-page[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  padding: 40px 20px 80px 20px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.letter-page[_ngcontent-ng-c2184142485]   .parallax-background[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: 0.5;
+  filter: brightness(0.6) contrast(1.2);
+  pointer-events: none;
+}
+.pliny-letter-16[_ngcontent-ng-c2184142485]   .parallax-background[_ngcontent-ng-c2184142485] {
+  opacity: 0.4;
+  filter: brightness(0.7) contrast(1.3);
+}
+.letter-header[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  color: #F5E6D3;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+.letter-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Georgia", serif;
+}
+.letter-subtitle[_ngcontent-ng-c2184142485] {
+  font-size: 1.5rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.letter-instruction[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  color: #F5E6D3;
+  opacity: 0.9;
+  font-style: italic;
+}
+.letter-content[_ngcontent-ng-c2184142485] {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+.latin-text[_ngcontent-ng-c2184142485], 
+.english-text[_ngcontent-ng-c2184142485] {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.latin-text[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485], 
+.english-text[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 25px;
+  font-family: "Georgia", serif;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+  padding-bottom: 15px;
+  text-align: center;
+}
+.text-paragraph[_ngcontent-ng-c2184142485] {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #F5E6D3;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+.latin-word[_ngcontent-ng-c2184142485] {
+  cursor: help;
+  position: relative;
+  border-bottom: 1px dotted rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease;
+  color: #FFD700;
+  font-weight: 500;
+}
+.latin-word[_ngcontent-ng-c2184142485]:hover {
+  background: rgba(255, 215, 0, 0.2);
+  border-radius: 3px;
+  padding: 2px 4px;
+  transform: scale(1.05);
+}
+.latin-word[_ngcontent-ng-c2184142485]::before {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #FFD700;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+.latin-word[_ngcontent-ng-c2184142485]::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.latin-word[_ngcontent-ng-c2184142485]:hover::before, 
+.latin-word[_ngcontent-ng-c2184142485]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1024px) {
+  .letter-content[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .letter-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 2.2rem;
+  }
+  .letter-subtitle[_ngcontent-ng-c2184142485] {
+    font-size: 1.2rem;
+  }
+  .letter-instruction[_ngcontent-ng-c2184142485] {
+    font-size: 1rem;
+  }
+  .latin-text[_ngcontent-ng-c2184142485], 
+   .english-text[_ngcontent-ng-c2184142485] {
+    padding: 20px;
+  }
+  .latin-text[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485], 
+   .english-text[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+    font-size: 1.6rem;
+  }
+  .text-paragraph[_ngcontent-ng-c2184142485] {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 480px) {
+  .letter-content[_ngcontent-ng-c2184142485] {
+    padding: 10px;
+    gap: 20px;
+  }
+  .letter-header[_ngcontent-ng-c2184142485] {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+  }
+  .letter-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+    font-size: 1.8rem;
+  }
+  .latin-text[_ngcontent-ng-c2184142485], 
+   .english-text[_ngcontent-ng-c2184142485] {
+    padding: 15px;
+  }
+}
+.artwork-section[_ngcontent-ng-c2184142485] {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+.artwork-container[_ngcontent-ng-c2184142485] {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  max-width: 800px;
+  width: 100%;
+}
+.artwork-container[_ngcontent-ng-c2184142485]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+.artwork-image[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .artwork-section[_ngcontent-ng-c2184142485] {
+    padding: 30px 15px;
+    margin-top: 40px;
+  }
+  .artwork-container[_ngcontent-ng-c2184142485] {
+    max-width: 300px;
+  }
+  .artwork-overlay[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+    font-size: 1.3rem;
+  }
+  .artwork-overlay[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .artwork-section[_ngcontent-ng-c2184142485] {
+    padding: 20px 10px;
+    margin-top: 30px;
+  }
+  .artwork-container[_ngcontent-ng-c2184142485] {
+    max-width: 250px;
+  }
+  .artwork-overlay[_ngcontent-ng-c2184142485] {
+    padding: 20px 15px 15px;
+  }
+}
+.grammar-page[_ngcontent-ng-c2184142485] {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  padding: 40px 20px 80px 20px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.grammar-page[_ngcontent-ng-c2184142485]   .parallax-background[_ngcontent-ng-c2184142485] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: 0.3;
+  filter: brightness(0.7) contrast(1.1);
+  pointer-events: none;
+}
+.grammar-header[_ngcontent-ng-c2184142485] {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+.grammar-header[_ngcontent-ng-c2184142485]   h1[_ngcontent-ng-c2184142485] {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.grammar-subtitle[_ngcontent-ng-c2184142485] {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+.grammar-content[_ngcontent-ng-c2184142485] {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.grammar-section[_ngcontent-ng-c2184142485] {
+  background: rgba(135, 134, 134, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.grammar-section[_ngcontent-ng-c2184142485]   h2[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #654321;
+  padding-bottom: 10px;
+}
+.section-note[_ngcontent-ng-c2184142485] {
+  font-style: italic;
+  color: #D4A574;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.verb-charts[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.chart-container[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #654321;
+}
+.chart-container[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  background: #654321;
+  padding: 8px;
+  border-radius: 5px;
+}
+.horizontal-chart[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
+}
+.horizontal-chart[_ngcontent-ng-c2184142485]   .chart-row[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: 100px repeat(6, 1fr);
+  border-bottom: 1px solid #654321;
+}
+.chart-container[_ngcontent-ng-c2184142485]:has(.tense-labels .tense-label:nth-child(5):last-child)   .horizontal-chart[_ngcontent-ng-c2184142485]   .chart-row[_ngcontent-ng-c2184142485], 
+.chart-container[_ngcontent-ng-c2184142485]:has(.tense-labels .tense-label:nth-child(5):last-child)   .tense-labels[_ngcontent-ng-c2184142485] {
+  grid-template-columns: 100px repeat(4, 1fr);
+}
+.horizontal-chart[_ngcontent-ng-c2184142485]   .chart-row[_ngcontent-ng-c2184142485]:last-child {
+  border-bottom: none;
+}
+.person-cell[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+  border-right: 1px solid #654321;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.horizontal-chart[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485] {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-right: 1px solid #654321;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.horizontal-chart[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485]:last-child {
+  border-right: none;
+}
+.tense-labels[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: 100px repeat(6, 1fr);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.tense-label[_ngcontent-ng-c2184142485] {
+  padding: 5px;
+  background: #5D4E37;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.75rem;
+  border-right: 1px solid #654321;
+}
+.tense-label[_ngcontent-ng-c2184142485]:last-child {
+  border-right: none;
+}
+.chart-table[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.chart-header[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 1fr);
+  background: #5D4E37;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.header-cell[_ngcontent-ng-c2184142485] {
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #654321;
+}
+.header-cell[_ngcontent-ng-c2184142485]:last-child {
+  border-right: none;
+}
+.chart-table[_ngcontent-ng-c2184142485]   .chart-row[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 1fr);
+  border-bottom: 1px solid #654321;
+}
+.chart-row[_ngcontent-ng-c2184142485]:last-child {
+  border-bottom: none;
+  border-radius: 0 0 5px 5px;
+}
+.tense-cell[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  padding: 12px;
+  font-weight: bold;
+  color: white;
+  border-right: 1px solid #654321;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-table[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485] {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-right: 1px solid #654321;
+}
+.chart-container[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485]:last-child {
+  border-right: none;
+}
+.endings[_ngcontent-ng-c2184142485] {
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+.note[_ngcontent-ng-c2184142485] {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+.declension-charts[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.declension-container[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #654321;
+}
+.declension-container[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  background: #654321;
+  padding: 8px;
+  border-radius: 5px;
+}
+.declension-table[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+}
+.declension-header[_ngcontent-ng-c2184142485] {
+  display: grid;
+  background: #5D4E37;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.declension-header[_ngcontent-ng-c2184142485]   .case-cell[_ngcontent-ng-c2184142485], 
+.declension-header[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485] {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #654321;
+}
+.declension-header[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485]:last-child {
+  border-right: none;
+}
+.declension-row[_ngcontent-ng-c2184142485] {
+  display: grid;
+  border-bottom: 1px solid #654321;
+}
+.declension-table[_ngcontent-ng-c2184142485] {
+  display: flex;
+  flex-direction: column;
+}
+.declension-header[_ngcontent-ng-c2184142485], 
+.declension-row[_ngcontent-ng-c2184142485] {
+  grid-template-columns: 100px 1fr 1fr;
+}
+.declension-container[_ngcontent-ng-c2184142485]:has(.declension-header .form-cell:nth-child(4))   .declension-header[_ngcontent-ng-c2184142485], 
+.declension-container[_ngcontent-ng-c2184142485]:has(.declension-header .form-cell:nth-child(4))   .declension-row[_ngcontent-ng-c2184142485] {
+  grid-template-columns: 100px repeat(4, 1fr);
+}
+.declension-row[_ngcontent-ng-c2184142485]:last-child {
+  border-bottom: none;
+}
+.case-cell[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  border-right: 1px solid #654321;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.declension-container[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485] {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-right: 1px solid #654321;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.declension-container[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485]:last-child {
+  border-right: none;
+}
+.example[_ngcontent-ng-c2184142485] {
+  margin-top: 15px;
+  padding: 10px;
+  background: #5D4E37;
+  border-left: 4px solid #654321;
+  border-radius: 0 5px 5px 0;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.figurative-language-list[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+.figurative-item[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 5px solid #654321;
+  transition: transform 0.2s ease;
+}
+.figurative-item[_ngcontent-ng-c2184142485]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.figurative-item[_ngcontent-ng-c2184142485]   h4[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.figurative-item[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  color: #E8D4B8;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.figurative-item[_ngcontent-ng-c2184142485]   .example[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  border-left: 4px solid #654321;
+  color: white;
+  font-weight: bold;
+}
+.case-section[_ngcontent-ng-c2184142485] {
+  margin-bottom: 30px;
+}
+.case-section[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #654321;
+  padding-bottom: 5px;
+}
+.case-item[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #654321;
+}
+.case-item[_ngcontent-ng-c2184142485]   h4[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.case-item[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  color: #E8D4B8;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.case-item[_ngcontent-ng-c2184142485]   .example[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  border-left: 4px solid #654321;
+  color: white;
+  font-weight: bold;
+}
+.note[_ngcontent-ng-c2184142485] {
+  background: #000000;
+  border-left: 4px solid #ffffff;
+  color: #ffffff;
+  font-style: italic;
+  padding: 8px;
+  border-radius: 0 5px 5px 0;
+  margin-top: 8px;
+}
+.advanced-section[_ngcontent-ng-c2184142485] {
+  margin-bottom: 30px;
+}
+.advanced-section[_ngcontent-ng-c2184142485]   h3[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #654321;
+  padding-bottom: 5px;
+}
+.conditional-subsection[_ngcontent-ng-c2184142485] {
+  margin-bottom: 20px;
+}
+.conditional-subsection[_ngcontent-ng-c2184142485]   h4[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.conditional-item[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #654321;
+}
+.conditional-item[_ngcontent-ng-c2184142485]   h5[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.convention-item[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #654321;
+}
+.convention-item[_ngcontent-ng-c2184142485]   h4[_ngcontent-ng-c2184142485] {
+  color: #D4A574;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.convention-item[_ngcontent-ng-c2184142485]   p[_ngcontent-ng-c2184142485] {
+  color: #E8D4B8;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.convention-item[_ngcontent-ng-c2184142485]   .example[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  border-left: 4px solid #654321;
+  color: white;
+  font-weight: bold;
+}
+.helpful-list[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+.helpful-item[_ngcontent-ng-c2184142485] {
+  background: #5D4E37;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #654321;
+  color: white;
+  font-weight: bold;
+}
+.pronoun-list[_ngcontent-ng-c2184142485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.pronoun-item[_ngcontent-ng-c2184142485] {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #654321;
+  color: #E8D4B8;
+}
+@media (max-width: 768px) {
+  .verb-charts[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .declension-charts[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .figurative-language-list[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .helpful-list[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .pronoun-list[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .chart-header[_ngcontent-ng-c2184142485], 
+   .declension-header[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .chart-row[_ngcontent-ng-c2184142485], 
+   .declension-row[_ngcontent-ng-c2184142485] {
+    grid-template-columns: 1fr;
+  }
+  .tense-cell[_ngcontent-ng-c2184142485], 
+   .case-cell[_ngcontent-ng-c2184142485] {
+    border-right: none;
+    border-bottom: 1px solid #bdc3c7;
+  }
+  .declension-container[_ngcontent-ng-c2184142485]   .form-cell[_ngcontent-ng-c2184142485] {
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+/*# sourceMappingURL=/app.css.map */</style></head>
+<body>
+  <app-root ng-version="20.1.6" _nghost-ng-c2184142485=""><div _ngcontent-ng-c2184142485="" class="ap-latin-homepage"><nav _ngcontent-ng-c2184142485="" class="navigation"><div _ngcontent-ng-c2184142485="" class="nav-container"><div _ngcontent-ng-c2184142485="" class="nav-brand"><h2 _ngcontent-ng-c2184142485="">AP Latin</h2></div><div _ngcontent-ng-c2184142485="" class="nav-tabs"><a _ngcontent-ng-c2184142485="" href="http://localhost:4200/#course-overview" class="nav-tab">Overview</a><a _ngcontent-ng-c2184142485="" href="http://localhost:4200/#curriculum" class="nav-tab">Curriculum</a><a _ngcontent-ng-c2184142485="" href="http://localhost:4200/#skills" class="nav-tab">Cheatsheet</a><a _ngcontent-ng-c2184142485="" href="http://localhost:4200/#countdown" class="nav-tab">Countdown</a><a _ngcontent-ng-c2184142485="" href="http://localhost:4200/#resources" class="nav-tab">Resources</a></div><div _ngcontent-ng-c2184142485="" class="nav-search"><form _ngcontent-ng-c2184142485="" class="nav-search-form"><input _ngcontent-ng-c2184142485="" type="search" placeholder="Search AP Latin..." aria-label="Search" class="nav-search-input"><button _ngcontent-ng-c2184142485="" type="submit" class="nav-search-button">Search</button></form></div></div></nav><section _ngcontent-ng-c2184142485="" class="parallax-hero"><div _ngcontent-ng-c2184142485="" class="parallax-background"></div><div _ngcontent-ng-c2184142485="" class="parallax-content"><div _ngcontent-ng-c2184142485="" class="parallax-text"><h1 _ngcontent-ng-c2184142485="" class="parallax-title">AP Latin</h1><p _ngcontent-ng-c2184142485="" class="parallax-subtitle">Master the Classics, Conquer the Exam</p><p _ngcontent-ng-c2184142485="" class="parallax-description"> Where you can find everything you need to score well on the exam in May - from daily vocab; to annotated translations; to thematic analysis of ancient texts; to ranked scansion games; we have it all. </p><button _ngcontent-ng-c2184142485="" class="parallax-cta-button">Get Started</button></div></div></section><div _ngcontent-ng-c2184142485="" class="hero-frame"><header _ngcontent-ng-c2184142485="" id="hero" class="hero-section"><div _ngcontent-ng-c2184142485="" class="hero-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/baroque-painting.jpg" alt="Baroque painting depicting dramatic mythological scene with warrior figures and divine elements" title="Click to learn more" class="hero-img"></div><div _ngcontent-ng-c2184142485="" class="hero-content"><h1 _ngcontent-ng-c2184142485="" class="hero-title">Click the image to learn more</h1><p _ngcontent-ng-c2184142485="" class="hero-subtitle">Why not explore the origin of this painting?</p><p _ngcontent-ng-c2184142485="" class="hero-description"> Try this out with other images in this website! </p></div></header><div _ngcontent-ng-c2184142485="" aria-hidden="true" class="frame-edge frame-top"></div><div _ngcontent-ng-c2184142485="" aria-hidden="true" class="frame-edge frame-bottom"></div></div><section _ngcontent-ng-c2184142485="" id="course-overview" class="course-overview"><div _ngcontent-ng-c2184142485="" class="container"><h2 _ngcontent-ng-c2184142485="" class="section-title">Course Overview</h2><div _ngcontent-ng-c2184142485="" class="overview-grid"><div _ngcontent-ng-c2184142485="" class="overview-card"><img _ngcontent-ng-c2184142485="" src="./Latin_files/prose.jpeg" alt="Prose text and writing" class="overview-img"><h3 _ngcontent-ng-c2184142485="">Prose</h3><p _ngcontent-ng-c2184142485="">The free-verse essays, letters, and histories that tell Rome's story. Explore how Pliny, Caesar, and Seneca have mastered the art of Prose.</p></div><div _ngcontent-ng-c2184142485="" class="overview-card"><img _ngcontent-ng-c2184142485="" src="./Latin_files/poetry.png" alt="Aeneas and poetry" class="overview-img"><h3 _ngcontent-ng-c2184142485="">Poetry</h3><p _ngcontent-ng-c2184142485="">The rhythm that inspired Western Society's oldest stories. Develop an understanding of the art that is Roman poetry through Virgil and Ovid.</p></div><div _ngcontent-ng-c2184142485="" class="overview-card"><img _ngcontent-ng-c2184142485="" src="./Latin_files/grammar.webp" alt="Language learning" class="overview-img"><h3 _ngcontent-ng-c2184142485="">Grammar</h3><p _ngcontent-ng-c2184142485="">Know everything you need to know to translate and understand the inner workings of Classical Latin.</p></div></div></div></section><div _ngcontent-ng-c2184142485="" class="curriculum-frame"><section _ngcontent-ng-c2184142485="" id="curriculum" class="curriculum-section"><div _ngcontent-ng-c2184142485="" class="container"><h2 _ngcontent-ng-c2184142485="" class="section-title">Curriculum Highlights</h2><div _ngcontent-ng-c2184142485="" class="curriculum-content"><div _ngcontent-ng-c2184142485="" class="curriculum-text"><h3 _ngcontent-ng-c2184142485="">Pliny the Younger, Letters</h3><p _ngcontent-ng-c2184142485="">Delve into Pliny's vivid insights in Roman society, politics, daily life and culture, as well as reading eye-witness accounts of the eruption of Mt. Vesuvius.</p><ul _ngcontent-ng-c2184142485=""><li _ngcontent-ng-c2184142485="">Book 6 <div _ngcontent-ng-c2184142485="" class="book-subtext">Letters 4 and 7: Letters to Calpurnia</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Letter 16: Eruption of Mt. Vesuvius and Pliny the Elder</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Letter 20: Eruption of Mt. Vesuvius and Pliny the Younger</div></li><li _ngcontent-ng-c2184142485="">Book 7 <div _ngcontent-ng-c2184142485="" class="book-subtext">Letter 27: Ghosts and Apparitions</div></li><li _ngcontent-ng-c2184142485="">Book 10 <div _ngcontent-ng-c2184142485="" class="book-subtext">Letters 5,6,and 7: Letters to Emperor Trajan, Citizenship for Pliny's Doctor</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Letters 37 and 90: Letters to Emperor Trajan, Aqueducts</div></li></ul></div><div _ngcontent-ng-c2184142485="" class="curriculum-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/pliny.jpeg" alt="Pliny and Vesuvius" title="Click to learn more" class="curriculum-img"></div></div><div _ngcontent-ng-c2184142485="" class="curriculum-content reverse"><div _ngcontent-ng-c2184142485="" class="curriculum-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/underworld.jpeg" alt="Aeneas in the Underworld" title="Click to learn more" class="curriculum-img"></div><div _ngcontent-ng-c2184142485="" class="curriculum-text"><h3 _ngcontent-ng-c2184142485="">Virgil's The Aeneid</h3><p _ngcontent-ng-c2184142485="">Analyze Virgil's account on the fall of Troy and the foundation of Rome, mixing both reliable history and epic mythology, all under the guise of a political commentary with iambic pentameter. </p><ul _ngcontent-ng-c2184142485=""><li _ngcontent-ng-c2184142485="">Book 1</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 1-33: The Epic Begins</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 88-107: The Storm</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 496-508: Queen Dido</div><li _ngcontent-ng-c2184142485="">Book 2</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 40-56 and 201-249: Laocoön and the Trojan Horse</div><li _ngcontent-ng-c2184142485="">Book 4</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 74-89: Dido Feels the Effect of Cupid</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 165-197: Rumor Reaches Jupiter</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 305-361: Aeneas Leaves Dido</div><li _ngcontent-ng-c2184142485="">Book 6</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 450-476: The Shade of Dido</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 788-800 and 847-853: Meeting Anchises</div><li _ngcontent-ng-c2184142485="">Book 7</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 45-58: King Latinus</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 783-792 and 803-817: Turnus Prepares for War</div><li _ngcontent-ng-c2184142485="">Book 11</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 532-594: The Story of Camilla</div><li _ngcontent-ng-c2184142485="">Book 12</li><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 791-796, 803-812, and 818-828: The Fate of the Trojans Is Decided</div><div _ngcontent-ng-c2184142485="" class="book-subtext">Lines 919-952: The Final Battle of Aeneas and Turnus</div></ul></div></div></div></section><div _ngcontent-ng-c2184142485="" aria-hidden="true" class="frame-edge frame-top"></div><div _ngcontent-ng-c2184142485="" aria-hidden="true" class="frame-edge frame-bottom"></div></div><section _ngcontent-ng-c2184142485="" id="skills" class="skills-section"><div _ngcontent-ng-c2184142485="" class="container"><h2 _ngcontent-ng-c2184142485="" class="section-title">Your Cheatsheet to Success</h2><div _ngcontent-ng-c2184142485="" class="skills-grid"><div _ngcontent-ng-c2184142485="" class="skill-column"><div _ngcontent-ng-c2184142485="" class="column-label">Word List</div><div _ngcontent-ng-c2184142485="" class="list-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/list.png" alt="Word List" class="list-img"></div><div _ngcontent-ng-c2184142485="" class="column-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/column3.png" alt="Column" class="column-img"></div></div><div _ngcontent-ng-c2184142485="" class="skill-column"><div _ngcontent-ng-c2184142485="" class="column-label">Dictionary</div><div _ngcontent-ng-c2184142485="" class="dict-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/dict.png" alt="Dictionary" class="dict-img"></div><div _ngcontent-ng-c2184142485="" class="column-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/column3.png" alt="Column" class="column-img"></div></div><div _ngcontent-ng-c2184142485="" class="skill-column"><div _ngcontent-ng-c2184142485="" class="column-label">Scansion</div><div _ngcontent-ng-c2184142485="" class="scansion-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/scansion2.png" alt="Scansion" class="scansion-img"></div><div _ngcontent-ng-c2184142485="" class="column-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/column3.png" alt="Column" class="column-img"></div></div><div _ngcontent-ng-c2184142485="" class="skill-column"><div _ngcontent-ng-c2184142485="" class="column-label">Culture and History</div><div _ngcontent-ng-c2184142485="" class="lyre-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/lyre.png" alt="Lyre" class="lyre-img"></div><div _ngcontent-ng-c2184142485="" class="column-image"><img _ngcontent-ng-c2184142485="" src="./Latin_files/column3.png" alt="Column" class="column-img"></div></div></div></div></section><div _ngcontent-ng-c2184142485="" class="countdown-frame"><section _ngcontent-ng-c2184142485="" id="countdown" class="countdown-section"><div _ngcontent-ng-c2184142485="" class="container"><h2 _ngcontent-ng-c2184142485="" class="section-title">Countdown to AP Latin Exam</h2><div _ngcontent-ng-c2184142485="" class="countdown-grid"><div _ngcontent-ng-c2184142485="" class="time-box days"><div _ngcontent-ng-c2184142485="" class="time-value">194</div><div _ngcontent-ng-c2184142485="" class="time-label">Days</div></div><div _ngcontent-ng-c2184142485="" class="time-box"><div _ngcontent-ng-c2184142485="" class="time-value">11</div><div _ngcontent-ng-c2184142485="" class="time-label">Hours</div></div><div _ngcontent-ng-c2184142485="" class="time-box"><div _ngcontent-ng-c2184142485="" class="time-value">5</div><div _ngcontent-ng-c2184142485="" class="time-label">Minutes</div></div><div _ngcontent-ng-c2184142485="" class="time-box"><div _ngcontent-ng-c2184142485="" class="time-value">29</div><div _ngcontent-ng-c2184142485="" class="time-label">Seconds</div></div></div><p _ngcontent-ng-c2184142485="" class="countdown-note">May 4, 2026 at 8:00 AM (local time)</p></div></section><div _ngcontent-ng-c2184142485="" aria-hidden="true" class="frame-edge frame-top"></div><div _ngcontent-ng-c2184142485="" aria-hidden="true" class="frame-edge frame-bottom"></div></div><section _ngcontent-ng-c2184142485="" id="resources" class="resources-section"><div _ngcontent-ng-c2184142485="" class="container"><h2 _ngcontent-ng-c2184142485="" class="section-title">Study Resources</h2><div _ngcontent-ng-c2184142485="" class="resources-grid"><div _ngcontent-ng-c2184142485="" class="resource-card"><img _ngcontent-ng-c2184142485="" src="./Latin_files/online.jpg" alt="Online tools" class="resource-img"><h4 _ngcontent-ng-c2184142485="">Online Tools</h4><p _ngcontent-ng-c2184142485="">All the websites and online tools you need to succeed.</p></div><div _ngcontent-ng-c2184142485="" class="resource-card"><img _ngcontent-ng-c2184142485="" src="./Latin_files/tests.jpg" alt="Practice tests" class="resource-img"><h4 _ngcontent-ng-c2184142485="">Practice Tests</h4><p _ngcontent-ng-c2184142485="">Previous AP exams and sample questions for comprehensive preparation.</p></div></div></div></section><footer _ngcontent-ng-c2184142485="" class="footer"><div _ngcontent-ng-c2184142485="" class="container"><p _ngcontent-ng-c2184142485="">© 2025-2026 AP Latin Course. All rights reserved.</p><p _ngcontent-ng-c2184142485="">This site is for educational purposes only. All trademarks and copyrighted materials belong to their respective owners.</p><p _ngcontent-ng-c2184142485="">Designed and coded by Hamza El-Gengaihy.</p></div></footer><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><div _ngcontent-ng-c2184142485="" class="page-overlay"><div _ngcontent-ng-c2184142485="" class="content-page"><h1 _ngcontent-ng-c2184142485="">Latin Grammar</h1><p _ngcontent-ng-c2184142485="">Master the fundamentals of Classical Latin grammar.</p><button _ngcontent-ng-c2184142485="" class="back-button">← Back to Home</button></div></div><!--container--><!--container--><!--container--><!--container--><!--container--><!--container--><div _ngcontent-ng-c2184142485="" class="page-overlay"><div _ngcontent-ng-c2184142485="" class="grammar-page"><img _ngcontent-ng-c2184142485="" src="./Latin_files/grammar.webp" alt="Background" class="parallax-background"><button _ngcontent-ng-c2184142485="" class="back-button">← Back to Home</button><div _ngcontent-ng-c2184142485="" class="grammar-header"><h1 _ngcontent-ng-c2184142485="">AP Latin Grammar</h1><p _ngcontent-ng-c2184142485="" class="grammar-subtitle">Latin grammar, syntax, and literary devices</p></div><div _ngcontent-ng-c2184142485="" class="grammar-content"><div _ngcontent-ng-c2184142485="" class="grammar-section"><h2 _ngcontent-ng-c2184142485="">Verb Synopsis</h2><p _ngcontent-ng-c2184142485="" class="section-note">Example roots: (1st) ama-, (2nd) mone-, (3rd) duc-, (4th) audi-, (3rdio) cap(i)-</p><div _ngcontent-ng-c2184142485="" class="verb-charts"><div _ngcontent-ng-c2184142485="" class="chart-container"><h3 _ngcontent-ng-c2184142485="">INDICATIVE ACTIVE</h3><div _ngcontent-ng-c2184142485="" class="horizontal-chart"><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label">Number</div><div _ngcontent-ng-c2184142485="" class="tense-label">Present</div><div _ngcontent-ng-c2184142485="" class="tense-label">Imperfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Future</div><div _ngcontent-ng-c2184142485="" class="tense-label">Perfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Pluperfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Future Perfect</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">I</div><div _ngcontent-ng-c2184142485="" class="form-cell">m/ō</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bam</div><div _ngcontent-ng-c2184142485="" class="form-cell">bo/am</div><div _ngcontent-ng-c2184142485="" class="form-cell">i</div><div _ngcontent-ng-c2184142485="" class="form-cell">eram</div><div _ngcontent-ng-c2184142485="" class="form-cell">erō</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)s</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bās</div><div _ngcontent-ng-c2184142485="" class="form-cell">bis/ēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">isti</div><div _ngcontent-ng-c2184142485="" class="form-cell">erās</div><div _ngcontent-ng-c2184142485="" class="form-cell">eris</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">He/She/It</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)t</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bat</div><div _ngcontent-ng-c2184142485="" class="form-cell">bit/et</div><div _ngcontent-ng-c2184142485="" class="form-cell">it</div><div _ngcontent-ng-c2184142485="" class="form-cell">erat</div><div _ngcontent-ng-c2184142485="" class="form-cell">erit</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">We</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)mus</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bāmus</div><div _ngcontent-ng-c2184142485="" class="form-cell">bimus/ēmus</div><div _ngcontent-ng-c2184142485="" class="form-cell">imus</div><div _ngcontent-ng-c2184142485="" class="form-cell">erāmus</div><div _ngcontent-ng-c2184142485="" class="form-cell">erimus</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You (pl.)</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)tis</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bātis</div><div _ngcontent-ng-c2184142485="" class="form-cell">bitis/ētis</div><div _ngcontent-ng-c2184142485="" class="form-cell">istis</div><div _ngcontent-ng-c2184142485="" class="form-cell">erātis</div><div _ngcontent-ng-c2184142485="" class="form-cell">eritis</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">They</div><div _ngcontent-ng-c2184142485="" class="form-cell">(u)nt</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bant</div><div _ngcontent-ng-c2184142485="" class="form-cell">bunt/ent</div><div _ngcontent-ng-c2184142485="" class="form-cell">ērunt</div><div _ngcontent-ng-c2184142485="" class="form-cell">erant</div><div _ngcontent-ng-c2184142485="" class="form-cell">erint</div></div></div><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label"></div><div _ngcontent-ng-c2184142485="" class="tense-label">(parentheses for 3rd and 3rdio only)</div><div _ngcontent-ng-c2184142485="" class="tense-label">(parentheses for 3rd, 3rdio, 4th)</div><div _ngcontent-ng-c2184142485="" class="tense-label">(am, es, et for 3rd, 3rdio, 4th)</div><div _ngcontent-ng-c2184142485="" class="tense-label">3rd principle part stem</div><div _ngcontent-ng-c2184142485="" class="tense-label">3rd principle part stem</div><div _ngcontent-ng-c2184142485="" class="tense-label">3rd principle part stem</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-container"><h3 _ngcontent-ng-c2184142485="">INDICATIVE PASSIVE</h3><div _ngcontent-ng-c2184142485="" class="horizontal-chart"><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label">Number</div><div _ngcontent-ng-c2184142485="" class="tense-label">Present</div><div _ngcontent-ng-c2184142485="" class="tense-label">Imperfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Future</div><div _ngcontent-ng-c2184142485="" class="tense-label">Perfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Pluperfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Future Perfect</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">I</div><div _ngcontent-ng-c2184142485="" class="form-cell">r</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bar</div><div _ngcontent-ng-c2184142485="" class="form-cell">bor/ar</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sum</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + eram</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erō</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)ris</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bāris</div><div _ngcontent-ng-c2184142485="" class="form-cell">beris/eris</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + es</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erās</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + eris</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">He/She/It</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)tur</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bātur</div><div _ngcontent-ng-c2184142485="" class="form-cell">bitur/etur</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + est</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erat</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erit</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">We</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)mur</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bāmur</div><div _ngcontent-ng-c2184142485="" class="form-cell">bimur/emur</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + summus</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erāmus</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erimus</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You (pl.)</div><div _ngcontent-ng-c2184142485="" class="form-cell">(i)minī</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bāminī</div><div _ngcontent-ng-c2184142485="" class="form-cell">bimini/emini</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + estis</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erātis</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + eritis</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">They</div><div _ngcontent-ng-c2184142485="" class="form-cell">(u)ntur</div><div _ngcontent-ng-c2184142485="" class="form-cell">(e)bantur</div><div _ngcontent-ng-c2184142485="" class="form-cell">buntur/entur</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sunt</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erant</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + erunt</div></div></div><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label"></div><div _ngcontent-ng-c2184142485="" class="tense-label">(parentheses for 3rd and 3rdio)</div><div _ngcontent-ng-c2184142485="" class="tense-label">(parentheses for 3rd, 3rdio, 4th)</div><div _ngcontent-ng-c2184142485="" class="tense-label">(ar, eris, etur for 3rd, 3rdio, 4th)</div><div _ngcontent-ng-c2184142485="" class="tense-label">4th principle part</div><div _ngcontent-ng-c2184142485="" class="tense-label">4th principle part</div><div _ngcontent-ng-c2184142485="" class="tense-label">4th principle part</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-container"><h3 _ngcontent-ng-c2184142485="">SUBJUNCTIVE ACTIVE</h3><div _ngcontent-ng-c2184142485="" class="horizontal-chart"><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label">Number</div><div _ngcontent-ng-c2184142485="" class="tense-label">Present</div><div _ngcontent-ng-c2184142485="" class="tense-label">Imperfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Perfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Pluperfect</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">I</div><div _ngcontent-ng-c2184142485="" class="form-cell">m</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + m</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + eri-m</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + isse-m</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You</div><div _ngcontent-ng-c2184142485="" class="form-cell">s</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + s</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + eri-s</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + isse-s</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">He/She/It</div><div _ngcontent-ng-c2184142485="" class="form-cell">t</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + t</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + eri-t</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + isse-t</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">We</div><div _ngcontent-ng-c2184142485="" class="form-cell">mus</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + mus</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + eri-mus</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + isse-mus</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You (pl.)</div><div _ngcontent-ng-c2184142485="" class="form-cell">tis</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + tis</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + eri-tis</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + isse-tis</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">They</div><div _ngcontent-ng-c2184142485="" class="form-cell">nt</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + nt</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + ēri-nt</div><div _ngcontent-ng-c2184142485="" class="form-cell">3pp + isse-nt</div></div></div><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label"></div><div _ngcontent-ng-c2184142485="" class="tense-label">Stem with no vowel + -e-(1) -ea-(2) -a-(3) -ia-(3io and 4th) (we fear a liar)</div><div _ngcontent-ng-c2184142485="" class="tense-label">Infinitive</div><div _ngcontent-ng-c2184142485="" class="tense-label">3rd principle part stem</div><div _ngcontent-ng-c2184142485="" class="tense-label">3rd principle part stem</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-container"><h3 _ngcontent-ng-c2184142485="">SUBJUNCTIVE PASSIVE</h3><div _ngcontent-ng-c2184142485="" class="horizontal-chart"><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label">Number</div><div _ngcontent-ng-c2184142485="" class="tense-label">Present</div><div _ngcontent-ng-c2184142485="" class="tense-label">Imperfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Perfect</div><div _ngcontent-ng-c2184142485="" class="tense-label">Pluperfect</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">I</div><div _ngcontent-ng-c2184142485="" class="form-cell">r</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + r</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sim</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + essem</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You</div><div _ngcontent-ng-c2184142485="" class="form-cell">ris</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + ris</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sis</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + esses</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">He/She/It</div><div _ngcontent-ng-c2184142485="" class="form-cell">tur</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + tur</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sit</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + esset</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">We</div><div _ngcontent-ng-c2184142485="" class="form-cell">mur</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + mur</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + simus</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + essemus</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">You (pl.)</div><div _ngcontent-ng-c2184142485="" class="form-cell">minī</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + minī</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sitis</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + essetis</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="person-cell">They</div><div _ngcontent-ng-c2184142485="" class="form-cell">ntur</div><div _ngcontent-ng-c2184142485="" class="form-cell">infinitive + ntur</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + sint</div><div _ngcontent-ng-c2184142485="" class="form-cell">4pp + essent</div></div></div><div _ngcontent-ng-c2184142485="" class="tense-labels"><div _ngcontent-ng-c2184142485="" class="tense-label"></div><div _ngcontent-ng-c2184142485="" class="tense-label">Stem with no vowel + -e-(1) -ea-(2) -a-(3) -ia-(3io and 4th) (we fear a liar)</div><div _ngcontent-ng-c2184142485="" class="tense-label">Infinitive</div><div _ngcontent-ng-c2184142485="" class="tense-label">4th principle part</div><div _ngcontent-ng-c2184142485="" class="tense-label">4th principle part</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-container"><h3 _ngcontent-ng-c2184142485="">INFINITIVES</h3><div _ngcontent-ng-c2184142485="" class="chart-table"><div _ngcontent-ng-c2184142485="" class="chart-header"><div _ngcontent-ng-c2184142485="" class="header-cell">Tense</div><div _ngcontent-ng-c2184142485="" class="header-cell">Active</div><div _ngcontent-ng-c2184142485="" class="header-cell">Passive</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="tense-cell">PRESENT</div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">bruh 2nd princicple part</div></div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">1/2/4: change -re to -ri</div><div _ngcontent-ng-c2184142485="" class="endings">3cons/io: replace -ere with -i</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="tense-cell">PERFECT</div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">3pp stem + isse</div></div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">(4pp)us/a/um + esse</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="tense-cell">FUTURE</div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">(4pp)urus/ura/urum esse</div></div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">(4pp)-um iri</div></div></div></div></div><div _ngcontent-ng-c2184142485="" class="chart-container"><h3 _ngcontent-ng-c2184142485="">PARTICIPLES</h3><div _ngcontent-ng-c2184142485="" class="chart-table"><div _ngcontent-ng-c2184142485="" class="chart-header"><div _ngcontent-ng-c2184142485="" class="header-cell">Tense</div><div _ngcontent-ng-c2184142485="" class="header-cell">Active</div><div _ngcontent-ng-c2184142485="" class="header-cell">Passive</div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="tense-cell">PRESENT</div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">-(e)ns, (e)ntis - (e) for 3cons/3io/4</div></div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">-</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="tense-cell">PERFECT</div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">-</div></div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">us/a/um</div></div></div><div _ngcontent-ng-c2184142485="" class="chart-row"><div _ngcontent-ng-c2184142485="" class="tense-cell">FUTURE</div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">4pp + urus/ura/urum</div></div><div _ngcontent-ng-c2184142485="" class="form-cell"><div _ngcontent-ng-c2184142485="" class="endings">1pp + (e)ndus/(e)nda/(e)ndum - (e) for 3cons/3io/4</div></div></div></div></div></div></div><div _ngcontent-ng-c2184142485="" class="grammar-section"><h2 _ngcontent-ng-c2184142485="">Noun Declensions</h2><div _ngcontent-ng-c2184142485="" class="declension-charts"><div _ngcontent-ng-c2184142485="" class="declension-container"><h3 _ngcontent-ng-c2184142485="">1st Declension (Feminine)</h3><div _ngcontent-ng-c2184142485="" class="declension-table"><div _ngcontent-ng-c2184142485="" class="declension-header"><div _ngcontent-ng-c2184142485="" class="case-cell">Case</div><div _ngcontent-ng-c2184142485="" class="form-cell">Singular</div><div _ngcontent-ng-c2184142485="" class="form-cell">Plural</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Nominative</div><div _ngcontent-ng-c2184142485="" class="form-cell">aqua</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquae</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Genitive</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquae</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquārum</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Dative</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquae</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquīs</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Accusative</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquam</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquās</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Ablative</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquā</div><div _ngcontent-ng-c2184142485="" class="form-cell">aquīs</div></div></div><div _ngcontent-ng-c2184142485="" class="example">aqua, -ae, F. (water)</div></div><div _ngcontent-ng-c2184142485="" class="declension-container"><h3 _ngcontent-ng-c2184142485="">2nd Declension (Masculine/Neuter)</h3><div _ngcontent-ng-c2184142485="" class="declension-table"><div _ngcontent-ng-c2184142485="" class="declension-header"><div _ngcontent-ng-c2184142485="" class="case-cell">Case</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc. Pl.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Pl.</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Nominative</div><div _ngcontent-ng-c2184142485="" class="form-cell">servus</div><div _ngcontent-ng-c2184142485="" class="form-cell">servī</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnum</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōna</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Genitive</div><div _ngcontent-ng-c2184142485="" class="form-cell">servī</div><div _ngcontent-ng-c2184142485="" class="form-cell">servōrum</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnī</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnōrum</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Dative</div><div _ngcontent-ng-c2184142485="" class="form-cell">servō</div><div _ngcontent-ng-c2184142485="" class="form-cell">servīs</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnō</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnīs</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Accusative</div><div _ngcontent-ng-c2184142485="" class="form-cell">servum</div><div _ngcontent-ng-c2184142485="" class="form-cell">servōs</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnum</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōna</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Ablative</div><div _ngcontent-ng-c2184142485="" class="form-cell">servō</div><div _ngcontent-ng-c2184142485="" class="form-cell">servīs</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnō</div><div _ngcontent-ng-c2184142485="" class="form-cell">dōnīs</div></div></div><div _ngcontent-ng-c2184142485="" class="example">servus, -ī, M. (slave); dōnum, -ī, N. (gift)</div></div><div _ngcontent-ng-c2184142485="" class="declension-container"><h3 _ngcontent-ng-c2184142485="">3rd Declension (Masculine/Feminine/Neuter)</h3><div _ngcontent-ng-c2184142485="" class="declension-table"><div _ngcontent-ng-c2184142485="" class="declension-header"><div _ngcontent-ng-c2184142485="" class="case-cell">Case</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc./Fem. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc./Fem. Pl.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Pl.</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Nominative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēx</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">corpus</div><div _ngcontent-ng-c2184142485="" class="form-cell">corpora</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Genitive</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgis</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgum</div><div _ngcontent-ng-c2184142485="" class="form-cell">corporis</div><div _ngcontent-ng-c2184142485="" class="form-cell">corporum</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Dative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgī</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgibus</div><div _ngcontent-ng-c2184142485="" class="form-cell">corporī</div><div _ngcontent-ng-c2184142485="" class="form-cell">corporibus</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Accusative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgem</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">corpus</div><div _ngcontent-ng-c2184142485="" class="form-cell">corpora</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Ablative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēge</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēgibus</div><div _ngcontent-ng-c2184142485="" class="form-cell">corpore</div><div _ngcontent-ng-c2184142485="" class="form-cell">corporibus</div></div></div><div _ngcontent-ng-c2184142485="" class="example">rēx, rēgis, M. (king); corpus, corporis, N. (body)</div></div><div _ngcontent-ng-c2184142485="" class="declension-container"><h3 _ngcontent-ng-c2184142485="">3rd Declension I-Stem (Masculine/Feminine/Neuter)</h3><div _ngcontent-ng-c2184142485="" class="declension-table"><div _ngcontent-ng-c2184142485="" class="declension-header"><div _ngcontent-ng-c2184142485="" class="case-cell">Case</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc./Fem. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc./Fem. Pl.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Pl.</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Nominative</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvis</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">mare</div><div _ngcontent-ng-c2184142485="" class="form-cell">maria</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Genitive</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvis</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvium</div><div _ngcontent-ng-c2184142485="" class="form-cell">maris</div><div _ngcontent-ng-c2184142485="" class="form-cell">marium</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Dative</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvī</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvibus</div><div _ngcontent-ng-c2184142485="" class="form-cell">marī</div><div _ngcontent-ng-c2184142485="" class="form-cell">maribus</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Accusative</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvem</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">mare</div><div _ngcontent-ng-c2184142485="" class="form-cell">maria</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Ablative</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīve</div><div _ngcontent-ng-c2184142485="" class="form-cell">cīvibus</div><div _ngcontent-ng-c2184142485="" class="form-cell">marī</div><div _ngcontent-ng-c2184142485="" class="form-cell">maribus</div></div></div><div _ngcontent-ng-c2184142485="" class="example">cīvis, cīvis, M./F. (citizen); mare, maris, N. (sea)</div></div><div _ngcontent-ng-c2184142485="" class="declension-container"><h3 _ngcontent-ng-c2184142485="">4th Declension (Masculine/Feminine/Neuter)</h3><div _ngcontent-ng-c2184142485="" class="declension-table"><div _ngcontent-ng-c2184142485="" class="declension-header"><div _ngcontent-ng-c2184142485="" class="case-cell">Case</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc. Pl.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Neut. Pl.</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Nominative</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctus</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctūs</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornū</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornua</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Genitive</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctūs</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctuum</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornūs</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornuum</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Dative</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctuī</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctibus</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornū</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornibus</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Accusative</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctum</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctūs</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornū</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornua</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Ablative</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctū</div><div _ngcontent-ng-c2184142485="" class="form-cell">frūctibus</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornū</div><div _ngcontent-ng-c2184142485="" class="form-cell">cornibus</div></div></div><div _ngcontent-ng-c2184142485="" class="example">frūctus, -ūs, M. (fruit); cornū, -ūs, N. (horn)</div></div><div _ngcontent-ng-c2184142485="" class="declension-container"><h3 _ngcontent-ng-c2184142485="">5th Declension (Feminine/Masculine)</h3><div _ngcontent-ng-c2184142485="" class="declension-table"><div _ngcontent-ng-c2184142485="" class="declension-header"><div _ngcontent-ng-c2184142485="" class="case-cell">Case</div><div _ngcontent-ng-c2184142485="" class="form-cell">Fem. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Fem. Pl.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc. Sing.</div><div _ngcontent-ng-c2184142485="" class="form-cell">Masc. Pl.</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Nominative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēs</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Genitive</div><div _ngcontent-ng-c2184142485="" class="form-cell">reī</div><div _ngcontent-ng-c2184142485="" class="form-cell">rērum</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēī</div><div _ngcontent-ng-c2184142485="" class="form-cell">diērum</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Dative</div><div _ngcontent-ng-c2184142485="" class="form-cell">reī</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēbus</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēī</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēbus</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Accusative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rem</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēs</div><div _ngcontent-ng-c2184142485="" class="form-cell">diem</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēs</div></div><div _ngcontent-ng-c2184142485="" class="declension-row"><div _ngcontent-ng-c2184142485="" class="case-cell">Ablative</div><div _ngcontent-ng-c2184142485="" class="form-cell">rē</div><div _ngcontent-ng-c2184142485="" class="form-cell">rēbus</div><div _ngcontent-ng-c2184142485="" class="form-cell">diē</div><div _ngcontent-ng-c2184142485="" class="form-cell">diēbus</div></div></div><div _ngcontent-ng-c2184142485="" class="example">rēs, reī, F. (thing); diēs, diēī, M. (day)</div></div></div></div><div _ngcontent-ng-c2184142485="" class="grammar-section"><h2 _ngcontent-ng-c2184142485="">Figurative Language Commonly Found in Latin</h2><div _ngcontent-ng-c2184142485="" class="figurative-language-list"><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">1. Allegory</h4><p _ngcontent-ng-c2184142485="">A narrative or description that conveys a hidden meaning, often moral or political.</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">2. Alliteration</h4><p _ngcontent-ng-c2184142485="">The repetition of initial consonant sounds in a series of words</p><div _ngcontent-ng-c2184142485="" class="example">"Peter Piper picked a peck of pickled peppers"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">3. Anaphora</h4><p _ngcontent-ng-c2184142485="">The repetition of a word/phrase at the beginning of successive clauses or sentences.</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">4. Anastrophe</h4><p _ngcontent-ng-c2184142485="">Inversion of word order</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">5. Aposiopesis</h4><p _ngcontent-ng-c2184142485="">A sudden breaking off in speech, leaving a thought unfinished</p><div _ngcontent-ng-c2184142485="" class="example">"If you say that again, I'll—"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">6. Apostrophe</h4><p _ngcontent-ng-c2184142485="">A direct address to an absent person, object, or abstract idea</p><div _ngcontent-ng-c2184142485="" class="example">"O Death, where is thy sting?"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">7. Asyndeton</h4><p _ngcontent-ng-c2184142485="">The omission of conjunctions between clauses for effect</p><div _ngcontent-ng-c2184142485="" class="example">"I came, I saw, I conquered"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">8. Chiasmus</h4><p _ngcontent-ng-c2184142485="">A rhetorical device in which two clauses are structured in a reverse order</p><div _ngcontent-ng-c2184142485="" class="example">"Ask not what your country can do for you—ask what you can do for your country"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">9. Ekphrasis</h4><p _ngcontent-ng-c2184142485="">A vivid, detailed description of a work of art or a visual scene.</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">10. Ellipsis</h4><p _ngcontent-ng-c2184142485="">The omission of words that are understood in context</p><div _ngcontent-ng-c2184142485="" class="example">"Some people prefer cats; others, dogs"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">11. Enjambment</h4><p _ngcontent-ng-c2184142485="">In poetry, the continuation of a sentence beyond the end of a line without a pause.</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">12. Hendiadys</h4><p _ngcontent-ng-c2184142485="">The expression of a single idea using two nouns connected by "and" instead of an adjective-noun structure</p><div _ngcontent-ng-c2184142485="" class="example">"Sound and fury" instead of "furious sound"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">13. Hyperbaton</h4><p _ngcontent-ng-c2184142485="">The inversion of normal word order for emphasis</p><div _ngcontent-ng-c2184142485="" class="example">"This I must see"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">14. Hyperbole</h4><p _ngcontent-ng-c2184142485="">Exaggeration for effect</p><div _ngcontent-ng-c2184142485="" class="example">"I'm so hungry I could eat a horse"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">15. Hysteron proteron</h4><p _ngcontent-ng-c2184142485="">A reversal of the natural order of events</p><div _ngcontent-ng-c2184142485="" class="example">"Put on your shoes and socks"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">16. Litotes</h4><p _ngcontent-ng-c2184142485="">Understatement using double negatives or negating the opposite</p><div _ngcontent-ng-c2184142485="" class="example">"Not bad" meaning "good"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">17. Metaphor</h4><p _ngcontent-ng-c2184142485="">A direct comparison between two unlike things without using "like" or "as"</p><div _ngcontent-ng-c2184142485="" class="example">"Time is a thief"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">18. Metonymy</h4><p _ngcontent-ng-c2184142485="">Substituting the name of one thing with something closely related</p><div _ngcontent-ng-c2184142485="" class="example">"The White House issued a statement" instead of "The President issued a statement"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">19. Onomatopoeia</h4><p _ngcontent-ng-c2184142485="">A word that imitates a sound</p><div _ngcontent-ng-c2184142485="" class="example">"Buzz," "sizzle"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">20. Personification</h4><p _ngcontent-ng-c2184142485="">Giving human qualities to non-human things</p><div _ngcontent-ng-c2184142485="" class="example">"The wind whispered through the trees"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">21. Pleonasm</h4><p _ngcontent-ng-c2184142485="">The use of redundant words for emphasis</p><div _ngcontent-ng-c2184142485="" class="example">"Burning fire" or "free gift"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">22. Polyptoton</h4><p _ngcontent-ng-c2184142485="">Repetition of the same root word in different forms</p><div _ngcontent-ng-c2184142485="" class="example">"strong" and "strength"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">23. Polysyndeton</h4><p _ngcontent-ng-c2184142485="">The use of multiple conjunctions for emphasis</p><div _ngcontent-ng-c2184142485="" class="example">"We have ships and men and money and supplies"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">24. Praeteritio</h4><p _ngcontent-ng-c2184142485="">Calling attention to something by claiming to omit it</p><div _ngcontent-ng-c2184142485="" class="example">"I won't even mention his bad habits"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">25. Prolepsis</h4><p _ngcontent-ng-c2184142485="">Anticipating and answering objections in advance, or using a future event as if it has already occurred.</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">26. Prosopopoeia</h4><p _ngcontent-ng-c2184142485="">A type of personification where an inanimate object or absent person is given speech.</p></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">27. Rhetorical question</h4><p _ngcontent-ng-c2184142485="">A question asked for effect, not expecting an answer</p><div _ngcontent-ng-c2184142485="" class="example">"Isn't it obvious"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">28. Simile</h4><p _ngcontent-ng-c2184142485="">A comparison using "like" or "as"</p><div _ngcontent-ng-c2184142485="" class="example">"Brave as a lion"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">29. Synchesis/Golden Line</h4><p _ngcontent-ng-c2184142485="">A confused or interwoven word order (synchesis with a verb in the middle)</p><div _ngcontent-ng-c2184142485="" class="example">"Golden happy ring girl" instead of "happy golden-haired girl"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">30. Synecdoche</h4><p _ngcontent-ng-c2184142485="">Using a part to represent the whole</p><div _ngcontent-ng-c2184142485="" class="example">"All hands on deck" meaning sailors, not just their hands</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">31. Tmesis</h4><p _ngcontent-ng-c2184142485="">The separation of a compound word into two parts, often for emphasis</p><div _ngcontent-ng-c2184142485="" class="example">"Abso-bloody-lutely"</div><div _ngcontent-ng-c2184142485="" class="example">"Quo quemque modo" = "quomodo quemque" aeneid VI.891</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">32. Transferred epithet</h4><p _ngcontent-ng-c2184142485="">An adjective that grammatically modifies one noun but logically describes another</p><div _ngcontent-ng-c2184142485="" class="example">"Restless night" when it's the person who is restless, not the night</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">33. Tricolon crescens</h4><p _ngcontent-ng-c2184142485="">A series of three elements in increasing intensity or size</p><div _ngcontent-ng-c2184142485="" class="example">"I came, I saw, I conquered"</div></div><div _ngcontent-ng-c2184142485="" class="figurative-item"><h4 _ngcontent-ng-c2184142485="">34. Zeugma</h4><p _ngcontent-ng-c2184142485="">A single word (often a verb) governing two or more words in different senses</p><div _ngcontent-ng-c2184142485="" class="example">"He stole my heart and my wallet"</div></div></div></div><div _ngcontent-ng-c2184142485="" class="grammar-section"><h2 _ngcontent-ng-c2184142485="">Derivatives of Cases</h2><div _ngcontent-ng-c2184142485="" class="case-section"><h3 _ngcontent-ng-c2184142485="">Genitive</h3><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Partitive genitive</h4><p _ngcontent-ng-c2184142485="">Used for the larger whole of which something is a part</p><div _ngcontent-ng-c2184142485="" class="example">"pars civitatis → part of the state"</div><div _ngcontent-ng-c2184142485="" class="note">All of the state is not partitive (it's not part of a whole), therefore in Latin, you just use an adj: omnis civitas</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Genitive of description</h4><p _ngcontent-ng-c2184142485="">Usually composed of a noun + adj</p><div _ngcontent-ng-c2184142485="" class="example">"vir magnae sapientiae → a man of great wisdom → a very wise man"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Subjective/objective genitive</h4><p _ngcontent-ng-c2184142485="">When two things are in genitive (usually the first one is the object and the subject one is in adj form)</p><div _ngcontent-ng-c2184142485="" class="example">"severitatis invidiae → hatred of severity"</div></div></div><div _ngcontent-ng-c2184142485="" class="case-section"><h3 _ngcontent-ng-c2184142485="">Dative</h3><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Dative of Agent</h4><p _ngcontent-ng-c2184142485="">Used w gerundive to indicate upon whom the obligation lies</p><div _ngcontent-ng-c2184142485="" class="example">"haec tibi agenda sunt → these things are to be done by you" or "these things are for you to do"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Dative of Possession</h4><p _ngcontent-ng-c2184142485="">Used with esse (sometimes the esse is implied)</p><div _ngcontent-ng-c2184142485="" class="example">"Tantaene animis caelestibus irae"</div><div _ngcontent-ng-c2184142485="" class="example">"est mihi domi pater → I have a father at home (there is a father to me at home)"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Dative of Reference</h4><p _ngcontent-ng-c2184142485="">Usual dative</p></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Dative of purpose</h4><div _ngcontent-ng-c2184142485="" class="example">"locum castris deligit → he selects a location for the camp"</div><div _ngcontent-ng-c2184142485="" class="example">"rei publicae cladi sunt → They are ruin to the state (they are for a disaster to the state)"</div></div></div><div _ngcontent-ng-c2184142485="" class="case-section"><h3 _ngcontent-ng-c2184142485="">Accusative</h3><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Accusative of place to which</h4><div _ngcontent-ng-c2184142485="" class="example">"Veronam venis? → are you coming to Verona?"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Accusative of time duration</h4><div _ngcontent-ng-c2184142485="" class="example">"multos annos regnavit → he ruled for many years"</div><div _ngcontent-ng-c2184142485="" class="example">"decem dies manebit → he will stay for ten days"</div></div></div><div _ngcontent-ng-c2184142485="" class="case-section"><h3 _ngcontent-ng-c2184142485="">Ablative</h3><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of cause</h4><p _ngcontent-ng-c2184142485="">Usually without prep (or ex or de)</p><div _ngcontent-ng-c2184142485="" class="example">"ex ira clamavit → he shouted out of anger"</div><div _ngcontent-ng-c2184142485="" class="example">"timore tremit → he trembles from fear"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of agent</h4><p _ngcontent-ng-c2184142485="">By whom (passive verb, a/ab, ablative) (means has no a/ab and is usually a tool)</p></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of time when</h4><p _ngcontent-ng-c2184142485="">No prep, ordinal numbers</p><div _ngcontent-ng-c2184142485="" class="example">"tertia hora venit → he came at the third hour"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of time within which</h4><p _ngcontent-ng-c2184142485="">No prep, usually cardinal numbers</p><div _ngcontent-ng-c2184142485="" class="example">"paucis horis discedent → they will depart within a few hours"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of comparison</h4><p _ngcontent-ng-c2184142485="">No quam; but when using quam, both nouns have the same case</p><div _ngcontent-ng-c2184142485="" class="example">"marcus est altior Paulo → Marcus is taller than Paul"</div><div _ngcontent-ng-c2184142485="" class="example">"Marcus est altior quam Paulus"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of separation</h4><p _ngcontent-ng-c2184142485="">Can be w or wout prep; more abstract, talking about freeing or lacking: physical or abstract act of separation</p></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of place from which</h4><p _ngcontent-ng-c2184142485="">Uses ex/e/a/ab/de</p></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of respect</h4><p _ngcontent-ng-c2184142485="">(Distinguished in piety)</p></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of place where</h4><p _ngcontent-ng-c2184142485="">Preposition + non-motion verb</p><div _ngcontent-ng-c2184142485="" class="example">"maneo in Africa → I am staying in Africa"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of means</h4><p _ngcontent-ng-c2184142485="">Accompanies a verb</p><div _ngcontent-ng-c2184142485="" class="example">"pedibus → on foot"</div><div _ngcontent-ng-c2184142485="" class="example">"equis → by horse"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of instrument</h4><p _ngcontent-ng-c2184142485="">Usually a tool</p><div _ngcontent-ng-c2184142485="" class="example">"gladio → with a sword"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of manner</h4><p _ngcontent-ng-c2184142485="">In what way?</p><div _ngcontent-ng-c2184142485="" class="example">"Magna voce → in a loud voice"</div></div><div _ngcontent-ng-c2184142485="" class="case-item"><h4 _ngcontent-ng-c2184142485="">Ablative of quality</h4><p _ngcontent-ng-c2184142485="">Describes the noun</p><div _ngcontent-ng-c2184142485="" class="example">"summa virtute → of the highest courage"</div></div></div><div _ngcontent-ng-c2184142485="" class="case-section"><h3 _ngcontent-ng-c2184142485="">Locative</h3><p _ngcontent-ng-c2184142485="">Form looks genitive or ablative, answers "where?"</p><p _ngcontent-ng-c2184142485="">Usually the same as the gen sg; for plural nouns (1 and 2) same form as abl pl; special forms: domus→domi; rus→ruri.</p></div></div><div _ngcontent-ng-c2184142485="" class="grammar-section"><h2 _ngcontent-ng-c2184142485="">Advanced Grammar Concepts</h2><div _ngcontent-ng-c2184142485="" class="advanced-section"><h3 _ngcontent-ng-c2184142485="">Conditionals</h3><div _ngcontent-ng-c2184142485="" class="conditional-subsection"><h4 _ngcontent-ng-c2184142485="">Subjunctive</h4><div _ngcontent-ng-c2184142485="" class="conditional-item"><h5 _ngcontent-ng-c2184142485="">Past Contrary to Fact</h5><p _ngcontent-ng-c2184142485="">Pluperfect subjunctive (translate with had and would have)</p><div _ngcontent-ng-c2184142485="" class="example">"Si id fecisset, prudens fuisset" → "if he had done this, he would have been wise"</div></div><div _ngcontent-ng-c2184142485="" class="conditional-item"><h5 _ngcontent-ng-c2184142485="">Present Contrary to Fact</h5><p _ngcontent-ng-c2184142485="">Imperfect subjunctive (translate with were and would (be))</p><div _ngcontent-ng-c2184142485="" class="example">"si id facerent, prudens esset" → "if he were doing this, he would be wise"</div></div><div _ngcontent-ng-c2184142485="" class="conditional-item"><h5 _ngcontent-ng-c2184142485="">Future Less Vivid (should would)</h5><p _ngcontent-ng-c2184142485="">Present subjunctive (translate with should and would)</p><div _ngcontent-ng-c2184142485="" class="example">"si id faciat, prudens sit" → "if he should do this, he would be wise"</div></div></div><div _ngcontent-ng-c2184142485="" class="conditional-subsection"><h4 _ngcontent-ng-c2184142485="">Indicative</h4><div _ngcontent-ng-c2184142485="" class="conditional-item"><h5 _ngcontent-ng-c2184142485="">Simple Fact Past</h5><p _ngcontent-ng-c2184142485="">Past (either imperfect or perfect) indicative</p><div _ngcontent-ng-c2184142485="" class="example">"si id fecit, prudens fuit" → "If he did this, he was wise"</div></div><div _ngcontent-ng-c2184142485="" class="conditional-item"><h5 _ngcontent-ng-c2184142485="">Simple Fact Present</h5><p _ngcontent-ng-c2184142485="">Present indicative</p><div _ngcontent-ng-c2184142485="" class="example">"si id facit, prudens est" → "if he is doing this, he is wise"</div></div><div _ngcontent-ng-c2184142485="" class="conditional-item"><h5 _ngcontent-ng-c2184142485="">Future More Vivid</h5><p _ngcontent-ng-c2184142485="">Future indicative (can also be future perfect)</p><div _ngcontent-ng-c2184142485="" class="example">"si id faciet, prudens erit" → "if he does (will do) this, he will be wise"</div></div></div></div><div _ngcontent-ng-c2184142485="" class="advanced-section"><h3 _ngcontent-ng-c2184142485="">Key Latin Language Conventions</h3><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Indirect Statement</h4><p _ngcontent-ng-c2184142485="">With head verbs (saying thinking, knowing, perceiving, feeling, seeing hearing, etc.) and infinitives (tense is relative) (accusative subject)</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Ablative Absolute</h4><p _ngcontent-ng-c2184142485="">Noun/pronoun with modifying ablative participle (self-contained, independent from main clause)</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Gerund</h4><p _ngcontent-ng-c2184142485="">Verbal noun (only 4th principal part neuter singular (gen, dat, acc, abl))</p><div _ngcontent-ng-c2184142485="" class="example">Amor legendi "love of reading"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Gerundive</h4><p _ngcontent-ng-c2184142485="">Verbal adjective 4th principal part (-ndus, -nda, -ndum) (denotes necessity or obligation)</p><div _ngcontent-ng-c2184142485="" class="example">Liber legendus "a book (about) to be read"</div><p _ngcontent-ng-c2184142485="">After a verb like give, deliver, have, receive, demand, undertake, the gerundive describes a purpose:</p><div _ngcontent-ng-c2184142485="" class="example">Aedem Castoris habuit tuendam "he had the temple of Castor to take care of"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Gerund-Gerundive Flip</h4><p _ngcontent-ng-c2184142485="">Latin prefers not to use gerunds for direct objects. The gerund-gerundive flip can happen in any case where the gerund would have taken a direct object. Latin prefers to flip to a gerundive phrase that agrees with the object.</p><div _ngcontent-ng-c2184142485="" class="example">Acc with ad (purpose): ad vicendum hostes (for conquering the enemies) → ad hostes vicendos (for the enemies to be conquered)</div><div _ngcontent-ng-c2184142485="" class="example">Gen expressing purpose, cause, or description: ars scribendi libros (the art of writing books) → ars librorum scribendorum (the art of books to be written)</div><div _ngcontent-ng-c2184142485="" class="example">Dat (purpose): studium legendi libros (enthusiasm for reading books) → studium libris legendis (enthusiasm for books to be read)</div><div _ngcontent-ng-c2184142485="" class="example">Abl (means, cause, manner): in discendo linguas (in learning languages) → in discendis linguis (in languages to be learned)</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Supine</h4><p _ngcontent-ng-c2184142485="">4th principal part stem (-um (acc)/ -u (abl)):</p><p _ngcontent-ng-c2184142485="">Accusative: verbs of motion indicating purpose (to _)</p><div _ngcontent-ng-c2184142485="" class="example">"persuasum amicis venerunt → they came to persuade the friends"</div><p _ngcontent-ng-c2184142485="">Ablative: used with neuter of adjectives (to _)</p><div _ngcontent-ng-c2184142485="" class="example">"mirabile dictu → amazing to say"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Hortatory</h4><p _ngcontent-ng-c2184142485="">Independent subjunctive, same as jussive in construction, but only 1st plural</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Jussive</h4><p _ngcontent-ng-c2184142485="">Independent subjunctive (main verb is subjunctive)</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Deliberative Question</h4><p _ngcontent-ng-c2184142485="">Independent subjunctive: subjunctive (can also be indicative) question, expressing doubt, indignation, or impossibility, as if asking the speaker's own advice. (translation: interrogative+auxiliary+inf (can use shall/should, can/could))</p><div _ngcontent-ng-c2184142485="" class="example">"quid agam → what am i to do?"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Potential Subjunctive</h4><p _ngcontent-ng-c2184142485="">Independent subjunctive: suggests an action as conceivable/possible subjunctive. In an independent clause (pres/ft: refer to the future; impf: to the past; plup (rare): what might have happened; should, would, may, might + tense indicator</p><div _ngcontent-ng-c2184142485="" class="example">"velim sic existimes → I should wish you to think thus"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Indirect Command</h4><p _ngcontent-ng-c2184142485="">Dependent subjunctive: subjunctive clause introduced by ut/ne with command-ish verbs (translate verb in the clause as an infinitive)</p><div _ngcontent-ng-c2184142485="" class="example">"imperat vobis ut hoc faciatis → he commands you (pl) to do this"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Indirect Question</h4><p _ngcontent-ng-c2184142485="">Dependent subjunctive: indicative discourse verbs, subjunctive clause with interrogative word (IC, interrogative, DC)</p><div _ngcontent-ng-c2184142485="" class="example">"rogant quid Gaius faciat → They ask what Gaius is doing"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Purpose</h4><p _ngcontent-ng-c2184142485="">Dependent subjunctive: subjunctive clause introduced by ut/ne (in order to infinitive or use may/might)</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Result</h4><p _ngcontent-ng-c2184142485="">Dependent subjunctive: ut (not ne), adverb (ita sic tam adeo), adjective (tantus); translated with no auxiliaries</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Cum Clauses</h4><p _ngcontent-ng-c2184142485="">Cum temporal clause: indicative (when..) can also be circumstantial</p><p _ngcontent-ng-c2184142485="">Causal clause: subjunctive + causal relationship (since…)</p><p _ngcontent-ng-c2184142485="">Concessive clause: subjunctive + tamen (although…nevertheless)</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Proviso Clause</h4><p _ngcontent-ng-c2184142485="">dummodo (+ne): (provided that…)</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Fear Clause</h4><p _ngcontent-ng-c2184142485="">vereor, metuo, and timeo (ut and ne are inverted): will/may (present); would/might (imperfect)</p><div _ngcontent-ng-c2184142485="" class="example">"timeo ne id credant → I fear that they will believe this"</div><div _ngcontent-ng-c2184142485="" class="example">"vereor ut id credant → I fear that they may not believe this"</div></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Relative Clause of Description</h4><p _ngcontent-ng-c2184142485="">Agrees with antecedent in gender and number with no forms that indicate otherwise</p></div><div _ngcontent-ng-c2184142485="" class="convention-item"><h4 _ngcontent-ng-c2184142485="">Relative Clause of Characteristic</h4><p _ngcontent-ng-c2184142485="">Relative pronoun, subjunctive verb in clause, general, indefinite, interrogative, negative antecedent (nemo, quis, etc.)</p><p _ngcontent-ng-c2184142485="">"The sort of/ the kind of" to indicate an indefinite antecedent</p><p _ngcontent-ng-c2184142485="">"would" for the subjunctive verb</p><div _ngcontent-ng-c2184142485="" class="example">"Hic est liber quem omnes legant → This is the kind of book that all would read"</div><div _ngcontent-ng-c2184142485="" class="example">"Quis est qui huic credat → Who is there who (is of such a kind that he) would trust this man?"</div></div></div><div _ngcontent-ng-c2184142485="" class="advanced-section"><h3 _ngcontent-ng-c2184142485="">Extra Helpful Things</h3><div _ngcontent-ng-c2184142485="" class="helpful-list"><div _ngcontent-ng-c2184142485="" class="helpful-item">Si quis = anyone</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Quodque = each</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Ne quis = no one</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Si nisi num ne, all the alis go away</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Passive periphrastic demands a dative of agent (by _dat_)</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Dum + subjunctive = until</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Latin diphthongs: ae, oe, eu, ei, au, ui</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Ne-for a neutral question</div><div _ngcontent-ng-c2184142485="" class="helpful-item">num -expects no for an answer</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Quisquam is any or anyone</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Nonne-expects yes for an answer</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Qua any way or any</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Quisque, quaeque, quodque: each every</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Quoad: until</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Ipse is intensive (he himself did this)</div><div _ngcontent-ng-c2184142485="" class="helpful-item">Se is reflexive (he hurt himself)</div><div _ngcontent-ng-c2184142485="" class="helpful-item">3 i-stem neuter – nominative singular will end in al/ar/e</div><div _ngcontent-ng-c2184142485="" class="helpful-item">3rd conjugation stem change</div><div _ngcontent-ng-c2184142485="" class="helpful-item">quam + superlative: as ___ as possible</div><div _ngcontent-ng-c2184142485="" class="helpful-item"><strong _ngcontent-ng-c2184142485="">Demonstratives:</strong> hic, ille, iste, is, ea, id</div></div></div><div _ngcontent-ng-c2184142485="" class="advanced-section"><h3 _ngcontent-ng-c2184142485="">Pronouns</h3><div _ngcontent-ng-c2184142485="" class="pronoun-list"><div _ngcontent-ng-c2184142485="" class="pronoun-item"><strong _ngcontent-ng-c2184142485="">Personal Pronouns:</strong> ego, tū, nōs, vōs</div><div _ngcontent-ng-c2184142485="" class="pronoun-item"><strong _ngcontent-ng-c2184142485="">Reflexive Pronouns:</strong> sē</div><div _ngcontent-ng-c2184142485="" class="pronoun-item"><strong _ngcontent-ng-c2184142485="">Possessive Adjectives:</strong> meus, tuus, suus, noster, vester</div><div _ngcontent-ng-c2184142485="" class="pronoun-item"><strong _ngcontent-ng-c2184142485="">Relative Pronouns:</strong> quī, quae, quod</div><div _ngcontent-ng-c2184142485="" class="pronoun-item"><strong _ngcontent-ng-c2184142485="">Interrogative Pronouns:</strong> quis, quid</div><div _ngcontent-ng-c2184142485="" class="pronoun-item"><strong _ngcontent-ng-c2184142485="">Indefinite Pronouns:</strong> aliquis, aliquid; quidam, quaedam, quoddam</div></div></div></div></div></div></div><!--container--><!--container--></div></app-root>
+<script src="./Latin_files/main.js" type="module"></script>
+
+</body></html>
