@@ -312,6 +312,77 @@ export class App {
     this.currentPage = 'aeneid-detail';
   }
 
+  // Aeneid passage navigation methods
+  navigateToAeneid1_1() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-1-1';
+  }
+
+  navigateToAeneid1_88() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-1-88';
+  }
+
+  navigateToAeneid1_496() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-1-496';
+  }
+
+  navigateToAeneid2_40() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-2-40';
+  }
+
+  navigateToAeneid4_74() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-4-74';
+  }
+
+  navigateToAeneid4_165() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-4-165';
+  }
+
+  navigateToAeneid4_305() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-4-305';
+  }
+
+  navigateToAeneid6_450() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-6-450';
+  }
+
+  navigateToAeneid6_788() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-6-788';
+  }
+
+  navigateToAeneid7_45() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-7-45';
+  }
+
+  navigateToAeneid7_783() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-7-783';
+  }
+
+  navigateToAeneid11_532() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-11-532';
+  }
+
+  navigateToAeneid12_791() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-12-791';
+  }
+
+  navigateToAeneid12_919() {
+    this.navigationHistory.push(this.currentPage);
+    this.currentPage = 'aeneid-12-919';
+  }
+
   navigateToPlinyLetter4() {
     this.navigationHistory.push(this.currentPage);
     this.currentPage = 'pliny-letter-4';

@@ -317,6 +317,731 @@
       </div>
     }
 
+    <!-- Aeneid Detail Page -->
+    @if (currentPage === 'aeneid-detail') {
+      <div class="page-overlay">
+        <div class="pliny-detail-page">
+          <img src="assets/horse.jpeg" alt="Background" class="parallax-background">
+          <button class="back-button" (click)="goBack()">← Back to Poetry</button>
+          
+          <div class="pliny-header">
+            <h1>The Aeneid</h1>
+            <p>Select a passage to study</p>
+          </div>
+
+          <div class="pliny-letters-container">
+            <div class="letter-category">
+              <h2>Book 1</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid1_1()">
+                  <h3>Lines 1-33</h3>
+                  <p class="letter-subtitle">The Epic Begins</p>
+                  <span class="letter-badge">Book 1</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid1_88()">
+                  <h3>Lines 88-107</h3>
+                  <p class="letter-subtitle">The Storm</p>
+                  <span class="letter-badge">Book 1</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid1_496()">
+                  <h3>Lines 496-508</h3>
+                  <p class="letter-subtitle">Queen Dido</p>
+                  <span class="letter-badge">Book 1</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="letter-category">
+              <h2>Book 2</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid2_40()">
+                  <h3>Lines 40-56 and 201-249</h3>
+                  <p class="letter-subtitle">Laocoön and the Trojan Horse</p>
+                  <span class="letter-badge">Book 2</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="letter-category">
+              <h2>Book 4</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid4_74()">
+                  <h3>Lines 74-89</h3>
+                  <p class="letter-subtitle">Dido Feels the Effect of Cupid</p>
+                  <span class="letter-badge">Book 4</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid4_165()">
+                  <h3>Lines 165-197</h3>
+                  <p class="letter-subtitle">Rumor Reaches Jupiter</p>
+                  <span class="letter-badge">Book 4</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid4_305()">
+                  <h3>Lines 305-361</h3>
+                  <p class="letter-subtitle">Aeneas Leaves Dido</p>
+                  <span class="letter-badge">Book 4</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="letter-category">
+              <h2>Book 6</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid6_450()">
+                  <h3>Lines 450-476</h3>
+                  <p class="letter-subtitle">The Shade of Dido</p>
+                  <span class="letter-badge">Book 6</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid6_788()">
+                  <h3>Lines 788-800 and 847-853</h3>
+                  <p class="letter-subtitle">Meeting Anchises</p>
+                  <span class="letter-badge">Book 6</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="letter-category">
+              <h2>Book 7</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid7_45()">
+                  <h3>Lines 45-58</h3>
+                  <p class="letter-subtitle">King Latinus</p>
+                  <span class="letter-badge">Book 7</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid7_783()">
+                  <h3>Lines 783-792 and 803-817</h3>
+                  <p class="letter-subtitle">Turnus Prepares for War</p>
+                  <span class="letter-badge">Book 7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="letter-category">
+              <h2>Book 11</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid11_532()">
+                  <h3>Lines 532-594</h3>
+                  <p class="letter-subtitle">The Story of Camilla</p>
+                  <span class="letter-badge">Book 11</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="letter-category">
+              <h2>Book 12</h2>
+              <div class="letter-options">
+                <div class="letter-card" (click)="navigateToAeneid12_791()">
+                  <h3>Lines 791-796, 803-812, and 818-828</h3>
+                  <p class="letter-subtitle">The Fate of the Trojans Is Decided</p>
+                  <span class="letter-badge">Book 12</span>
+                </div>
+                <div class="letter-card" (click)="navigateToAeneid12_919()">
+                  <h3>Lines 919-952</h3>
+                  <p class="letter-subtitle">The Final Battle of Aeneas and Turnus</p>
+                  <span class="letter-badge">Book 12</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- Aeneid Book 1, Lines 1-33 Page -->
+    @if (currentPage === 'aeneid-1-1') {
+      <div class="page-overlay">
+        <div class="letter-page">
+          <img src="assets/burning.jpg" alt="Background" class="parallax-background">
+          <button class="back-button" (click)="goBack()">← Back to Aeneid</button>
+          
+          <div class="letter-header">
+            <h1>The Aeneid: Book 1</h1>
+            <p class="letter-subtitle">Lines 1-33: The Epic Begins</p>
+            <p class="letter-instruction">Hover over Latin words to see their rough translations</p>
+          </div>
+
+          <div class="letter-content">
+            <div class="latin-text">
+              <h2>Latin Text</h2>
+              <div class="text-paragraph">
+                <strong>Lines 1-11</strong><br>
+                <span class="latin-word" title="arms">Arma </span> 
+                <span class="latin-word" title="man (acc.)">virumque </span> 
+                <span class="latin-word" title="I sing">canō </span>, 
+                <span class="latin-word" title="of Troy (gen.)">Trōiae </span> 
+                <span class="latin-word" title="who">quī </span> 
+                <span class="latin-word" title="first">prīmus </span> 
+                <span class="latin-word" title="from">ab </span> 
+                <span class="latin-word" title="shores (abl.)">ōrīs</span><br>
+                <span class="latin-word" title="to Italy (acc.)">Ītaliam</span>, 
+                <span class="latin-word" title="by fate (abl.)">fātō </span> 
+                <span class="latin-word" title="exiled">profugus</span>, 
+                <span class="latin-word" title="Lavinian (acc.)">Lāvīniaque </span> 
+                <span class="latin-word" title="came">vēnit</span><br>
+                <span class="latin-word" title="shores (acc.)">lītora</span>, 
+                <span class="latin-word" title="much"> multum </span> 
+                <span class="latin-word" title="that one">ille </span> 
+                <span class="latin-word" title="both">et </span> 
+                <span class="latin-word" title="on lands (abl.)">terrīs </span> 
+                <span class="latin-word" title="tossed">iactātus </span> 
+                <span class="latin-word" title="and">et </span> 
+                <span class="latin-word" title="on deep (abl.)">altō</span><br>
+                <span class="latin-word" title="by force (abl.)">vī </span> 
+                <span class="latin-word" title="of the gods above (gen.)">superum </span> 
+                <span class="latin-word" title="savage (gen.)">saevae </span> 
+                <span class="latin-word" title="remembering (gen.)">memorem </span> 
+                <span class="latin-word" title="of Juno (gen.)">Iūnōnis </span> 
+                <span class="latin-word" title="because of">ob </span> 
+                <span class="latin-word" title="anger (acc.)">īram</span>;<br>
+                <span class="latin-word" title="many">multa </span> 
+                <span class="latin-word" title="also">quoque </span> 
+                <span class="latin-word" title="both">et </span> 
+                <span class="latin-word" title="in war (abl.)">bellō </span> 
+                <span class="latin-word" title="having suffered">passus </span>, 
+                <span class="latin-word" title="until">dum </span> 
+                <span class="latin-word" title="he could found">conderet </span> 
+                <span class="latin-word" title="city (acc.)">urbem</span>,<br>
+                <span class="latin-word" title="and bring in">inferretque </span> 
+                <span class="latin-word" title="gods (acc.)">deōs </span> 
+                <span class="latin-word" title="into Latium (abl.)">Latiō</span>, 
+                <span class="latin-word" title="race (nom.)"> genus </span> 
+                <span class="latin-word" title="from where">unde </span> 
+                <span class="latin-word" title="Latin (nom.)">Latīnum</span>,<br>
+                <span class="latin-word" title="Alban (nom.)">Albānīque </span> 
+                <span class="latin-word" title="fathers (nom.)">patrēs</span>, 
+                <span class="latin-word" title="and"> atque </span> 
+                <span class="latin-word" title="high (gen.)">altae </span> 
+                <span class="latin-word" title="walls (nom.)">moenia </span> 
+                <span class="latin-word" title="of Rome (gen.)">Rōmae</span>.<br>
+                <span class="latin-word" title="Muse (voc.)"> Mūsa</span>, 
+                <span class="latin-word" title="to me (dat.)"> mihī </span> 
+                <span class="latin-word" title="reasons (acc.)">causās </span> 
+                <span class="latin-word" title="recount">memorā</span>, 
+                <span class="latin-word" title="with what"> quō </span> 
+                <span class="latin-word" title="divine power (abl.)">nūmine </span> 
+                <span class="latin-word" title="having been insulted">laesō</span>,<br>
+                <span class="latin-word" title="by what"> quidve </span> 
+                <span class="latin-word" title="grieving">dolēns</span>, 
+                <span class="latin-word" title="queen (nom.)"> rēgīna </span> 
+                <span class="latin-word" title="of gods (gen.)">deum </span> 
+                <span class="latin-word" title="so many">tot </span> 
+                <span class="latin-word" title="to undergo">volvere </span> 
+                <span class="latin-word" title="misfortunes (acc.)">cāsūs</span><br>
+                <span class="latin-word" title="renowned (acc.)">īnsīgnem </span> 
+                <span class="latin-word" title="in piety (abl.)">pietāte </span> 
+                <span class="latin-word" title="man (acc.)">virum</span>, 
+                <span class="latin-word" title="so many"> tot </span> 
+                <span class="latin-word" title="to endure">adīre </span> 
+                <span class="latin-word" title="hardships (acc.)">labōrēs</span><br>
+                <span class="latin-word" title="forced">impulerit</span>. 
+                <span class="latin-word" title="So great"> Tantaene </span> 
+                <span class="latin-word" title="in spirits (abl.)">animīs </span> 
+                <span class="latin-word" title="celestial (abl.)">caelestibus </span> 
+                <span class="latin-word" title="anger (nom.)">īrae</span>?
+              </div>
+              
+              <div class="text-paragraph">
+                <strong>Lines 12-22</strong><br>
+                <span class="latin-word" title="city (nom.)">Urbs </span> 
+                <span class="latin-word" title="ancient (nom.)">antīqua </span> 
+                <span class="latin-word" title="was">fuit</span>, 
+                <span class="latin-word" title="Tyrian (nom.)">Tyriī </span> 
+                <span class="latin-word" title="lived in">tenuēre</span> 
+                <span class="latin-word" title="settlers (nom.)">colōnī</span>,<br>
+                <span class="latin-word" title="Carthage (nom.)">Karthāgō</span>, 
+                <span class="latin-word" title="Italy (acc.)">Ītaliam </span> 
+                <span class="latin-word" title="facing">contrā </span> 
+                <span class="latin-word" title="Tiber (acc.)">Tiberīnaque </span> 
+                <span class="latin-word" title="from afar">longē </span><br>
+                <span class="latin-word" title="mouths (acc.)">ōstia</span>, 
+                <span class="latin-word" title="wealthy (nom.)">dīves </span> 
+                <span class="latin-word" title="in resources (gen.)">opum </span> 
+                <span class="latin-word" title="in pursuits (abl.)">studiīsque </span> 
+                <span class="latin-word" title="harshest (nom.)">asperrima </span> 
+                <span class="latin-word" title="of war (gen.)">bellī</span>,<br>
+                <span class="latin-word" title="which (acc.)">quam </span> 
+                <span class="latin-word" title="Juno (nom.)">Iūnō </span> 
+                <span class="latin-word" title="is said">fertur </span> 
+                <span class="latin-word" title="lands (abl.)">terrīs </span> 
+                <span class="latin-word" title="more">magis </span> 
+                <span class="latin-word" title="all (abl.)">omnibus </span> 
+                <span class="latin-word" title="one (acc.)">ūnam</span><br>
+                <span class="latin-word" title="with Samos held after (abl.)">posthabitā </span> 
+                <span class="latin-word" title="cherished">coluisse </span> 
+                <span class="latin-word" title="Samos (abl.)">Samō</span>; 
+                <span class="latin-word" title="here">hīc </span> 
+                <span class="latin-word" title="of that one (gen.)">illius </span> 
+                <span class="latin-word" title="weapons (nom.)">arma</span>,<br>
+                <span class="latin-word" title="here">hīc </span> 
+                <span class="latin-word" title="chariot (nom.)">currus </span> 
+                <span class="latin-word" title="was">fuit</span>; 
+                <span class="latin-word" title="this (acc.)">hōc </span> 
+                <span class="latin-word" title="kingdom (acc.)">rēgnum </span> 
+                <span class="latin-word" title="goddess (nom.)">dea </span> 
+                <span class="latin-word" title="for peoples (dat.)">gentibus </span> 
+                <span class="latin-word" title="to be">esse </span>,<br>
+                <span class="latin-word" title="if">sī </span> 
+                <span class="latin-word" title="in any way">quā </span> 
+                <span class="latin-word" title="Fates (nom.)">Fāta </span> 
+                <span class="latin-word" title="would allow">sinant</span>, 
+                <span class="latin-word" title="now">iam </span> 
+                <span class="latin-word" title="then">tum </span> 
+                <span class="latin-word" title="strives">tenditque </span> 
+                <span class="latin-word" title="favors">fovetque</span>.<br>
+                <span class="latin-word" title="race (acc.)">Prōgeniem </span> 
+                <span class="latin-word" title="but indeed">sed enim </span> 
+                <span class="latin-word" title="Trojan (abl.)">Trōiānō </span> 
+                <span class="latin-word" title="from">ā </span> 
+                <span class="latin-word" title="blood (abl.)">sanguine </span> 
+                <span class="latin-word" title="to be led">dūcī </span><br>
+                <span class="latin-word" title="she had heard">audierat</span>, 
+                <span class="latin-word" title="Tyrian (acc.)">Tyriās </span> 
+                <span class="latin-word" title="one day">olim </span> 
+                <span class="latin-word" title="which">quae </span> 
+                <span class="latin-word" title="would overturn">verteret </span> 
+                <span class="latin-word" title="citadels (acc.)">arcēs</span>;<br>
+                <span class="latin-word" title="from here">hinc </span> 
+                <span class="latin-word" title="people (acc.)">populum </span> 
+                <span class="latin-word" title="widely">lātē </span> 
+                <span class="latin-word" title="ruling (acc.)">regem </span> 
+                <span class="latin-word" title="in war (abl.)">bellōque </span> 
+                <span class="latin-word" title="proud (acc.)">superbum</span><br>
+                <span class="latin-word" title="to come">ventūrum </span> 
+                <span class="latin-word" title="for destruction (dat.)">excidiō </span> 
+                <span class="latin-word" title="of Libya (gen.)">Libyae</span>: 
+                <span class="latin-word" title="thus">sīc </span> 
+                <span class="latin-word" title="to spin">volvere </span> 
+                <span class="latin-word" title="Fates (acc.)">Parcās</span>.
+              </div>
+
+              <div class="text-paragraph">
+                <strong>Lines 23-33</strong><br>
+                <span class="latin-word" title="this (acc.)">Id </span> 
+                <span class="latin-word" title="fearing">metuēns</span>, 
+                <span class="latin-word" title="ancient (gen.)">veterisque </span> 
+                <span class="latin-word" title="remembering">memor </span> 
+                <span class="latin-word" title="Saturnian one (nom.)">Sāturnia </span> 
+                <span class="latin-word" title="of war (gen.)">bellī</span>,<br>
+                <span class="latin-word" title="first (acc.)">prīma </span> 
+                <span class="latin-word" title="which">quod </span> 
+                <span class="latin-word" title="against">ad </span> 
+                <span class="latin-word" title="Troy (acc.)">Trōiam </span> 
+                <span class="latin-word" title="for">prō </span> 
+                <span class="latin-word" title="beloved (abl.)">cārīs </span> 
+                <span class="latin-word" title="had waged">gesserat </span> 
+                <span class="latin-word" title="Argives (abl.)">Argīs</span>—<br>
+                <span class="latin-word" title="not yet">necdum </span> 
+                <span class="latin-word" title="also">etiam </span> 
+                <span class="latin-word" title="reasons (nom.)">causae </span> 
+                <span class="latin-word" title="of anger (gen.)">īrārum </span> 
+                <span class="latin-word" title="savage (nom.)">saevīque </span> 
+                <span class="latin-word" title="resentment (nom.)">dolōrēs</span><br>
+                <span class="latin-word" title="had fallen">exciderant </span> 
+                <span class="latin-word" title="from mind (abl.)">animō</span>: 
+                <span class="latin-word" title="remains">manet </span> 
+                <span class="latin-word" title="deep (abl.)">altā </span> 
+                <span class="latin-word" title="in mind (abl.)">mente </span> 
+                <span class="latin-word" title="stored up (nom.)">repostum</span><br>
+                <span class="latin-word" title="judgment (nom.)">iūdicium </span> 
+                <span class="latin-word" title="of Paris (gen.)">Paridis </span> 
+                <span class="latin-word" title="spurned (gen.)">sprētaeque </span> 
+                <span class="latin-word" title="injury (nom.)">iniūria </span> 
+                <span class="latin-word" title="of beauty (gen.)">fōrmae</span>,<br>
+                <span class="latin-word" title="and">et </span> 
+                <span class="latin-word" title="race (nom.)">genus </span> 
+                <span class="latin-word" title="hated (nom.)">invīsum</span>, 
+                <span class="latin-word" title="and">et </span> 
+                <span class="latin-word" title="raptured (gen.)">raptī </span> 
+                <span class="latin-word" title="of Ganymede (gen.)">Ganymēdis </span> 
+                <span class="latin-word" title="honors (nom.)">honōrēs</span>.<br>
+                <span class="latin-word" title="by these (abl.)">Hīs </span> 
+                <span class="latin-word" title="enraged">accēnsa </span> 
+                <span class="latin-word" title="even more">super</span>, 
+                <span class="latin-word" title="tossed (acc.)">iactātōs </span> 
+                <span class="latin-word" title="on sea (abl.)">aequore </span> 
+                <span class="latin-word" title="whole (abl.)">tōtō</span><br>
+                <span class="latin-word" title="Trojans (acc.)">Trōas</span>, 
+                <span class="latin-word" title="survivors (acc.)">rēliquiās </span> 
+                <span class="latin-word" title="of Greeks (gen.)">Danaum </span> 
+                <span class="latin-word" title="and">atque </span> 
+                <span class="latin-word" title="unmerciful (gen.)">immītis </span> 
+                <span class="latin-word" title="of Achilles (gen.)">Achillī </span>,<br>
+                <span class="latin-word" title="was keeping">arcēbat </span> 
+                <span class="latin-word" title="far">longē </span> 
+                <span class="latin-word" title="from Latium (abl.)">Latiō </span>, 
+                <span class="latin-word" title="many (acc.)">multōsque </span> 
+                <span class="latin-word" title="through">per </span> 
+                <span class="latin-word" title="years (acc.)">annōs</span><br>
+                <span class="latin-word" title="they were wandering">errābant</span>, 
+                <span class="latin-word" title="having been driven">āctī </span> 
+                <span class="latin-word" title="by Fates (abl.)">Fātīs</span>, 
+                <span class="latin-word" title="seas (acc.)">maria </span> 
+                <span class="latin-word" title="all (acc.)">omnia </span> 
+                <span class="latin-word" title="around">circum</span>.<br>
+                <span class="latin-word" title="So great (gen.)">Tantae </span> 
+                <span class="latin-word" title="burden (gen.)">mōlis </span> 
+                <span class="latin-word" title="it was">erat </span> 
+                <span class="latin-word" title="Roman (acc.)">Rōmānam </span> 
+                <span class="latin-word" title="to found">condere </span> 
+                <span class="latin-word" title="people (acc.)">gentem</span>!
+              </div>
+            </div>
+
+            <div class="english-text">
+              <h2>English Translation</h2>
+              <div class="text-paragraph">
+                <strong>Lines 1-11</strong><br>
+                I sing of arms and a man, who, exiled by fate, first came from the shores of Troy to Italy and the shores of Lavinium–that one was tossed much both on land and on deep sea by the force of the gods above, because of the unforgetting anger of the savage Juno, and he also suffered many things in war, until he could found a city and bring in the gods into Latium–from where comes the Latin race, the Alban fathers, and the walls of high Rome.
+              </div>
+
+              <div class="text-paragraph">
+                Muse, recount to me the reasons, with her divine power having been insulted, by what, or grieving what, the queen of the gods forced a man, renowned for his piety, to undergo so many misfortunes, to endure so many hardships. Was the anger of the celestial spirits so great?
+              </div>
+              
+              <div class="text-paragraph">
+                <strong>Lines 12-22</strong><br>
+                There was an ancient city called Carthage (Tyrian settlers lived in the city), facing Italy and the mouths of the Tiber from afar, wealthy in resources, and the harshest in pursuits of war; a city which Juno is said to have cherished more than all other lands, with Samos having been held after: here were her weapons, here was her chariot; Now, then, the goddess both strives and favors that this be the kingdom for all peoples, if in any way the Fates would allow. But indeed she had heard that a race had been led from Trojan blood, which would one day overturn Tyrian citadels; and that from here a people, ruling widely and proud in war, would come for the destruction of Libya: that thus the Fates were spinning.
+              </div>
+
+              <div class="text-paragraph">
+                <strong>Lines 23-33</strong><br>
+                Fearing this, and the Saturnian One remembering the ancient war, which she had first waged against Troy for her beloved Argives (also the reasons of her anger and savage resentment had not yet fallen from her mind; there remained deep in her mind, the stored up the judgment of Paris, and the injury to her spurned beauty, and the hated race, and the honors of raptured Ganymede), Juno, having been enraged even more by these things, was keeping the Trojans, the survivors of the Greeks and of the unmerciful Achilles, all over the sea, far from Latium, and for many years, they were wandering, the Trojans having been driven by the Fates around the whole seas. It was such a great burden to found the Roman people.
+              </div>
+            </div>
+          </div>
+
+          <!-- Clickable Artwork -->
+          <div class="artwork-section">
+            <div class="artwork-container" (click)="openImagePopup('assets/burning.jpg', 'The Burning of Troy, Adam Elsheimer, 1600, via the Alte Pinakothek. Aeneas flees the burning city with his father Anchises on his back (showing pietas), accompanied by his son Ascanius and wife Creusa. This work is a nocturne, and showcases dramatic contrasting of light and dark values. This technique, called chiaroscuro, greatly influenced later Baroque artists, including Rembrandt. The technique is used to describe this sense of ominosity, with the silhouette of the Trojan Horse barely visible in the background.')">
+              <img src="assets/burning.jpg" alt="The Burning of Troy" class="artwork-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- Aeneid Book 1, Lines 88-107 Page -->
+    @if (currentPage === 'aeneid-1-88') {
+      <div class="page-overlay">
+        <div class="letter-page">
+          <img src="assets/juno.jpg" alt="Background" class="parallax-background">
+          <button class="back-button" (click)="goBack()">← Back to Aeneid</button>
+          
+          <div class="letter-header">
+            <h1>The Aeneid: Book 1</h1>
+            <p class="letter-subtitle">Lines 88-107: The Storm</p>
+            <p class="letter-instruction">Hover over Latin words to see their rough translations</p>
+          </div>
+
+          <div class="letter-content">
+            <div class="latin-text">
+              <h2>Latin Text</h2>
+              <div class="text-paragraph">
+                <strong>Lines 88-101</strong><br>
+                <span class="latin-word" title="they snatch">Eripiunt </span>
+                <span class="latin-word" title="suddenly">subito </span>
+                <span class="latin-word" title="clouds (nom.)">nubes </span>
+                <span class="latin-word" title="sky (acc.)">caelumque </span>
+                <span class="latin-word" title="daylight (acc.)">diemque </span><br>
+                <span class="latin-word" title="of Trojans (gen.)">Teucrorum </span>
+                <span class="latin-word" title="from">ex </span>
+                <span class="latin-word" title="eyes (abl.)">oculis </span>;
+                <span class="latin-word" title="on sea (abl.)">ponto </span>
+                <span class="latin-word" title="night (nom.)">nox </span>
+                <span class="latin-word" title="lies">incubat </span>
+                <span class="latin-word" title="dark (nom.)">atra </span>.<br>
+                <span class="latin-word" title="thundered">Intonuere </span>
+                <span class="latin-word" title="skies (nom.)">poli </span>,
+                <span class="latin-word" title="and">et </span>
+                <span class="latin-word" title="with frequent (abl.)">crebris </span>
+                <span class="latin-word" title="flickers">micat </span>
+                <span class="latin-word" title="with lightning (abl.)">ignibus </span>
+                <span class="latin-word" title="aether (nom.)">aether </span>,<br>
+                <span class="latin-word" title="instant (acc.)">praesentemque </span>
+                <span class="latin-word" title="to men (dat.)">viris </span>
+                <span class="latin-word" title="threaten">intentant </span>
+                <span class="latin-word" title="all (nom.)">omnia </span>
+                <span class="latin-word" title="death (acc.)">mortem </span>.<br>
+                <span class="latin-word" title="instantly">Extemplo </span>
+                <span class="latin-word" title="of Aeneas (gen.)">Aeneae </span>
+                <span class="latin-word" title="are loosened">solvuntur </span>
+                <span class="latin-word" title="by chilly fear (abl.)">frigore </span>
+                <span class="latin-word" title="limbs (nom.)">membra </span>:<br>
+                <span class="latin-word" title="he sighs">ingemit </span>,
+                <span class="latin-word" title="and">et </span>
+                <span class="latin-word" title="both (acc.)">duplicis </span>
+                <span class="latin-word" title="holding">tendens </span>
+                <span class="latin-word" title="to">ad </span>
+                <span class="latin-word" title="stars (acc.)">sidera </span>
+                <span class="latin-word" title="hands (acc.)">palmas </span><br>
+                <span class="latin-word" title="such things (acc.)">talia </span>
+                <span class="latin-word" title="aloud (abl.)">voce </span>
+                <span class="latin-word" title="he says">refert </span>:
+                <span class="latin-word" title="O">&#39;O </span>
+                <span class="latin-word" title="thrice">terque </span>
+                <span class="latin-word" title="four times">quaterque </span>
+                <span class="latin-word" title="blessed (nom.)">beati </span>,<br>
+                <span class="latin-word" title="to whom (dat.)">quis </span>
+                <span class="latin-word" title="in front of">ante </span>
+                <span class="latin-word" title="faces (acc.)">ora </span>
+                <span class="latin-word" title="of fathers (gen.)">patrum </span>
+                <span class="latin-word" title="of Troy (gen.)">Troiae </span>
+                <span class="latin-word" title="under">sub </span>
+                <span class="latin-word" title="walls (abl.)">moenibus </span>
+                <span class="latin-word" title="high (abl.)">altis </span><br>
+                <span class="latin-word" title="it happened">contigit </span>
+                <span class="latin-word" title="to meet death">oppetere </span>!
+                <span class="latin-word" title="O">O </span>
+                <span class="latin-word" title="of Greeks (gen.)">Danaum </span>
+                <span class="latin-word" title="strongest (voc.)">fortissime </span>
+                <span class="latin-word" title="of race (gen.)">gentis </span><br>
+                <span class="latin-word" title="son of Tydeus (voc.)">Tydide </span>!
+                <span class="latin-word" title="me (acc.)">Mene </span>
+                <span class="latin-word" title="Trojan (abl.)">Iliacis </span>
+                <span class="latin-word" title="to fall">occumbere </span>
+                <span class="latin-word" title="on camps (abl.)">campis </span><br>
+                <span class="latin-word" title="not">non </span>
+                <span class="latin-word" title="to be able">potuisse </span>,
+                <span class="latin-word" title="your (abl.)">tuaque </span>
+                <span class="latin-word" title="soul (acc.)">animam </span>
+                <span class="latin-word" title="this (acc.)">hanc </span>
+                <span class="latin-word" title="to pour out">effundere </span>
+                <span class="latin-word" title="right hand (abl.)">dextra </span>,<br>
+                <span class="latin-word" title="savage (nom.)">saevus </span>
+                <span class="latin-word" title="where">ubi </span>
+                <span class="latin-word" title="of Achilles (gen.)">Aeacidae </span>
+                <span class="latin-word" title="by spear (abl.)">telo </span>
+                <span class="latin-word" title="lies">iacet </span>
+                <span class="latin-word" title="Hector (nom.)">Hector </span>,
+                <span class="latin-word" title="where">ubi </span>
+                <span class="latin-word" title="immense (nom.)">ingens </span><br>
+                <span class="latin-word" title="Sarpedon (nom.)">Sarpedon </span>,
+                <span class="latin-word" title="where">ubi </span>
+                <span class="latin-word" title="so many">tot </span>
+                <span class="latin-word" title="Simois (nom.)">Simois </span>
+                <span class="latin-word" title="rolled up">correpta </span>
+                <span class="latin-word" title="under">sub </span>
+                <span class="latin-word" title="waves (abl.)">undis </span><br>
+                <span class="latin-word" title="shields (acc.)">scuta </span>
+                <span class="latin-word" title="of men (gen.)">virum </span>
+                <span class="latin-word" title="helmets (acc.)">galeasque </span>
+                <span class="latin-word" title="and">et </span>
+                <span class="latin-word" title="strong (acc.)">fortia </span>
+                <span class="latin-word" title="bodies (acc.)">corpora </span>
+                <span class="latin-word" title="rolls">volvit </span>?&#39;
+              </div>
+              
+              <div class="text-paragraph">
+                <strong>Lines 102-107</strong><br>
+                <span class="latin-word" title="such things (acc.)">Talia </span>
+                <span class="latin-word" title="to one uttering (dat.)">iactanti </span>
+                <span class="latin-word" title="whirring (nom.)">stridens </span>
+                <span class="latin-word" title="by north wind (abl.)">Aquilone </span>
+                <span class="latin-word" title="storm (nom.)">procella </span><br>
+                <span class="latin-word" title="sail (acc.)">velum </span>
+                <span class="latin-word" title="straight on (nom.)">adversa </span>
+                <span class="latin-word" title="strikes">ferit </span>,
+                <span class="latin-word" title="waves (acc.)">fluctusque </span>
+                <span class="latin-word" title="to">ad </span>
+                <span class="latin-word" title="stars (acc.)">sidera </span>
+                <span class="latin-word" title="raises">tollit </span>.<br>
+                <span class="latin-word" title="are broken">Franguntur </span>
+                <span class="latin-word" title="oars (nom.)">remi </span>;
+                <span class="latin-word" title="then">tum </span>
+                <span class="latin-word" title="prow (nom.)">prora </span>
+                <span class="latin-word" title="turns away">avertit </span>,
+                <span class="latin-word" title="and">et </span>
+                <span class="latin-word" title="to waves (abl.)">undis </span><br>
+                <span class="latin-word" title="gives">dat </span>
+                <span class="latin-word" title="side (acc.)">latus </span>;
+                <span class="latin-word" title="follows">insequitur </span>
+                <span class="latin-word" title="in heap (abl.)">cumulo </span>
+                <span class="latin-word" title="steep (nom.)">praeruptus </span>
+                <span class="latin-word" title="of water (gen.)">aquae </span>
+                <span class="latin-word" title="mountain (nom.)">mons </span>.<br>
+                <span class="latin-word" title="they">Hi </span>
+                <span class="latin-word" title="on top (abl.)">summo </span>
+                <span class="latin-word" title="in">in </span>
+                <span class="latin-word" title="wave (abl.)">fluctu </span>
+                <span class="latin-word" title="hang">pendent </span>;
+                <span class="latin-word" title="to these (dat.)">his </span>
+                <span class="latin-word" title="wave (nom.)">unda </span>
+                <span class="latin-word" title="gaping (nom.)">dehiscens </span><br>
+                <span class="latin-word" title="land (acc.)">terram </span>
+                <span class="latin-word" title="between">inter </span>
+                <span class="latin-word" title="waves (acc.)">fluctus </span>
+                <span class="latin-word" title="reveals">aperit </span>;
+                <span class="latin-word" title="rages">furit </span>
+                <span class="latin-word" title="tide (nom.)">aestus </span>
+                <span class="latin-word" title="with sands (abl.)">harenis </span>.
+              </div>
+            </div>
+
+            <div class="english-text">
+              <h2>English Translation</h2>
+              <div class="text-paragraph">
+                <strong>Lines 88-101</strong><br>
+                Suddenly, the clouds snatch both the sky and daylight from the eyes of the Trojans; the dark night lies on the sea. The skies thunder, and the aether flickers with frequent lightning, and all threaten instant death to the men. The limbs of Aeneas are loosened by chilly fear; Aeneas sighs, and holding both hands to the stars, he says such things aloud: "O blessed Trojans, both thrice and four times, to whom it happened to meet death in front of the faces of the fathers in Troy under the high walls! O strongest of the Greek race, son of Tydens! Was I not able to fall from the Trojan camps and to pour out this soul with your right hand where savage Hector lies dead by the spear of Achilles, where the immense Sarpedon lies, where the Simois rolls up under its waves so many shields, men, helmets, and strong bodies!"
+              </div>
+              
+              <div class="text-paragraph">
+                <strong>Lines 102-107</strong><br>
+                For the one uttering such things, the whirring storm by the north wind strikes the sail straight on, and it raises the wave to the stars. The oars are broken, then the prow turns away and gives the side to the waves, a steep mountain of water follows in a heap. They hang on top of the wave; the gaping wave reveals to these men land between the waves, the tide rages with sands.
+              </div>
+            </div>
+          </div>
+
+          <!-- Clickable Artwork -->
+          <div class="artwork-section">
+            <div class="artwork-container" (click)="openImagePopup('assets/juno.jpg', 'Juno Asking Aeolus to Release the Winds, Francois Boucher, 1769, via the Kimbell Art Museum. This Rococo style painting features pale blues, pinks, and creamy whites, which create an airy, luxurious atmosphere, despite the impending doom that this scene describes. In this scene, Juno is convincing Aeolus, the King of Winds, to release a storm, filled with turbulent waters and harsh winds, upon the Trojan refugees, in her attempt to deny fate. This could be done to signify the divinity of Juno, and how she is using her ira (rage) and use of erotic persuasion (through Deiopea) to achieve a political end.')">
+              <img src="assets/juno.jpg" alt="Juno Asking Aeolus to Release the Winds" class="artwork-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- Aeneid Book 1, Lines 496-508 Page -->
+    @if (currentPage === 'aeneid-1-496') {
+      <div class="page-overlay">
+        <div class="letter-page">
+          <img src="assets/dido.jpg" alt="Background" class="parallax-background">
+          <button class="back-button" (click)="goBack()">← Back to Aeneid</button>
+          
+          <div class="letter-header">
+            <h1>The Aeneid: Book 1</h1>
+            <p class="letter-subtitle">Lines 496-508: Queen Dido</p>
+            <p class="letter-instruction">Hover over Latin words to see their rough translations</p>
+          </div>
+
+          <div class="letter-content">
+            <div class="latin-text">
+              <h2>Latin Text</h2>
+              <div class="text-paragraph">
+                <strong>Lines 494-497</strong><br>
+                <span class="latin-word" title="these things (nom.)">Haec </span>
+                <span class="latin-word" title="while">dum </span>
+                <span class="latin-word" title="to Dardanian (dat.)">Dardanio </span>
+                <span class="latin-word" title="to Aeneas (dat.)">Aeneae </span>
+                <span class="latin-word" title="amazing (nom.)">miranda </span>
+                <span class="latin-word" title="seem">videntur </span>,<br>
+                <span class="latin-word" title="while">dum </span>
+                <span class="latin-word" title="he is stunned">stupet </span>,
+                <span class="latin-word" title="with view (abl.)">obtutuque </span>
+                <span class="latin-word" title="he clings">haeret </span>
+                <span class="latin-word" title="transfixed (nom.)">defixus </span>
+                <span class="latin-word" title="in">in </span>
+                <span class="latin-word" title="one (abl.)">uno </span>,<br>
+                <span class="latin-word" title="queen (nom.)">regina </span>
+                <span class="latin-word" title="to">ad </span>
+                <span class="latin-word" title="temple (acc.)">templum </span>,
+                <span class="latin-word" title="in form (abl.)">forma </span>
+                <span class="latin-word" title="most beautiful (nom.)">pulcherrima </span>
+                <span class="latin-word" title="Dido (nom.)">Dido </span>,<br>
+                <span class="latin-word" title="proceeded">incessit </span>
+                <span class="latin-word" title="large (abl.)">magna </span>
+                <span class="latin-word" title="of young men (gen.)">iuvenum </span>
+                <span class="latin-word" title="crowding (abl.)">stipante </span>
+                <span class="latin-word" title="retinue (abl.)">caterva </span>.
+              </div>
+              
+              <div class="text-paragraph">
+                <strong>Lines 498-508</strong><br>
+                <span class="latin-word" title="just as">Qualis </span>
+                <span class="latin-word" title="in">in </span>
+                <span class="latin-word" title="of Eurotas (gen.)">Eurotae </span>
+                <span class="latin-word" title="banks (abl.)">ripis </span>
+                <span class="latin-word" title="or">aut </span>
+                <span class="latin-word" title="through">per </span>
+                <span class="latin-word" title="ridges (acc.)">iuga </span>
+                <span class="latin-word" title="of Cynthus (gen.)">Cynthi </span><br>
+                <span class="latin-word" title="incites">exercet </span>
+                <span class="latin-word" title="Diana (nom.)">Diana </span>
+                <span class="latin-word" title="choruses (acc.)">choros </span>,
+                <span class="latin-word" title="whom (acc.)">quam </span>
+                <span class="latin-word" title="a thousand (nom.)">mille </span>
+                <span class="latin-word" title="having followed">secutae </span><br>
+                <span class="latin-word" title="here">hinc </span>
+                <span class="latin-word" title="and">atque </span>
+                <span class="latin-word" title="there">hinc </span>
+                <span class="latin-word" title="are gathered">glomerantur </span>
+                <span class="latin-word" title="nymphs (nom.)">oreades </span>;
+                <span class="latin-word" title="that one (nom.)">illa </span>
+                <span class="latin-word" title="quiver (acc.)">pharetram </span><br>
+                <span class="latin-word" title="carries">fert </span>
+                <span class="latin-word" title="on shoulder (abl.)">umero </span>,
+                <span class="latin-word" title="walking (nom.)">gradiensque </span>
+                <span class="latin-word" title="goddesses (acc.)">deas </span>
+                <span class="latin-word" title="towers above">supereminet </span>
+                <span class="latin-word" title="all (acc.)">omnis </span>:<br>
+                <span class="latin-word" title="of Latona (gen.)">Latonae </span>
+                <span class="latin-word" title="silent (acc.)">tacitum </span>
+                <span class="latin-word" title="thrill">pertemptant </span>
+                <span class="latin-word" title="joys (nom.)">gaudia </span>
+                <span class="latin-word" title="heart (acc.)">pectus </span>:<br>
+                <span class="latin-word" title="such (nom.)">talis </span>
+                <span class="latin-word" title="was">erat </span>
+                <span class="latin-word" title="Dido (nom.)">Dido </span>,
+                <span class="latin-word" title="such (acc.)">talem </span>
+                <span class="latin-word" title="herself (acc.)">se </span>
+                <span class="latin-word" title="happy (nom.)">laeta </span>
+                <span class="latin-word" title="was carrying">ferebat </span><br>
+                <span class="latin-word" title="through">per </span>
+                <span class="latin-word" title="middle (acc.)">medios </span>,
+                <span class="latin-word" title="pressing on (nom.)">instans </span>
+                <span class="latin-word" title="on work (dat.)">operi </span>
+                <span class="latin-word" title="kingdoms (dat.)">regnisque </span>
+                <span class="latin-word" title="future (dat.)">futuris </span>.<br>
+                <span class="latin-word" title="then">Tum </span>
+                <span class="latin-word" title="in doorways (abl.)">foribus </span>
+                <span class="latin-word" title="of goddess (gen.)">divae </span>,
+                <span class="latin-word" title="middle (abl.)">media </span>
+                <span class="latin-word" title="archway (abl.)">testudine </span>
+                <span class="latin-word" title="of temple (gen.)">templi </span>,<br>
+                <span class="latin-word" title="enclosed (nom.)">saepta </span>
+                <span class="latin-word" title="by armed guards (abl.)">armis </span>,
+                <span class="latin-word" title="throne (abl.)">solioque </span>
+                <span class="latin-word" title="up high">alte </span>
+                <span class="latin-word" title="resting (nom.)">subnixa </span>
+                <span class="latin-word" title="sat down">resedit </span>.<br>
+                <span class="latin-word" title="justice (acc.)">Iura </span>
+                <span class="latin-word" title="she gave">dabat </span>
+                <span class="latin-word" title="laws (acc.)">legesque </span>
+                <span class="latin-word" title="to men (dat.)">viris </span>,
+                <span class="latin-word" title="of projects (gen.)">operumque </span>
+                <span class="latin-word" title="labor (acc.)">laborem </span><br>
+                <span class="latin-word" title="with parts (abl.)">partibus </span>
+                <span class="latin-word" title="made equal">aequabat </span>
+                <span class="latin-word" title="just (abl.)">iustis </span>,
+                <span class="latin-word" title="or">aut </span>
+                <span class="latin-word" title="by lot (abl.)">sorte </span>
+                <span class="latin-word" title="she drew">trahebat </span>:
+              </div>
+            </div>
+
+            <div class="english-text">
+              <h2>English Translation</h2>
+              <div class="text-paragraph">
+                <strong>Lines 494-497</strong><br>
+                While these things seem amazing to the Dardanian Aeneas, and while he is stunned and clings, transfixed in one view, Queen Dido, most beautiful in form, proceeded to the temple with a large retinue of young men crowding together.
+              </div>
+              
+              <div class="text-paragraph">
+                <strong>Lines 498-508</strong><br>
+                Just as into the banks of the Eurotas river or through the ridges of Mount Cynthus, when Diana incites choruses, whom a million nymphs, having followed her, are gathered here and there; that one (Diana) carries a quiver on her shoulder and, walking, towers above all the goddesses (joys thrill the silent heart of Latona): such was Dido, and as such, pressing on the work and future kingdom through the middle of the crowd, she was happily carrying herself. Then Dido, enclosed by armed guards, resting on a throne up high, sat down in the doorways of the goddess (Juno), in the middle archway of her temple. She gave justice and laws to men, and she made equal the labor of projects with just parts, or she drew (selected) randomly.
+              </div>
+            </div>
+          </div>
+
+          <!-- Clickable Artwork -->
+          <div class="artwork-section">
+            <div class="artwork-container" (click)="openImagePopup('assets/dido.jpg', 'Aeneas Tells Dido the Misfortunes of Troy, Pierre-Narcisse Guérin, 1815, via the Louvre Museum. This painting shows the arrival in Carthage of the Trojan hero Aeneas, who is asked by the queen of the city, Dido, to relate his adventures and, in particular, his project of founding Rome. According to the fourth book of Virgil’s Aeneid, Aeneas and Dido fell in love as he was telling his tale..')">
+              <img src="assets/dido.jpg" alt="The Burning of Troy" class="artwork-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
     <!-- Pliny Detail Page -->
     @if (currentPage === 'pliny-detail') {
       <div class="page-overlay">
@@ -3952,7 +4677,7 @@ display, propose, relate; put or place forward;">propositam</span>.
     <div class="page-overlay">
       <div class="culture-page">
         <!-- Parallax Background -->
-        <img src="assets/culture.webp" alt="Roman Culture" class="parallax-background">
+        <img src="assets/cluture.jpg" alt="Roman Culture" class="parallax-background">
         
         <div class="culture-content">
           <div class="culture-header">
@@ -3963,28 +4688,72 @@ display, propose, relate; put or place forward;">propositam</span>.
           <div class="timeline-container">
             <!-- Timeline Line -->
             <div class="timeline-line"></div>
-            
-            <!-- Timeline Dots -->
-            <div class="timeline-dot" data-section="founding" (click)="scrollToSection('founding')"></div>
-            <div class="timeline-dot" data-section="kingdom" (click)="scrollToSection('kingdom')"></div>
-            <div class="timeline-dot" data-section="republic" (click)="scrollToSection('republic')"></div>
-            <div class="timeline-dot" data-section="empire" (click)="scrollToSection('empire')"></div>
-            
-            <!-- Dates Column (20%) -->
-            <div class="timeline-dates-column">
-              <div class="timeline-year">753 BC</div>
-              <div class="timeline-year">753-509 BC</div>
-              <div class="timeline-year">509-27 BC</div>
-              <div class="timeline-year">27 BC-476 AD</div>
-            </div>
 
             <!-- Content Column (80%) -->
             <div class="timeline-content-column">
               <!-- Founding of Rome (753 BC) -->
               <div class="timeline-section" id="founding">
+                <div class="timeline-year">753 BC</div>
                 <div class="timeline-content">
                   <h2>The Founding of Rome</h2>
                   <p>According to Roman legend, Rome was founded by Romulus and Remus, twin brothers raised by a she-wolf. Romulus killed Remus in a dispute and became the first king of Rome, establishing the city on Palatine Hill.</p>
+                </div>
+                <div class="history-item">
+                  <!-- Hills of Rome Table (but labeled emperor j cuz) -->
+                  <h4>The Seven Hills of Rome</h4>
+                  <div class="emperors-table">
+                    <div class="emperors-header">
+                      <div class="emperor-name">Hill</div>
+                    </div>
+                    <div class="emperors-header">
+                      <div class="emperor-dates">Latin Name</div>
+                    </div>
+                    <div class="emperors-header">
+                      <div class="emperor-achievements">Notes/Importances</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Palatine Hill</div>
+                      <div class="emperor-dates"><i>Mons Palatinus</i></div>
+                      <div class="emperor-achievements">The most famous hill — site of Rome’s founding by Romulus (according to legend). Later home to emperors’ palaces. The English word palace comes from Palatinus.</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Capitoline Hill</div>
+                      <div class="emperor-dates"><i>Mons Capitolinus</i></div>
+                      <div class="emperor-achievements">The religious and political center of Rome — location of the Temple of Jupiter Optimus Maximus and the Capitoline Triad. Also site of the Tabularium (state archives).</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Aventine Hill</div>
+                      <div class="emperor-dates"><i>Mons Aventinus</i></div>
+                      <div class="emperor-achievements">Traditionally associated with the common people (plebeians) and later with residential areas. Romulus and Remus quarreled here over where to found the city.</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Caelian Hill</div>
+                      <div class="emperor-dates"><i>Mons Caelius</i></div>
+                      <div class="emperor-achievements">An early residential district for Rome’s elite — later home to wealthy houses and temples.</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Esquiline Hill</div>
+                      <div class="emperor-dates"><i>Mons Esquilinus</i></div>
+                      <div class="emperor-achievements">One of the largest hills; contained both rich villas and poorer neighborhoods. Later site of Nero’s Domus Aurea (Golden House).</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Viminal Hill</div>
+                      <div class="emperor-dates"><i>Mons Viminalis</i></div>
+                      <div class="emperor-achievements">The smallest hill — mainly residential, less historically famous.</div>
+                    </div>
+                    <div class="emperors-row">
+                      <div class="emperor-name">Quirinal Hill</div>
+                      <div class="emperor-dates"><i>Mons Quirinalis</i></div>
+                      <div class="emperor-achievements">Named for Quirinus, the deified Romulus. Later became a fashionable district; today, it’s where the Italian President’s palace stands.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Historical Image -->
+              <div class="timeline-image-section">
+                <div class="artwork-container" (click)="openImagePopup('assets/founding.jpg', 'The Commencement of Empire, Thomas Cole, 1833-1836, via the New York Historical Society. The first in the five-painting series, The Course of an Empire, this painting, also known as The Savage State, depicts a natural landscape before civilization, with people living in harmony with nature. Clouds and mist, shroud much of the distant landscape, hinting towards an uncertain future. This image signals at the oncoming thunderstorm that is the Empire, and while the landscape details a pensive scene, it emphasizes the natural world still untouched by humanity.')">
+                  <img src="assets/founding.jpg" alt="The Beginning" class="artwork-image">
                 </div>
               </div>
 
@@ -4055,15 +4824,22 @@ display, propose, relate; put or place forward;">propositam</span>.
                       <li><strong>Slaves:</strong> Captured in war or born into slavery</li>
                     </ul>
                   </div>
+                </div>
               </div>
-          </div>
 
-            <!-- Roman Republic (509-27 BC) -->
-            <div class="timeline-section" id="republic">
-              <div class="timeline-year">509-27 BC</div>
-              <div class="timeline-content">
-                <h2>The Roman Republic</h2>
-                <div class="section-note">Rome's greatest period of expansion and political innovation</div>
+              <!-- Historical Image -->
+              <div class="timeline-image-section">
+                <div class="artwork-container" (click)="openImagePopup('assets/progress.jpg','The Pastoral State, Thomas Cole, 1833-1836, via the New York Historical Society. The second in the five-painting series, The Course of an Empire, this painting, also known as The Arcadian, depicts the beginnings of civilization, and the gradual advancement of society. Although the sky has cleared, this looming sense of destruction still remains, as the inception of destructive imperial ambitions sneak their way into the frame. Nature is no longer untouched my humanity and is subsequently altered to meet humanitys needs.')">
+                  <img src="assets/progress.jpg" alt="Progress" class="artwork-image">
+                </div>
+              </div>
+
+              <!-- Roman Republic (509-27 BC) -->
+              <div class="timeline-section" id="republic">
+                <div class="timeline-year">509-27 BC</div>
+                <div class="timeline-content">
+                  <h2>The Roman Republic</h2>
+                  <div class="section-note">Rome's greatest period of expansion and political innovation</div>
                   
                   <div class="history-item">
                     <h4>Early Republic (509-264 BC)</h4>
@@ -4155,12 +4931,19 @@ display, propose, relate; put or place forward;">propositam</span>.
                 </div>
               </div>
 
-            <!-- Roman Empire (27 BC-476 AD) -->
-            <div class="timeline-section" id="empire">
-              <div class="timeline-year">27 BC-476 AD</div>
-              <div class="timeline-content">
-                <h2>The Roman Empire</h2>
-                <div class="section-note">Rome's imperial period from Augustus to the fall of the Western Empire</div>
+              <!-- Historical Image -->
+              <div class="timeline-image-section">
+                <div class="artwork-container" (click)="openImagePopup('assets/glorydays.jpg','The Consummation of Empire, Thomas Cole, 1833-1836, via the New York Historical Society. The third in the five-painting series, The Course of an Empire, depicts the height of civilization, the ideal that all states strive to achieve - asymptotically of course, due to its idyllic connotation. The decadence, focus on extravagance, and emphasis on egocentrism shown in this image only further foreshadows the eventual and inevitable fall of every civilization that has ever (and will ever) walk this Earth.')">
+                  <img src="assets/glorydays.jpg" alt="The Glory Days" class="artwork-image">
+                </div>
+              </div>
+
+               <!-- Roman Empire (27 BC-476 AD) -->
+              <div class="timeline-section" id="empire">
+                <div class="timeline-year">27 BC-476 AD</div>
+                <div class="timeline-content">
+                    <h2>The Roman Empire</h2>
+                    <div class="section-note">Rome's imperial period from Augustus to the fall of the Western Empire</div>
                   
                   <div class="history-item">
                     <h4>Early Empire (27 BC-68 AD)</h4>
@@ -4257,15 +5040,30 @@ display, propose, relate; put or place forward;">propositam</span>.
                       <p><strong>Significance:</strong> Cemented Vandals' reputation; highlighted vulnerability</p>
                     </div>
                   </div>
+                </div>
+              </div>
+              <!-- Historical Image -->
+              <div class="timeline-image-section">
+                <div class="artwork-container" (click)="openImagePopup('assets/end.jpg','Destruction, Thomas Cole, 1833-1836, via the New York Historical Society. The fourth in the five-painting series, The Course of an Empire, depicts the sack and destruction of what once was. The detail on every woman, man, and child, heightens the loss felt in this event that all civilizations fall victim to. The statue of a venerable figure stands in the foreground, headless, yet still striding towards an uncertain future. Internal strife and civil war nuances are also both implicated in this image, tackling the complexity of what leads to such destruction, and the morals that come with it.')">
+                  <img src="assets/end.jpg" alt="The End" class="artwork-image">
+                </div>
               </div>
             </div>
           </div> <!-- End timeline-container -->
+
           
           <!-- Roman Culture Section (Separate from Timeline) -->
           <div class="culture-section" id="culture">
-            <h2>Roman Culture & Society</h2>
-            <div class="section-note">Cultural elements that defined Roman civilization across all periods</div>
-                  
+            <div class="culture-header">
+              <h1>Roman Culture and Society</h1>
+              <p>Cultural elements that defined Roman civilization across all periods</p>
+            </div> 
+              <!-- Historical Image -->
+              <div class="timeline-image-section">
+                <div class="artwork-container" (click)="openImagePopup('assets/last.jpg','Desolation, Thomas Cole, 1833-1836, via the New York Historical Society. The last in the five-painting series, The Course of an Empire, shows the aftermath, decades later. In this painting, we can see nature reclaim its old land, taking over and shrouding the manmade monuments, which used to hold so much bearing. Not only is this testament to the seemingly trifle nature of human struggles in the grand scheme of the universe, but it is ultimately commenting on the lasting legacy of the Roman Empire - or any civilization for that matter - and how future generations may use their history to learn.')">
+                  <img src="assets/last.jpg" alt="Legaacy" class="artwork-image">
+                </div>
+              </div>
                   <!-- Names Section -->
                   <div class="culture-subsection">
                     <h3>Roman Names</h3>
@@ -4330,12 +5128,88 @@ display, propose, relate; put or place forward;">propositam</span>.
                         <p>Personal worth, honor, and reputation built through service to the state.</p>
                       </div>
                       <div class="virtue-item">
-                        <h4>Auctoritas</h4>
+                        <h4>Auctoritas (fasces)</h4>
                         <p>Moral authority or influence, earned through experience, service, and integrity.</p>
                       </div>
                       <div class="virtue-item">
                         <h4>Fides</h4>
                         <p>Faithfulness, trust, and reliability—both in public life and private dealings.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Disciplina</h4>
+                        <p>Discipline, self-control, and training—particularly in military and educational contexts.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Constantia</h4>
+                        <p>Perseverance and steadiness of purpose.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Fortitudo</h4>
+                        <p>Courage and endurance, especially in adversity.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Industria</h4>
+                        <p>Diligence and hard work.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Prudentia</h4>
+                        <p>Prudence and practical wisdom—good judgment in personal and public matters.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Temperantia</h4>
+                        <p>Moderation and self-restraint.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Clementia</h4>
+                        <p>Mercy and leniency—especially of rulers or generals.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Iustitia</h4>
+                        <p>Justice and fairness, key to both law and governance.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Honestas</h4>
+                        <p>Moral integrity and respectability.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Libertas</h4>
+                        <p>Liberty and personal freedom, valued especially in the Republic.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Religio</h4>
+                        <p>Reverence and proper respect for the gods and religious traditions.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Mos Maiorum</h4>
+                        <p>"The custom of the ancestors"; traditionalism and reverence for ancestral ways.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Officium</h4>
+                        <p>Sense of duty, especially regarding fulfilling one's role in society.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Veritas</h4>
+                        <p>Truthfulness and honesty.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Humanitas</h4>
+                        <p>Refinement, civilization, learning, and kindness—akin to the modern "humanism."</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Pudor</h4>
+                        <p>Modesty and a sense of shame; awareness of proper behavior.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Severitas</h4>
+                        <p>Sternness or strictness, especially in moral character or justice.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Frugalitas</h4>
+                        <p>Frugality and economy; avoidance of excess and luxury.</p>
+                      </div>
+                      <div class="virtue-item">
+                        <h4>Nobilitas</h4>
+                        <p>Nobility in behavior and ancestry; a reputation for virtuous conduct.</p>
                       </div>
                     </div>
                   </div>
@@ -4448,15 +5322,20 @@ display, propose, relate; put or place forward;">propositam</span>.
                       <div class="house-row">
                         <div class="room-name">Entrance Hall</div>
                         <div class="room-latin">Vestibulum</div>
+                        <div class="room-function">Entry space between the street and the house; set the tone for visitors.</div>
+                      </div>
+                      <div class="house-row">
+                        <div class="room-name">Entrance Corridor</div>
+                        <div class="room-latin">Fauces</div>
                         <div class="room-function">Narrow passage leading from the street to the atrium.</div>
                       </div>
                       <div class="house-row">
                         <div class="room-name">Main Hall</div>
                         <div class="room-latin">Atrium</div>
-                        <div class="room-function">Central reception area; heart of the house; where clients were received.</div>
+                        <div class="room-function">Main reception area; social and religious center of the house.</div>
                       </div>
                       <div class="house-row">
-                        <div class="room-name">Rain Pool</div>
+                        <div class="room-name">Rainwater basin</div>
                         <div class="room-latin">Impluvium</div>
                         <div class="room-function">Shallow pool in the atrium floor to collect rainwater.</div>
                       </div>
@@ -4466,35 +5345,61 @@ display, propose, relate; put or place forward;">propositam</span>.
                         <div class="room-function">Opening in the atrium roof to let in light and rain (which filled the impluvium).</div>
                       </div>
                       <div class="house-row">
-                        <div class="room-name">Master's Study</div>
+                        <div class="room-name">Study/Office</div>
                         <div class="room-latin">Tablinum</div>
-                        <div class="room-function">Office/study behind the atrium; often had family records and archives.</div>
+                        <div class="room-function">Room for the head of household to manage affairs and meet clients.</div>
+                      </div>
+                      <div class="house-row">
+                        <div class="room-name">Bedrooms</div>
+                        <div class="room-latin">Cubicula</div>
+                        <div class="room-function">Small sleeping rooms; sometimes also used for private meetings.</div>
                       </div>
                       <div class="house-row">
                         <div class="room-name">Dining Room</div>
                         <div class="room-latin">Triclinium</div>
-                        <div class="room-function">Formal dining room with three couches arranged around a table.</div>
-                      </div>
-                      <div class="house-row">
-                        <div class="room-name">Inner Courtyard</div>
-                        <div class="room-latin">Peristyle</div>
-                        <div class="room-function">Garden courtyard surrounded by columns; private family area.</div>
-                      </div>
-                      <div class="house-row">
-                        <div class="room-name">Side Rooms</div>
-                        <div class="room-latin">Alae</div>
-                        <div class="room-function">Open rooms off the atrium; often displayed ancestor busts and family memorabilia.</div>
+                        <div class="room-function">Formal room for meals; diners reclined on couches (klinai).</div>
                       </div>
                       <div class="house-row">
                         <div class="room-name">Kitchen</div>
                         <div class="room-latin">Culina</div>
-                        <div class="room-function">Cooking area; usually small and smoky.</div>
+                        <div class="room-function">Room for cooking; usually small, dark, and smoky.</div>
                       </div>
                       <div class="house-row">
-                        <div class="room-name">Bedroom</div>
-                        <div class="room-latin">Cubiculum</div>
-                        <div class="room-function">Small sleeping chamber; often had no windows.</div>
+                        <div class="room-name">Side Alcoves/Wings</div>
+                        <div class="room-latin">Alae</div>
+                        <div class="room-function">Open rooms off the atrium; often displayed ancestor busts and family memorabilia.</div>
                       </div>
+                      <div class="house-row">
+                        <div class="room-name">Shrine</div>
+                        <div class="room-latin">Lararium</div>
+                        <div class="room-function">Small altar or shrine to the household gods (Lares and Penates).</div>
+                      </div>
+                      <div class="house-row">
+                        <div class="room-name">Bath</div>
+                        <div class="room-latin">Balneum</div>
+                        <div class="room-function">Private bathing area, sometimes with heated rooms.</div>
+                      </div>
+                      <div class="house-row">
+                        <div class="room-name">Garden Courtyard</div>
+                        <div class="room-latin">Peristylium</div>
+                        <div class="room-function">Open-air colonnaded garden at the back of the house; a private and decorative space.</div>
+                      </div>
+                      <div class="house-row">
+                        <div class="room-name">Lounge/Salon</div>
+                        <div class="room-latin">Exedra</div>
+                        <div class="room-function">Elegant room for conversation, reading, or displaying art.</div>
+                      </div>
+                      <div class="house-row">
+                        <div class="room-name">Servant Quarters/Storage</div>
+                        <div class="room-latin">Cella/Cellae</div>
+                        <div class="room-function">Rooms for slaves or storage of food, tools, etc.</div>
+                      </div>
+                    </div>
+                  </div>
+                      <!-- House Layout Image -->
+                  <div class="house-image-section">
+                    <div class="artwork-container" (click)="openImagePopup('assets/house.png', 'Diagram of a typical Roman house (domus) showing the various rooms and their functions.')">
+                      <img src="assets/house.png" alt="Roman House Layout" class="artwork-image">
                     </div>
                   </div>
 
@@ -4679,11 +5584,11 @@ display, propose, relate; put or place forward;">propositam</span>.
                     </div>
                   </div>
           </div>
-          <button class="back-button" (click)="goBack()">← Back to Home</button>
         </div>
+        <button class="back-button" (click)="goBack()">← Back to Home</button>
       </div>
     </div>
-    }
+  }
     
 
     @if (currentPage === 'online-tools') {
@@ -4700,20 +5605,26 @@ display, propose, relate; put or place forward;">propositam</span>.
             <div class="tool-category">
               <h3>Scansion & Poetry</h3>
               <div class="tool-links">
-                <a href="#" class="tool-link">
-                  <span class="tool-title">Access Online Tools</span>
+                <a href="https://grammars.alpheios.net/bennett/part1.htm#:~:text=The%20Liquids%20are%20l%2C%20r,These%20sounds%20were%20voiced.&text=anceps%2C%20double%2C%20pronounced%20angceps." target="_blank" class="tool-link">
+                  <span class="tool-title">Bennett's New Latin Grammar</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=cGF47JT0hPA" target="_blank" class="tool-link">
+                  <span class="tool-title">Scansion video</span>
+                </a>
+                <a href="https://www.thelatinlibrary.com/satire/scansion.pdf" target="_blank" class="tool-link">
+                  <span class="tool-title">The Latin Library: Scansion pdf</span>
+                </a>
+                <a href="https://dcc.dickinson.edu/grammar/latin/gerund-and-gerundive" target="_blank" class="tool-link">
+                  <span class="tool-title">Gerunds and Gerundives</span>
                 </a>
               </div>
             </div>
             
             <div class="tool-category">
-              <h3>Practice Tests</h3>
+              <h3>The Holy Grail</h3>
               <div class="tool-links">
-                <a href="https://grammars.alpheios.net/bennett/part1.htm#:~:text=The%20Liquids%20are%20l%2C%20r,These%20sounds%20were%20voiced.&text=anceps%2C%20double%2C%20pronounced%20angceps." target="_blank" class="tool-link">
-                  <span class="tool-title">Bennett's New Latin Grammar</span>
-                </a>
-                <a href="https://nodictionaries.com/" target="_blank" class="tool-link">
-                  <span class="tool-title">No Dictionaries - Latin Reader</span>
+                <a href="https://docs.google.com/document/d/1bSSS7DEPCQwY4QIMGZlN_NQIcb96MAVeA_58rZiwRMo/edit?usp=sharing" target="_blank" class="tool-link">
+                  <span class="tool-title">Thank you to Aarush, Harold, Saish, Leo, and Enzo. We made the greatest google doc of all time.</span>
                 </a>
               </div>
             </div>
@@ -4722,13 +5633,19 @@ display, propose, relate; put or place forward;">propositam</span>.
               <h3>Aeneid Resources</h3>
               <div class="tool-links">
                 <a href="http://apsubjects.weebly.com/aeneid-book-1.html" target="_blank" class="tool-link">
-                  <span class="tool-title">Aeneid Book 1 Study Guide</span>
+                  <span class="tool-title">Weebly: Aeneid Book 1 Study Guide</span>
                 </a>
                 <a href="https://sites.google.com/hufsd.edu/magistra-f-ap-latin/ap-exam-review-materials/aeneid-translations" target="_blank" class="tool-link">
-                  <span class="tool-title">Aeneid Translations & Analysis</span>
+                  <span class="tool-title">Magistra F's AP Latin</span>
                 </a>
-                <a href="https://drive.google.com/file/d/1B5xLrrQQFdRpRnhJZXpHbUdZZWM/view?pli=1&resourcekey=0-KmoX7onWGzy4Gop6VhrN-g" target="_blank" class="tool-link">
-                  <span class="tool-title">Aeneid Study Materials (Google Drive)</span>
+                <a href="https://docs.google.com/document/d/1KEEWpCYhpHx40_JDaWGdDrM6NhXP1Fk7ZJoUDU9lm8U/edit?pli=1&tab=t.0#heading=h.qo1qnjmgl7c" target="_blank" class="tool-link">
+                  <span class="tool-title">AP Latin Translation Google Doc</span>
+                </a>
+                <a href="https://aplatin.altervista.org/HomeworkViewer.php?level=AP&hw=134" target="_blank" class="tool-link">
+                  <span class="tool-title">Altervista: AP Latin</span>
+                </a>
+                <a href="https://nodictionaries.com/" target="_blank" class="tool-link">
+                  <span class="tool-title">No Dictionaries - Latin Reader</span>
                 </a>
               </div>
             </div>
@@ -4736,11 +5653,14 @@ display, propose, relate; put or place forward;">propositam</span>.
             <div class="tool-category">
               <h3>Pliny Letters Resources</h3>
               <div class="tool-links">
-                <a href="https://docs.google.com/document/d/1KEEWpCYhpHx40_JDaWGdDrM6NhXP1Fk7ZJoUDU9lm8U/edit?pli=1&tab=t.0#heading=h.qo1qnjmgl7c" target="_blank" class="tool-link">
-                  <span class="tool-title">Pliny Letters Study Guide</span>
+                <a href="https://www.attalus.org/info/pliny.html" target="_blank" class="tool-link">
+                  <span class="tool-title">Attalus: Pliny the Younger</span>
                 </a>
-                <a href="https://aplatin.altervista.org/HomeworkViewer.php?level=AP&hw=134" target="_blank" class="tool-link">
-                  <span class="tool-title">AP Latin Homework Viewer</span>
+                <a href="https://www.vroma.org/vromans/hwalker/Pliny/PlinyNumbers.html" target="_blank" class="tool-link">
+                  <span class="tool-title">Pliny Letter Index</span>
+                </a>
+                <a href="https://www.perseus.tufts.edu/hopper/text?doc=Plin.+Ep.+6.4" target="_blank" class="tool-link">
+                  <span class="tool-title">Tufts Perseus: Pliny in Latin</span>
                 </a>
               </div>
             </div>
@@ -4751,14 +5671,14 @@ display, propose, relate; put or place forward;">propositam</span>.
                 <a href="http://www.linneyslatinclass.com/studyhelps.html" target="_blank" class="tool-link">
                   <span class="tool-title">Linney's Latin Class Study Helps</span>
                 </a>
-                <a href="https://www.youtube.com/watch?v=cGF47JT0hPA" target="_blank" class="tool-link">
-                  <span class="tool-title">AP Latin Review Video</span>
-                </a>
                 <a href="https://latin-words.com/" target="_blank" class="tool-link">
-                  <span class="tool-title">Latin Words Dictionary</span>
+                  <span class="tool-title">William Whitaker's Words</span>
                 </a>
                 <a href="https://hexameter.co/" target="_blank" class="tool-link">
                   <span class="tool-title">Hexameter.co</span>
+                </a>
+                <a href="https://drive.google.com/file/d/0B5xLrrQQFdRpRnhJZXpHbUdZZWM/view?pli=1&resourcekey=0-KmoX7onWGzy4Gop6VhrN-g" target="_blank" class="tool-link">
+                  <span class="tool-title">Commentary on Caesar</span>
                 </a>
               </div>
             </div>
